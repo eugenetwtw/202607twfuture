@@ -58,6 +58,9 @@ UI = {
         "gallery_pause": "暫停",
         "gallery_fullscreen": "全螢幕",
         "gallery_fullscreen_exit": "離開全螢幕",
+        "gallery_delay": "每張秒數",
+        "gallery_delay_dec": "減少秒數",
+        "gallery_delay_inc": "增加秒數",
         "gallery_of": "/",
         "home": "首頁",
         "issues": "議題",
@@ -119,6 +122,9 @@ UI = {
         "gallery_pause": "Pause",
         "gallery_fullscreen": "Fullscreen",
         "gallery_fullscreen_exit": "Exit fullscreen",
+        "gallery_delay": "Seconds per photo",
+        "gallery_delay_dec": "Decrease seconds",
+        "gallery_delay_inc": "Increase seconds",
         "gallery_of": "/",
         "home": "Home",
         "issues": "Issues",
@@ -707,6 +713,11 @@ def build_gallery(lang: str, gallery_data: dict) -> str:
         <div class="lb__actions">
           <button type="button" class="btn btn-secondary lb__play" data-gallery-play>{esc(ui["gallery_play"])}</button>
           <span class="lb__countdown" data-gallery-countdown hidden aria-live="polite"></span>
+          <div class="lb__delay" role="group" aria-label="{esc(ui["gallery_delay"])}">
+            <button type="button" class="lb__delay-btn" data-gallery-delay-dec aria-label="{esc(ui["gallery_delay_dec"])}">−</button>
+            <span class="lb__delay-val" data-gallery-delay-label>5 秒</span>
+            <button type="button" class="lb__delay-btn" data-gallery-delay-inc aria-label="{esc(ui["gallery_delay_inc"])}">+</button>
+          </div>
           <button type="button" class="btn btn-secondary lb__fs" data-gallery-fullscreen>{esc(ui["gallery_fullscreen"])}</button>
         </div>
         <div class="lb__caption" data-gallery-caption></div>

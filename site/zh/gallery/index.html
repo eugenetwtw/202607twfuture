@@ -438,6 +438,11 @@
         <div class="lb__actions">
           <button type="button" class="btn btn-secondary lb__play" data-gallery-play>自動播放</button>
           <span class="lb__countdown" data-gallery-countdown hidden aria-live="polite"></span>
+          <div class="lb__delay" role="group" aria-label="每張秒數">
+            <button type="button" class="lb__delay-btn" data-gallery-delay-dec aria-label="減少秒數">−</button>
+            <span class="lb__delay-val" data-gallery-delay-label>5 秒</span>
+            <button type="button" class="lb__delay-btn" data-gallery-delay-inc aria-label="增加秒數">+</button>
+          </div>
           <button type="button" class="btn btn-secondary lb__fs" data-gallery-fullscreen>全螢幕</button>
         </div>
         <div class="lb__caption" data-gallery-caption></div>

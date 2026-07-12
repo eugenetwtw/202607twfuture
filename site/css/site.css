@@ -916,6 +916,48 @@ a:hover {
   display: none !important;
 }
 
+.lb__delay {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  font-family: var(--sans);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  padding: 0.15rem;
+}
+
+.lb__delay-btn {
+  width: 1.85rem;
+  height: 1.85rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-soft);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.lb__delay-btn:hover {
+  background: var(--paper-2);
+  color: var(--accent);
+}
+
+.lb__delay-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.lb__delay-val {
+  font-size: 0.88rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-soft);
+  min-width: 3.4rem;
+  text-align: center;
+  padding: 0 0.15rem;
+}
+
 .lb__panel:fullscreen .lb__countdown,
 .lb__panel:-webkit-full-screen .lb__countdown {
   color: #f0d9b5;

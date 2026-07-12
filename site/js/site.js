@@ -188,8 +188,12 @@
     var index = 0;
     var playing = false;
     var playTimer = null;
-    var INTERVAL_SEC = 5;
-    var remainSec = INTERVAL_SEC;
+    var MIN_SEC = 2;
+    var MAX_SEC = 30;
+    var DEFAULT_SEC = 5;
+    var STORAGE_KEY = "twfuture-gallery-delay-sec";
+    var intervalSec = DEFAULT_SEC;
+    var remainSec = intervalSec;
 
     var imgEl = lb.querySelector("[data-gallery-img]");
     var capEl = lb.querySelector("[data-gallery-caption]");
@@ -197,6 +201,9 @@
     var totalEl = lb.querySelector("[data-gallery-total]");
     var playBtn = lb.querySelector("[data-gallery-play]");
     var countdownEl = lb.querySelector("[data-gallery-countdown]");
+    var delayLabel = lb.querySelector("[data-gallery-delay-label]");
+    var delayDec = lb.querySelector("[data-gallery-delay-dec]");
+    var delayInc = lb.querySelector("[data-gallery-delay-inc]");
     var fsBtn = lb.querySelector("[data-gallery-fullscreen]");
     var panel = lb.querySelector("[data-gallery-panel]") || lb;
     var labelPlay = lb.getAttribute("data-label-play") || "Play";
@@ -207,9 +214,58 @@
 
     if (totalEl) totalEl.textContent = String(items.length);
 
-    function formatCountdown(sec) {
+    function clampSec(n) {
+      n = parseInt(n, 10);
+      if (isNaN(n)) return DEFAULT_SEC;
+      if (n < MIN_SEC) return MIN_SEC;
+      if (n > MAX_SEC) return MAX_SEC;
+      return n;
+    }
+
+    function loadInterval() {
+      try {
+        var raw = localStorage.getItem(STORAGE_KEY);
+        if (raw != null) intervalSec = clampSec(raw);
+      } catch (e) {
+        intervalSec = DEFAULT_SEC;
+      }
+      remainSec = intervalSec;
+    }
+
+    function saveInterval() {
+      try {
+        localStorage.setItem(STORAGE_KEY, String(intervalSec));
+      } catch (e) {}
+    }
+
+    function formatSec(sec) {
       if (isZh) return sec + " 秒";
       return sec + "s";
+    }
+
+    function renderDelayControls() {
+      if (delayLabel) delayLabel.textContent = formatSec(intervalSec);
+      if (delayDec) delayDec.disabled = intervalSec <= MIN_SEC;
+      if (delayInc) delayInc.disabled = intervalSec >= MAX_SEC;
+    }
+
+    function setIntervalSec(next) {
+      intervalSec = clampSec(next);
+      saveInterval();
+      renderDelayControls();
+      // If autoplay is running, restart window with new delay
+      if (playing) {
+        armPlayTimer();
+      } else {
+        remainSec = intervalSec;
+        renderCountdown();
+      }
+    }
+
+    function formatCountdown(sec) {
+      // Distinguish "time left this slide" from "setting"
+      if (isZh) return "下張 " + sec + " 秒";
+      return "next " + sec + "s";
     }
 
     function renderCountdown() {
@@ -232,18 +288,21 @@
 
     function armPlayTimer() {
       clearPlayTimer();
-      remainSec = INTERVAL_SEC;
+      remainSec = intervalSec;
       renderCountdown();
       // One tick per second: countdown UI + advance when it hits 0
       playTimer = setInterval(function () {
         remainSec -= 1;
         if (remainSec <= 0) {
           show((index + 1) % items.length);
-          remainSec = INTERVAL_SEC;
+          remainSec = intervalSec;
         }
         renderCountdown();
       }, 1000);
     }
+
+    loadInterval();
+    renderDelayControls();
 
     function fsElement() {
       return (
@@ -384,6 +443,18 @@
       fsBtn.addEventListener("click", function (e) {
         e.stopPropagation();
         toggleFullscreen();
+      });
+    }
+    if (delayDec) {
+      delayDec.addEventListener("click", function (e) {
+        e.stopPropagation();
+        setIntervalSec(intervalSec - 1);
+      });
+    }
+    if (delayInc) {
+      delayInc.addEventListener("click", function (e) {
+        e.stopPropagation();
+        setIntervalSec(intervalSec + 1);
       });
     }
 
