@@ -67,6 +67,7 @@ UI = {
         "gallery_of": "/",
         "home": "首頁",
         "issues": "議題",
+        "issue_no": "議題",
         "primary_lib": "到圖書館借電子書",
         "fallback_en": "English text is not ready yet; showing Traditional Chinese.",
         "footer": "張渝江《台灣大未來》— 工程師視角的台灣下一步。圖像除另有標示外屬作者。",
@@ -138,6 +139,7 @@ UI = {
         "gallery_of": "/",
         "home": "Home",
         "issues": "Issues",
+        "issue_no": "Issue",
         "primary_lib": "Borrow ebook (library)",
         "fallback_en": "English text is not ready yet; showing Traditional Chinese.",
         "footer": "Eugene Chang · Taiwan's Great Future — an engineer's map of what's next. Images © the author unless noted.",
@@ -425,6 +427,12 @@ def build_home(lang: str, issues: list, clusters: list, books: dict) -> str:
             f'<button type="button" class="chip" data-filter="{esc(c["id"])}">{esc(t(c["title"], lang))}</button>'
         )
 
+    # Stable issue numbers from list order (01, 02, …)
+    num_by_slug = {issue["slug"]: idx for idx, issue in enumerate(issues, start=1)}
+
+    def issue_no_label(n: int) -> str:
+        return f"{n:02d}"
+
     # featured
     featured_slugs = ["detail-and-craft", "coal-and-air", "eighty-days-campaign"]
     by_slug = {i["slug"]: i for i in issues}
@@ -433,12 +441,16 @@ def build_home(lang: str, issues: list, clusters: list, books: dict) -> str:
         if s not in by_slug:
             continue
         issue = by_slug[s]
+        n = num_by_slug[issue["slug"]]
         href = f"issues/{issue['slug']}/"
         featured_html.append(
             f"""<a class="issue-card" href="{href}">
-          <div class="thumb"><img src="{media_src(issue['cover'], 0)}" alt="" loading="lazy" /></div>
+          <div class="thumb">
+            <span class="issue-no" aria-label="{esc(ui["issue_no"])} {issue_no_label(n)}">{issue_no_label(n)}</span>
+            <img src="{media_src(issue['cover'], 0)}" alt="" loading="lazy" />
+          </div>
           <div class="body">
-            <div class="cluster-label">{esc(cluster_map.get(issue['cluster'], ''))}</div>
+            <div class="cluster-label"><span class="issue-no-inline">{issue_no_label(n)}</span> · {esc(cluster_map.get(issue['cluster'], ''))}</div>
             <h3>{esc(t(issue['title'], lang))}</h3>
             <p class="claim">{esc(t(issue['claim'], lang))}</p>
           </div>
@@ -447,12 +459,16 @@ def build_home(lang: str, issues: list, clusters: list, books: dict) -> str:
 
     cards = []
     for issue in issues:
+        n = num_by_slug[issue["slug"]]
         href = f"issues/{issue['slug']}/"
         cards.append(
             f"""<a class="issue-card" data-cluster="{esc(issue['cluster'])}" href="{href}">
-        <div class="thumb"><img src="{media_src(issue['cover'], 0)}" alt="" loading="lazy" /></div>
+        <div class="thumb">
+          <span class="issue-no" aria-label="{esc(ui["issue_no"])} {issue_no_label(n)}">{issue_no_label(n)}</span>
+          <img src="{media_src(issue['cover'], 0)}" alt="" loading="lazy" />
+        </div>
         <div class="body">
-          <div class="cluster-label">{esc(cluster_map.get(issue['cluster'], ''))}</div>
+          <div class="cluster-label"><span class="issue-no-inline">{issue_no_label(n)}</span> · {esc(cluster_map.get(issue['cluster'], ''))}</div>
           <h3>{esc(t(issue['title'], lang))}</h3>
           <p class="claim">{esc(t(issue['claim'], lang))}</p>
         </div>
@@ -553,6 +569,9 @@ def build_issue(lang: str, issue: dict, issues: list, books: dict) -> str:
     ui = UI[lang]
     depth = 3
     by_slug = {i["slug"]: i for i in issues}
+    num_by_slug = {i["slug"]: idx for idx, i in enumerate(issues, start=1)}
+    issue_n = num_by_slug.get(issue["slug"], 0)
+    issue_no = f"{issue_n:02d}" if issue_n else ""
     title = t(issue["title"], lang)
     claim = t(issue["claim"], lang)
     prose, fallback = body_paragraphs(issue, lang)
@@ -596,7 +615,9 @@ def build_issue(lang: str, issue: dict, issues: list, books: dict) -> str:
     for slug in issue.get("related") or []:
         if slug in by_slug:
             rel = by_slug[slug]
-            related.append(f'<a href="../{esc(slug)}/">{esc(t(rel["title"], lang))}</a>')
+            rn = num_by_slug.get(slug, 0)
+            rno = f"{rn:02d} " if rn else ""
+            related.append(f'<a href="../{esc(slug)}/">{rno}{esc(t(rel["title"], lang))}</a>')
 
     chapters = []
     for ch in issue.get("source_chapters") or []:
@@ -612,13 +633,14 @@ def build_issue(lang: str, issue: dict, issues: list, books: dict) -> str:
   <article class="article article-hero">
     <div class="wrap-narrow">
       <div class="breadcrumb">
-        <a href="../../">{esc(ui["home"])}</a> / {esc(ui["issues"])} / {esc(title)}
+        <a href="../../">{esc(ui["home"])}</a> / {esc(ui["issues"])} / {esc(ui["issue_no"])} {issue_no}
       </div>
       <div class="article-meta">
+        <span class="issue-no-badge">{esc(ui["issue_no"])} {issue_no}</span>
         <span>{esc(ui["minutes"])}</span>
         <span>{esc(ui["from_book"])}: {esc(" · ".join(chapters))}</span>
       </div>
-      <h1>{esc(title)}</h1>
+      <h1><span class="issue-no-title">{issue_no}</span> {esc(title)}</h1>
       <p class="claim">{esc(claim)}</p>
       {fb}
       {cover_html}
