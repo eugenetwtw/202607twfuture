@@ -57,6 +57,21 @@ UI = {
         "isbn": "ISBN",
         "also_search": "亦可於所屬縣市公共圖書館搜尋書名借閱。",
         "featured": "從這裡開始",
+        "compose_title": "發表框",
+        "compose_hint": "編輯文案後，一鍵複製或發到社群。貼上連結時，平台會抓取下方預覽卡的標題與說明。",
+        "compose_preview": "連結預覽（示意）",
+        "compose_draft": "發表文案",
+        "compose_copy_text": "複製文案",
+        "compose_copy_link": "複製連結",
+        "compose_native": "系統分享",
+        "compose_fb": "Facebook",
+        "compose_x": "X",
+        "compose_line": "LINE",
+        "compose_threads": "Threads",
+        "compose_copied_text": "已複製文案",
+        "compose_copied_link": "已複製連結",
+        "compose_site_tag": "台灣大未來 · 議題摘錄",
+        "compose_footer_line": "— 摘自《台灣大未來》張渝江",
     },
     "en": {
         "nav_home": "Issues",
@@ -93,6 +108,21 @@ UI = {
         "isbn": "ISBN",
         "also_search": "You can also search the title at your local public library.",
         "featured": "Start here",
+        "compose_title": "Share box",
+        "compose_hint": "Edit the draft, then copy or post to social. When you paste the link, platforms use the preview card below.",
+        "compose_preview": "Link preview (mock)",
+        "compose_draft": "Post draft",
+        "compose_copy_text": "Copy text",
+        "compose_copy_link": "Copy link",
+        "compose_native": "Share…",
+        "compose_fb": "Facebook",
+        "compose_x": "X",
+        "compose_line": "LINE",
+        "compose_threads": "Threads",
+        "compose_copied_text": "Text copied",
+        "compose_copied_link": "Link copied",
+        "compose_site_tag": "Taiwan's Great Future · essay",
+        "compose_footer_line": "— from Taiwan's Great Future by Eugene Chang",
     },
 }
 
@@ -269,6 +299,56 @@ def cta_box(lang: str, books: dict, depth: int) -> str:
       <div class="cta-actions">
         {"".join(buttons[:2])}
         {more}
+      </div>
+    </aside>
+"""
+
+
+def compose_box(lang: str, title: str, claim: str, cover: str, depth: int) -> str:
+    """Share / publish composer box for social posting."""
+    ui = UI[lang]
+    if lang == "zh":
+        draft = f"「{title}」\n\n{claim}\n\n{ui['compose_footer_line']}"
+    else:
+        draft = f'"{title}"\n\n{claim}\n\n{ui["compose_footer_line"]}'
+    img = media_src(cover, depth)
+    return f"""
+    <aside class="compose-box" data-compose-box
+      data-msg-copied-text="{esc(ui["compose_copied_text"])}"
+      data-msg-copied-link="{esc(ui["compose_copied_link"])}">
+      <div class="compose-box__head">
+        <h2>{esc(ui["compose_title"])}</h2>
+        <p>{esc(ui["compose_hint"])}</p>
+      </div>
+
+      <div class="compose-preview" aria-label="{esc(ui["compose_preview"])}">
+        <div class="compose-preview__label">{esc(ui["compose_preview"])}</div>
+        <div class="compose-preview__card">
+          <div class="compose-preview__thumb">
+            <img src="{img}" alt="" />
+          </div>
+          <div class="compose-preview__body">
+            <div class="compose-preview__site">{esc(ui["compose_site_tag"])}</div>
+            <div class="compose-preview__title">{esc(title)}</div>
+            <div class="compose-preview__desc">{esc(claim)}</div>
+          </div>
+        </div>
+      </div>
+
+      <label class="compose-label" for="compose-draft">{esc(ui["compose_draft"])}</label>
+      <textarea id="compose-draft" class="compose-textarea" data-compose-text rows="6">{esc(draft)}</textarea>
+
+      <div class="compose-actions">
+        <button type="button" class="btn btn-primary" data-copy-text>{esc(ui["compose_copy_text"])}</button>
+        <button type="button" class="btn btn-secondary" data-copy-url>{esc(ui["compose_copy_link"])}</button>
+        <button type="button" class="btn btn-secondary" data-share-native hidden>{esc(ui["compose_native"])}</button>
+      </div>
+
+      <div class="compose-social" role="group" aria-label="{esc(ui["compose_title"])}">
+        <button type="button" class="compose-social__btn" data-share="facebook">{esc(ui["compose_fb"])}</button>
+        <button type="button" class="compose-social__btn" data-share="x">{esc(ui["compose_x"])}</button>
+        <button type="button" class="compose-social__btn" data-share="line">{esc(ui["compose_line"])}</button>
+        <button type="button" class="compose-social__btn" data-share="threads">{esc(ui["compose_threads"])}</button>
       </div>
     </aside>
 """
@@ -469,10 +549,7 @@ def build_issue(lang: str, issue: dict, issues: list, books: dict) -> str:
         <div class="related-list">{"".join(related)}</div>
       </div>
       <p class="source-note">{esc(ui["source"])}: {esc(t(books["title"], lang))} — {esc(t(books["author"], lang))} · {esc(" · ".join(chapters))}</p>
-      <div class="share-row">
-        <span>{esc(ui["share"])}:</span>
-        <button type="button" class="btn btn-secondary" data-copy-url>{esc(ui["copy"])}</button>
-      </div>
+      {compose_box(lang, title, claim, cover, depth)}
     </div>
   </article>
 """
