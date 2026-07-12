@@ -17,8 +17,8 @@ SITE_NAME = {
     "en": "Taiwan's Great Future",
 }
 DEFAULT_DESC = {
-    "zh": "張渝江《台灣大未來》議題摘錄：今日瑞士，明日台灣。個人文集，非競選官網。",
-    "en": "Issue excerpts from Eugene Chang's Taiwan's Great Future. A personal essay site.",
+    "zh": "瑞士人均八萬美金、台灣兩萬四——差在哪？工程師張渝江把瑞士當鏡子，拆解台灣的能源、居住、醫療與未來。",
+    "en": "Switzerland's GDP per capita is triple Taiwan's—why? Engineer Eugene Chang uses Switzerland as a mirror for Taiwan's future.",
 }
 
 UI = {
@@ -27,28 +27,29 @@ UI = {
         "nav_about": "關於",
         "nav_books": "借書／買書",
         "nav_gallery": "照片選輯",
-        "kicker": "個人文集 · 議題摘錄",
-        "hero_title": "台灣大未來",
-        "hero_sub": "今日瑞士，明日台灣",
-        "hero_lede": "這不是競選官網。這裡把書中的議題拆成可分享的短文——每則約兩三分鐘——完整論述請借閱或購買原書。",
-        "cta_map": "瀏覽議題",
-        "cta_books": "借書／買書",
+        "kicker": "張渝江 · 工程師怎麼看台灣的下一步",
+        "hero_title": "若台灣變成瑞士，你的生活會差多少？",
+        "hero_sub": "《台灣大未來》— 今日瑞士，明日台灣",
+        "hero_lede": "人均所得差三倍、空氣差一截、房子卻貴到喘不過氣。他不是空談，而是帶著高鐵工地、區塊鏈與八十天選戰現場，把「有沒有可能」一題題拆開——每則兩三分鐘，點進去就知道。",
+        "cta_map": "先看最刺痛的幾題",
+        "cta_books": "借書／買全書",
         "filter_all": "全部",
         "section_map": "議題地圖",
-        "section_map_hint": "依主題篩選；點進任一則即可用網址分享。",
-        "read_full": "讀全書",
-        "read_full_body": "以上為書中觀點的摘錄。完整脈絡與論證請讀《台灣大未來》。公共圖書館可借電子書；也可購買電子書或紙本。",
-        "related": "相關議題",
+        "section_map_hint": "能源、居住、醫療、科技……挑你在意的點進去；每頁都能直接分享。",
+        "read_full": "想看完整推理？",
+        "read_full_body": "上面只是入口。書裡有數據、現場與完整論證——圖書館可借電子書，也可直接買。",
+        "related": "你可能也會點這些",
         "source": "來源",
         "share": "分享連結",
         "copied": "已複製連結",
         "copy": "複製本頁網址",
         "minutes": "約 2–3 分鐘",
         "from_book": "摘自原書",
-        "about_title": "關於作者與本書",
+        "about_title": "這個人是誰？",
+        "about_hook": "台大土木與法律、芝加哥 MBA、工地裡長大的工程師——也曾用八十天拿下一萬四千票。他寫書不是為了站台，是為了把「台灣有沒有機會變瑞士」說清楚。",
         "books_title": "借書／買書",
         "gallery_title": "照片選輯",
-        "gallery_lede": "依書中「9.1 照片集」收錄全部照片。點縮圖開啟說明；可用方向鍵切換，或自動播放。",
+        "gallery_lede": "八十天、菜市場、特斯拉宣傳車、開票之夜——點進去看現場，也看他怎麼走這一趟。",
         "gallery_count": "共 {n} 張",
         "gallery_open": "開啟說明",
         "gallery_close": "關閉",
@@ -68,13 +69,16 @@ UI = {
         "issues": "議題",
         "primary_lib": "到圖書館借電子書",
         "fallback_en": "English text is not ready yet; showing Traditional Chinese.",
-        "footer": "摘錄自張渝江《台灣大未來》。圖像著作權屬作者，除非另有標示。",
+        "footer": "張渝江《台灣大未來》— 工程師視角的台灣下一步。圖像除另有標示外屬作者。",
+        "footer_by": "作者 張渝江",
         "isbn": "ISBN",
         "also_search": "亦可於所屬縣市公共圖書館搜尋書名借閱。",
-        "featured": "從這裡開始",
+        "featured": "先從這幾題刺進去",
         "cover_caption": "《台灣大未來》封面",
+        "author_name": "張渝江",
+        "author_role": "工程師 · 作者 · 八十天選戰紀錄者",
         "compose_title": "發表框",
-        "compose_hint": "編輯文案後，一鍵複製或發到社群。貼上連結時，平台會抓取下方預覽卡的標題與說明。",
+        "compose_hint": "改幾句話，就能貼上 FB、LINE、Threads。預覽卡會帶出標題與封面。",
         "compose_preview": "連結預覽（示意）",
         "compose_draft": "發表文案",
         "compose_copy_text": "複製文案",
@@ -86,36 +90,37 @@ UI = {
         "compose_threads": "Threads",
         "compose_copied_text": "已複製文案",
         "compose_copied_link": "已複製連結",
-        "compose_site_tag": "台灣大未來 · 議題摘錄",
-        "compose_footer_line": "— 摘自《台灣大未來》張渝江",
+        "compose_site_tag": "張渝江 · 台灣大未來",
+        "compose_footer_line": "— 張渝江《台灣大未來》",
     },
     "en": {
         "nav_home": "Issues",
         "nav_about": "About",
         "nav_books": "Get the book",
         "nav_gallery": "Gallery",
-        "kicker": "Personal essays · Issue excerpts",
-        "hero_title": "Taiwan's Great Future",
-        "hero_sub": "Switzerland Today, Taiwan Tomorrow",
-        "hero_lede": "Not a campaign site. Short, shareable issue essays from the book—about two to three minutes each. Borrow or buy the full book for the complete argument.",
-        "cta_map": "Browse issues",
-        "cta_books": "Get the book",
+        "kicker": "Eugene Chang · An engineer’s map of Taiwan’s next move",
+        "hero_title": "What if Taiwan became Switzerland?",
+        "hero_sub": "Taiwan's Great Future — Switzerland Today, Taiwan Tomorrow",
+        "hero_lede": "Triple the GDP per capita. Cleaner air. A housing market that doesn’t crush the young. He doesn’t lecture—he opens the case file: HSR job sites, blockchain, an 80-day campaign. Two or three minutes per issue. Click if you’re curious.",
+        "cta_map": "Start with the sharp ones",
+        "cta_books": "Borrow / buy the book",
         "filter_all": "All",
         "section_map": "Issue map",
-        "section_map_hint": "Filter by theme; each page has a shareable URL.",
-        "read_full": "Read the full book",
-        "read_full_body": "These pages are excerpts. For the full context, borrow the ebook from a public library or purchase print/ebook editions.",
-        "related": "Related issues",
+        "section_map_hint": "Energy, housing, health, tech—pick what hits you. Every page is shareable.",
+        "read_full": "Want the full argument?",
+        "read_full_body": "This is the doorway. The book has the data and the field notes—borrow the ebook or buy it.",
+        "related": "You might open these next",
         "source": "Source",
         "share": "Share",
         "copied": "Link copied",
         "copy": "Copy page URL",
         "minutes": "≈ 2–3 min read",
         "from_book": "From the book",
-        "about_title": "About the author & book",
+        "about_title": "Who is this?",
+        "about_hook": "NTU civil engineering & law. Chicago MBA. Builder of sites and systems—and once, an 80-day outsider campaign. He writes to answer one question: can Taiwan grow up to Switzerland?",
         "books_title": "Borrow or buy",
         "gallery_title": "Photo gallery",
-        "gallery_lede": "All photos from chapter 9.1. Click a thumbnail for the caption; use arrow keys or autoplay.",
+        "gallery_lede": "Eighty days, night markets, a Tesla campaign car, election night—open a frame and stay a second.",
         "gallery_count": "{n} photos",
         "gallery_open": "Open",
         "gallery_close": "Close",
@@ -135,13 +140,16 @@ UI = {
         "issues": "Issues",
         "primary_lib": "Borrow ebook (library)",
         "fallback_en": "English text is not ready yet; showing Traditional Chinese.",
-        "footer": "Excerpts from Eugene Chang, Taiwan's Great Future. Images © the author unless noted.",
+        "footer": "Eugene Chang · Taiwan's Great Future — an engineer's map of what's next. Images © the author unless noted.",
+        "footer_by": "Eugene Chang",
         "isbn": "ISBN",
         "also_search": "You can also search the title at your local public library.",
-        "featured": "Start here",
+        "featured": "Start with these",
         "cover_caption": "Book cover — Taiwan's Great Future",
+        "author_name": "Eugene Chang",
+        "author_role": "Engineer · Author · 80-day campaign chronicler",
         "compose_title": "Share box",
-        "compose_hint": "Edit the draft, then copy or post to social. When you paste the link, platforms use the preview card below.",
+        "compose_hint": "Tweak a line, then post to social. The preview card carries title and image.",
         "compose_preview": "Link preview (mock)",
         "compose_draft": "Post draft",
         "compose_copy_text": "Copy text",
@@ -153,8 +161,8 @@ UI = {
         "compose_threads": "Threads",
         "compose_copied_text": "Text copied",
         "compose_copied_link": "Link copied",
-        "compose_site_tag": "Taiwan's Great Future · essay",
-        "compose_footer_line": "— from Taiwan's Great Future by Eugene Chang",
+        "compose_site_tag": "Eugene Chang · Taiwan's Great Future",
+        "compose_footer_line": "— Eugene Chang, Taiwan's Great Future",
     },
 }
 
@@ -276,8 +284,13 @@ def layout(
         nav_html.append(f'<a href="{href}"{cur}>{esc(label)}</a>')
 
     brand_href = "../" * depth + f"{lang}/"
+    about_href = "../" * depth + f"{lang}/about/"
     css = asset("css/site.css", depth)
     js = asset("js/site.js", depth)
+    author_img = asset("media/author.jpg", depth)
+    author_name = esc(ui.get("author_name") or "張渝江")
+    author_role = esc(ui.get("author_role") or "")
+    footer_by = esc(ui.get("footer_by") or author_name)
 
     return f"""<!DOCTYPE html>
 <html lang="{lang}">
@@ -285,7 +298,7 @@ def layout(
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{esc(full_title)}</title>
-  {og_tags(full_title, desc, image or "image35.jpg", depth, path)}
+  {og_tags(full_title, desc, image or "author.jpg", depth, path)}
   <link rel="icon" href="{asset("favicon.svg", depth)}" type="image/svg+xml" />
   <link rel="icon" href="{asset("favicon.ico", depth)}" sizes="any" />
   <link rel="icon" href="{asset("favicon-32.png", depth)}" type="image/png" sizes="32x32" />
@@ -295,7 +308,10 @@ def layout(
 <body>
   <header class="site-header">
     <div class="inner">
-      <a class="brand" href="{brand_href}">{esc(SITE_NAME[lang])} <span>— essays</span></a>
+      <a class="brand" href="{brand_href}">
+        <img class="brand-avatar" src="{author_img}" alt="{author_name}" width="36" height="36" />
+        <span class="brand-text">{esc(SITE_NAME[lang])} <span class="brand-sub">— {author_name}</span></span>
+      </a>
       <nav class="nav">{"".join(nav_html)}</nav>
       <a class="lang-switch" href="{lang_href}">{other_label}</a>
     </div>
@@ -305,8 +321,17 @@ def layout(
   </main>
   <footer class="site-footer">
     <div class="inner">
-      <div>{esc(ui["footer"])}</div>
-      <div><a href="{brand_href}">{esc(ui["home"])}</a> · <a href="{"../" * depth + lang + "/books/"}">{esc(ui["nav_books"])}</a></div>
+      <a class="footer-author" href="{about_href}">
+        <img src="{author_img}" alt="{author_name}" width="40" height="40" />
+        <span>
+          <strong>{footer_by}</strong>
+          <span class="footer-role">{author_role}</span>
+        </span>
+      </a>
+      <div class="footer-meta">
+        <div>{esc(ui["footer"])}</div>
+        <div><a href="{brand_href}">{esc(ui["home"])}</a> · <a href="{about_href}">{esc(ui["nav_about"])}</a> · <a href="{"../" * depth + lang + "/books/"}">{esc(ui["nav_books"])}</a></div>
+      </div>
     </div>
   </footer>
   <script src="{js}"></script>
@@ -434,6 +459,7 @@ def build_home(lang: str, issues: list, clusters: list, books: dict) -> str:
         )
 
     cover_src = media_src("cover.jpg", 0)
+    author_src = media_src("author.jpg", 0)
     body = f"""
   <section class="hero">
     <div class="wrap hero-layout">
@@ -442,15 +468,29 @@ def build_home(lang: str, issues: list, clusters: list, books: dict) -> str:
         <h1>{esc(ui["hero_title"])}</h1>
         <p class="subtitle">{esc(ui["hero_sub"])}</p>
         <p class="lede">{esc(ui["hero_lede"])}</p>
+        <div class="hero-author-chip">
+          <img src="{author_src}" alt="{esc(ui["author_name"])}" width="56" height="56" />
+          <div>
+            <strong>{esc(ui["author_name"])}</strong>
+            <span>{esc(ui["author_role"])}</span>
+          </div>
+        </div>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#map">{esc(ui["cta_map"])}</a>
           <a class="btn btn-secondary" href="books/">{esc(ui["cta_books"])}</a>
+          <a class="btn btn-ghost" href="about/">{esc(ui["nav_about"])}</a>
         </div>
       </div>
-      <figure class="hero-cover">
-        <img src="{cover_src}" alt="{esc(ui["cover_caption"])}" width="640" height="1008" />
-        <figcaption>{esc(ui["cover_caption"])}</figcaption>
-      </figure>
+      <div class="hero-visuals">
+        <figure class="hero-cover">
+          <img src="{cover_src}" alt="{esc(ui["cover_caption"])}" width="640" height="1008" />
+          <figcaption>{esc(ui["cover_caption"])}</figcaption>
+        </figure>
+        <figure class="hero-portrait">
+          <img src="{author_src}" alt="{esc(ui["author_name"])}" width="680" height="1024" />
+          <figcaption>{esc(ui["author_name"])}</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
@@ -609,30 +649,70 @@ def build_issue(lang: str, issue: dict, issues: list, books: dict) -> str:
 def build_about(lang: str, books: dict) -> str:
     ui = UI[lang]
     depth = 2
+    author = media_src("author.jpg", depth)
+    campaign = media_src("author-campaign.jpg", depth)
     if lang == "zh":
-        content = """
-      <p>張渝江，台灣大學土木／法律雙學士與碩士，芝加哥伊利諾大學 MBA（財務管理），土木工程技師。綠圖顧問負責人，亦從事區塊鏈與營造相關工作。著有《無人機大未來》《比特幣區塊鏈大未來》等多部作品。</p>
-      <p>《台灣大未來 — 今日瑞士，明日台灣》寫於 2019–2020，交織瑞士參照、能源與居住、醫療與科技，以及八十天立委競選的現場紀錄。2020 年夏於台中完稿。</p>
-      <p>本站是<strong>個人文集式的議題摘錄</strong>，方便以網址分享各主題。作者已不再從政參政；此處不從事競選或政黨動員。</p>
-      <p>完整論述請透過公共圖書館借閱電子書，或購買紙本／電子書。書目與連結見「借書／買書」。</p>
+        content = f"""
+      <p class="about-hook">{esc(ui.get("about_hook") or "")}</p>
+      <p>台大土木與法律雙學士、碩士；芝加哥伊利諾大學 MBA（財務與風險）。土木工程技師、綠圖顧問負責人，也做區塊鏈與營造。他在工地學細節，在選戰學效率——然後把兩者寫進書裡。</p>
+      <p>著有《無人機大未來》《比特幣區塊鏈大未來》《台灣大未來》等。這一站，是他的<strong>個人品牌入口</strong>：短議題好分享，長論證在書裡、在圖書館、在你願意往下點的地方。</p>
+      <div class="about-photos">
+        <figure>
+          <img src="{author}" alt="{esc(ui["author_name"])}" width="680" height="1024" />
+          <figcaption>{esc(ui["author_name"])} · {esc(ui["author_role"])}</figcaption>
+        </figure>
+        <figure>
+          <img src="{campaign}" alt="{esc(ui["author_name"])}" width="960" height="960" />
+          <figcaption>形象與現場——同一個作者，不同鏡頭</figcaption>
+        </figure>
+      </div>
+      <p>《台灣大未來》寫於 2019–2020：瑞士參照、能源與空污、居住、醫療與科技，外加八十天競選日記。他要回答的不是口號，是：方向對了，台灣能不能站上另一個量級。</p>
 """
     else:
-        content = """
-      <p>Eugene Chang (張渝江) is a civil engineer and writer based in Taiwan, with degrees in civil engineering and law (NTU) and an MBA from the University of Illinois at Chicago. He has written on drones, blockchain, engineering, and public policy.</p>
-      <p><em>Taiwan's Great Future — Switzerland Today, Taiwan Tomorrow</em> (2020) weaves Swiss comparisons, energy and housing, healthcare and technology, and a memoir of an eighty-day legislative campaign.</p>
-      <p>This site offers <strong>short, shareable issue essays</strong>—not a campaign property. The author is not seeking office.</p>
-      <p>For the full book, borrow from public libraries or purchase ebook/print editions.</p>
+        content = f"""
+      <p class="about-hook">{esc(ui.get("about_hook") or "")}</p>
+      <p>NTU (civil engineering & law), University of Illinois MBA, licensed engineer, founder work in consulting and blockchain. He learned detail on job sites and speed on the trail—then put both on the page.</p>
+      <p>Author of books on drones, bitcoin, and Taiwan’s future. This site is his <strong>personal brand front door</strong>: short issues you can share, full arguments in the book.</p>
+      <div class="about-photos">
+        <figure>
+          <img src="{author}" alt="{esc(ui["author_name"])}" width="680" height="1024" />
+          <figcaption>{esc(ui["author_name"])} · {esc(ui["author_role"])}</figcaption>
+        </figure>
+        <figure>
+          <img src="{campaign}" alt="{esc(ui["author_name"])}" width="960" height="960" />
+          <figcaption>Studio and field—same author, different frames</figcaption>
+        </figure>
+      </div>
+      <p><em>Taiwan's Great Future</em> (2019–2020) covers Switzerland as mirror, energy, housing, health, tech—and an eighty-day campaign. The question is simple and hard: if the direction is right, how high can Taiwan climb?</p>
 """
     body = f"""
   <section class="section">
-    <div class="wrap-narrow">
-      <h1>{esc(ui["about_title"])}</h1>
-      {content}
-      {cta_box(lang, books, depth)}
+    <div class="wrap about-page">
+      <div class="about-hero">
+        <img class="about-hero__photo" src="{author}" alt="{esc(ui["author_name"])}" width="680" height="1024" />
+        <div>
+          <h1>{esc(ui["about_title"])}</h1>
+          <p class="about-name">{esc(ui["author_name"])}</p>
+          <p class="about-role">{esc(ui["author_role"])}</p>
+        </div>
+      </div>
+      <div class="about-body wrap-narrow">
+        {content}
+        {cta_box(lang, books, depth)}
+      </div>
     </div>
   </section>
 """
-    return layout(lang, ui["about_title"], body, depth, current="about", path="about")
+    return layout(
+        lang,
+        ui["about_title"],
+        body,
+        depth,
+        current="about",
+        path="about",
+        image="author.jpg",
+        desc=ui.get("about_hook") or DEFAULT_DESC[lang],
+    )
 
 
 def build_books(lang: str, books: dict) -> str:
