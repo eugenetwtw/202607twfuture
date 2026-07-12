@@ -678,28 +678,21 @@ a:hover {
 
 .book-link {
   display: block;
-  padding: 1rem 1.15rem;
+  padding: 0.95rem 1.15rem;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  text-decoration: none;
-  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: var(--link);
+  font-family: var(--sans);
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .book-link:hover {
   border-color: var(--accent-soft);
-}
-
-.book-link strong {
-  display: block;
-  font-family: var(--sans);
-  margin-bottom: 0.2rem;
-}
-
-.book-link span {
-  font-size: 0.88rem;
-  color: var(--muted);
-  word-break: break-all;
+  color: var(--accent);
 }
 
 .book-link.is-primary {

@@ -602,10 +602,7 @@ def build_books(lang: str, books: dict) -> str:
         cls = "book-link is-primary" if link.get("primary") else "book-link"
         label = ui["primary_lib"] if link.get("primary") else t(link["label"], lang)
         items.append(
-            f"""<a class="{cls}" href="{esc(link["url"])}" target="_blank" rel="noopener">
-        <strong>{esc(label)}</strong>
-        <span>{esc(link["url"])}</span>
-      </a>"""
+            f"""<a class="{cls}" href="{esc(link["url"])}" target="_blank" rel="noopener noreferrer">{esc(label)}</a>"""
         )
     body = f"""
   <section class="section">
