@@ -48,7 +48,8 @@ UI = {
         "about_title": "關於作者與本書",
         "books_title": "借書／買書",
         "gallery_title": "照片選輯",
-        "gallery_lede": "選自書中競選與人生紀錄影像。定位為文集附錄，而非拉票文宣。",
+        "gallery_lede": "依書中「9.1 照片集」全文收錄：每張照片與其原文描述。定位為文集附錄，而非拉票文宣。",
+        "gallery_count": "共 {n} 張",
         "home": "首頁",
         "issues": "議題",
         "primary_lib": "到圖書館借電子書",
@@ -99,7 +100,8 @@ UI = {
         "about_title": "About the author & book",
         "books_title": "Borrow or buy",
         "gallery_title": "Photo gallery",
-        "gallery_lede": "Selected images from the campaign memoir chapters—personal archive, not campaigning.",
+        "gallery_lede": "Full set from chapter 9.1 of the book—each photo with its original caption. Personal archive, not campaigning.",
+        "gallery_count": "{n} photos",
         "home": "Home",
         "issues": "Issues",
         "primary_lib": "Borrow ebook (library)",
@@ -621,25 +623,52 @@ def build_books(lang: str, books: dict) -> str:
     return layout(lang, ui["books_title"], body, depth, current="books", path="books")
 
 
-def build_gallery(lang: str, gallery_images: list[str]) -> str:
+def build_gallery(lang: str, gallery_data: dict) -> str:
     ui = UI[lang]
     depth = 2
-    cells = []
-    for name in gallery_images:
-        src = media_src(name, depth)
-        cells.append(f'<a href="{src}" target="_blank" rel="noopener"><img src="{src}" alt="" loading="lazy" /></a>')
+    items = gallery_data.get("items") or []
+    intro = t(gallery_data.get("intro") or {}, lang)
+    cards = []
+    for idx, item in enumerate(items, 1):
+        src = media_src(item["src"], depth)
+        cap = t(item.get("caption") or {}, lang)
+        cap_html = "".join(f"<p>{esc(part)}</p>" for part in cap.split("\n\n") if part.strip()) if cap else ""
+        alt = esc(cap[:80].replace("\n", " ")) if cap else f"Photo {idx}"
+        cards.append(
+            f"""<figure class="gallery-item" id="photo-{idx}">
+        <div class="gallery-item__num">{idx}</div>
+        <a class="gallery-item__img" href="{src}" target="_blank" rel="noopener noreferrer">
+          <img src="{src}" alt="{alt}" loading="lazy" />
+        </a>
+        <figcaption class="gallery-item__cap">{cap_html or f"<p>—</p>"}</figcaption>
+      </figure>"""
+        )
+    cover = items[0]["src"] if items else "image35.jpg"
+    count_label = ui["gallery_count"].replace("{n}", str(len(items)))
+    intro_html = f'<p class="gallery-intro">{esc(intro)}</p>' if intro else ""
     body = f"""
   <section class="section">
-    <div class="wrap">
+    <div class="wrap-narrow gallery-page">
       <h1>{esc(ui["gallery_title"])}</h1>
-      <p class="lede" style="max-width:40em;color:var(--ink-soft)">{esc(ui["gallery_lede"])}</p>
-      <div class="gallery-grid" style="margin-top:1.5rem">
-        {"".join(cells)}
+      <p class="lede" style="color:var(--ink-soft)">{esc(ui["gallery_lede"])}</p>
+      {intro_html}
+      <p class="gallery-meta">{esc(count_label)}</p>
+      <div class="gallery-list">
+        {"".join(cards)}
       </div>
     </div>
   </section>
 """
-    return layout(lang, ui["gallery_title"], body, depth, current="gallery", path="gallery", image=gallery_images[0] if gallery_images else "image35.jpg")
+    return layout(
+        lang,
+        ui["gallery_title"],
+        body,
+        depth,
+        current="gallery",
+        path="gallery",
+        image=cover,
+        desc=ui["gallery_lede"],
+    )
 
 
 def write(path: Path, html: str):
@@ -652,23 +681,7 @@ def main():
     clusters = load_json("clusters.json")
     books = load_json("books.json")
 
-    # gallery: chapter 9.1 images from image_map
-    image_map = json.loads((ROOT / "scripts" / "image_map.json").read_text(encoding="utf-8"))
-    gallery = []
-    for item in image_map:
-        if str(item.get("chapter", "")).startswith("9.1"):
-            gallery.append(item["file"])
-    # unique preserve order, cap at 60 for performance
-    seen = set()
-    gallery_u = []
-    for g in gallery:
-        stem = Path(g).stem
-        if stem in seen:
-            continue
-        seen.add(stem)
-        gallery_u.append(g)
-        if len(gallery_u) >= 60:
-            break
+    gallery_data = load_json("gallery.json")
 
     # root redirect
     write(
@@ -694,15 +707,16 @@ def main():
         write(OUT / lang / "index.html", build_home(lang, issues, clusters, books))
         write(OUT / lang / "about" / "index.html", build_about(lang, books))
         write(OUT / lang / "books" / "index.html", build_books(lang, books))
-        write(OUT / lang / "gallery" / "index.html", build_gallery(lang, gallery_u))
+        write(OUT / lang / "gallery" / "index.html", build_gallery(lang, gallery_data))
         for issue in issues:
             write(
                 OUT / lang / "issues" / issue["slug"] / "index.html",
                 build_issue(lang, issue, issues, books),
             )
 
+    n_gal = len(gallery_data.get("items") or [])
     print(f"Built {len(issues)} issues × 2 langs + home/about/books/gallery")
-    print(f"Gallery images: {len(gallery_u)}")
+    print(f"Gallery photos: {n_gal}")
     print(f"Output: {OUT}")
 
 
