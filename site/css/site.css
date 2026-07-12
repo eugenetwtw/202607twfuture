@@ -812,22 +812,26 @@ a:hover {
 
 .lb__close {
   position: absolute;
-  top: 0.4rem;
-  right: 0.5rem;
-  z-index: 3;
-  width: 2.4rem;
-  height: 2.4rem;
+  top: 0.5rem;
+  right: 0.55rem;
+  z-index: 5;
+  width: 2.6rem;
+  height: 2.6rem;
   border: 0;
   border-radius: 999px;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.62);
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.55rem;
   line-height: 1;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
 }
 
 .lb__close:hover {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.82);
 }
 
 .lb__stage {

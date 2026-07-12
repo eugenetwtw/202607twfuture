@@ -359,9 +359,30 @@
     function stopPlay() {
       playing = false;
       clearPlayTimer();
-      remainSec = INTERVAL_SEC;
+      remainSec = intervalSec;
       renderCountdown();
       if (playBtn) playBtn.textContent = labelPlay;
+    }
+
+    function closeLightbox(e) {
+      if (e) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+      try {
+        stopPlay();
+      } catch (err) {}
+      try {
+        if (isFs()) {
+          var p = exitFs();
+          if (p && typeof p.catch === "function") p.catch(function () {});
+        }
+      } catch (err2) {}
+      lb.hidden = true;
+      lb.setAttribute("hidden", "");
+      document.body.classList.remove("lb-open");
+      if (imgEl) imgEl.removeAttribute("src");
+      updateFsButton();
     }
 
     function startPlay() {
@@ -396,18 +417,6 @@
       if (closeBtn) closeBtn.focus();
     }
 
-    function close() {
-      stopPlay();
-      if (isFs()) {
-        var p = exitFs();
-        if (p && typeof p.catch === "function") p.catch(function () {});
-      }
-      lb.hidden = true;
-      document.body.classList.remove("lb-open");
-      if (imgEl) imgEl.removeAttribute("src");
-      updateFsButton();
-    }
-
     document.querySelectorAll("[data-gallery-open]").forEach(function (btn) {
       btn.addEventListener("click", function () {
         var i = parseInt(btn.getAttribute("data-gallery-open"), 10) || 0;
@@ -416,7 +425,7 @@
     });
 
     lb.querySelectorAll("[data-gallery-close]").forEach(function (el) {
-      el.addEventListener("click", close);
+      el.addEventListener("click", closeLightbox);
     });
 
     var prev = lb.querySelector("[data-gallery-prev]");
@@ -467,7 +476,7 @@
         // Browser exits fullscreen first; second Esc closes lightbox
         if (isFs()) return;
         e.preventDefault();
-        close();
+        closeLightbox(e);
       } else if (e.key === "ArrowLeft") {
         e.preventDefault();
         show(index - 1, { restartTimer: true });
