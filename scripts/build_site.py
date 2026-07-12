@@ -426,7 +426,7 @@ def build_home(lang: str, issues: list, clusters: list, books: dict) -> str:
         )
 
     # featured
-    featured_slugs = ["covid-as-turning-point", "v2g-and-ev-bonds", "euthanasia-and-autonomy"]
+    featured_slugs = ["detail-and-craft", "coal-and-air", "eighty-days-campaign"]
     by_slug = {i["slug"]: i for i in issues}
     featured_html = []
     for s in featured_slugs:
