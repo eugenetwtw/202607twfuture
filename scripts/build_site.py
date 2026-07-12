@@ -289,16 +289,14 @@ def cta_box(lang: str, books: dict, depth: int) -> str:
         if link.get("primary"):
             label = ui["primary_lib"]
         buttons.append(
-            f'<a class="{cls}" href="{esc(link["url"])}" target="_blank" rel="noopener">{esc(label)}</a>'
+            f'<a class="{cls}" href="{esc(link["url"])}" target="_blank" rel="noopener noreferrer">{esc(label)}</a>'
         )
-    more = f'<a class="btn btn-ghost" href="{"../" * depth + lang + "/books/"}">{esc(ui["nav_books"])}</a>'
     return f"""
     <aside class="cta-box">
       <h2>{esc(ui["read_full"])}</h2>
       <p>{esc(ui["read_full_body"])}</p>
       <div class="cta-actions">
-        {"".join(buttons[:2])}
-        {more}
+        {"".join(buttons)}
       </div>
     </aside>
 """
