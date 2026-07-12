@@ -48,8 +48,15 @@ UI = {
         "about_title": "關於作者與本書",
         "books_title": "借書／買書",
         "gallery_title": "照片選輯",
-        "gallery_lede": "依書中「9.1 照片集」全文收錄：每張照片與其原文描述。定位為文集附錄，而非拉票文宣。",
+        "gallery_lede": "依書中「9.1 照片集」收錄全部照片。點縮圖開啟說明；可用方向鍵切換，或自動播放。",
         "gallery_count": "共 {n} 張",
+        "gallery_open": "開啟說明",
+        "gallery_close": "關閉",
+        "gallery_prev": "上一張",
+        "gallery_next": "下一張",
+        "gallery_play": "自動播放",
+        "gallery_pause": "暫停",
+        "gallery_of": "/",
         "home": "首頁",
         "issues": "議題",
         "primary_lib": "到圖書館借電子書",
@@ -100,8 +107,15 @@ UI = {
         "about_title": "About the author & book",
         "books_title": "Borrow or buy",
         "gallery_title": "Photo gallery",
-        "gallery_lede": "Full set from chapter 9.1 of the book—each photo with its original caption. Personal archive, not campaigning.",
+        "gallery_lede": "All photos from chapter 9.1. Click a thumbnail for the caption; use arrow keys or autoplay.",
         "gallery_count": "{n} photos",
+        "gallery_open": "Open",
+        "gallery_close": "Close",
+        "gallery_prev": "Previous",
+        "gallery_next": "Next",
+        "gallery_play": "Autoplay",
+        "gallery_pause": "Pause",
+        "gallery_of": "/",
         "home": "Home",
         "issues": "Issues",
         "primary_lib": "Borrow ebook (library)",
@@ -632,36 +646,66 @@ def build_gallery(lang: str, gallery_data: dict) -> str:
     depth = 2
     items = gallery_data.get("items") or []
     intro = t(gallery_data.get("intro") or {}, lang)
-    cards = []
-    for idx, item in enumerate(items, 1):
+    thumbs = []
+    payload = []
+    for idx, item in enumerate(items):
         src = media_src(item["src"], depth)
         cap = t(item.get("caption") or {}, lang)
-        cap_html = "".join(f"<p>{esc(part)}</p>" for part in cap.split("\n\n") if part.strip()) if cap else ""
-        alt = esc(cap[:80].replace("\n", " ")) if cap else f"Photo {idx}"
-        cards.append(
-            f"""<figure class="gallery-item" id="photo-{idx}">
-        <div class="gallery-item__num">{idx}</div>
-        <a class="gallery-item__img" href="{src}" target="_blank" rel="noopener noreferrer">
+        # Prefer zh caption for payload when en empty
+        if not cap:
+            cap = t(item.get("caption") or {}, "zh")
+        alt = esc((cap[:60] if cap else f"Photo {idx + 1}").replace("\n", " "))
+        thumbs.append(
+            f"""<button type="button" class="gallery-thumb" data-gallery-open="{idx}" aria-label="{esc(ui["gallery_open"])} {idx + 1}">
           <img src="{src}" alt="{alt}" loading="lazy" />
-        </a>
-        <figcaption class="gallery-item__cap">{cap_html or f"<p>—</p>"}</figcaption>
-      </figure>"""
+          <span class="gallery-thumb__n">{idx + 1}</span>
+        </button>"""
         )
+        payload.append({"src": src, "caption": cap})
+
     cover = items[0]["src"] if items else "image35.jpg"
     count_label = ui["gallery_count"].replace("{n}", str(len(items)))
     intro_html = f'<p class="gallery-intro">{esc(intro)}</p>' if intro else ""
+    # JSON for lightbox (safe embed)
+    payload_json = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")
+
     body = f"""
   <section class="section">
-    <div class="wrap-narrow gallery-page">
+    <div class="wrap gallery-page">
       <h1>{esc(ui["gallery_title"])}</h1>
       <p class="lede" style="color:var(--ink-soft)">{esc(ui["gallery_lede"])}</p>
       {intro_html}
       <p class="gallery-meta">{esc(count_label)}</p>
-      <div class="gallery-list">
-        {"".join(cards)}
+      <div class="gallery-grid" data-gallery-grid>
+        {"".join(thumbs)}
       </div>
     </div>
   </section>
+
+  <div class="lb" id="gallery-lightbox" hidden data-gallery-lightbox
+       data-label-play="{esc(ui["gallery_play"])}"
+       data-label-pause="{esc(ui["gallery_pause"])}"
+       data-label-of="{esc(ui["gallery_of"])}">
+    <div class="lb__backdrop" data-gallery-close tabindex="-1"></div>
+    <div class="lb__panel" role="dialog" aria-modal="true" aria-label="{esc(ui["gallery_title"])}">
+      <button type="button" class="lb__close" data-gallery-close aria-label="{esc(ui["gallery_close"])}">×</button>
+      <div class="lb__stage">
+        <button type="button" class="lb__nav lb__nav--prev" data-gallery-prev aria-label="{esc(ui["gallery_prev"])}">‹</button>
+        <div class="lb__media">
+          <img class="lb__img" data-gallery-img alt="" />
+        </div>
+        <button type="button" class="lb__nav lb__nav--next" data-gallery-next aria-label="{esc(ui["gallery_next"])}">›</button>
+      </div>
+      <div class="lb__footer">
+        <div class="lb__counter"><span data-gallery-index>1</span>{esc(ui["gallery_of"])}<span data-gallery-total>{len(items)}</span></div>
+        <div class="lb__actions">
+          <button type="button" class="btn btn-secondary lb__play" data-gallery-play>{esc(ui["gallery_play"])}</button>
+        </div>
+        <div class="lb__caption" data-gallery-caption></div>
+      </div>
+    </div>
+  </div>
+  <script type="application/json" id="gallery-data">{payload_json}</script>
 """
     return layout(
         lang,

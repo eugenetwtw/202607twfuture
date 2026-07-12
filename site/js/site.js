@@ -170,4 +170,158 @@
       });
     });
   });
+
+  // Gallery lightbox + slideshow
+  (function initGallery() {
+    var dataEl = document.getElementById("gallery-data");
+    var lb = document.querySelector("[data-gallery-lightbox]");
+    if (!dataEl || !lb) return;
+
+    var items = [];
+    try {
+      items = JSON.parse(dataEl.textContent || "[]");
+    } catch (e) {
+      return;
+    }
+    if (!items.length) return;
+
+    var index = 0;
+    var playing = false;
+    var timer = null;
+    var INTERVAL_MS = 4500;
+
+    var imgEl = lb.querySelector("[data-gallery-img]");
+    var capEl = lb.querySelector("[data-gallery-caption]");
+    var idxEl = lb.querySelector("[data-gallery-index]");
+    var totalEl = lb.querySelector("[data-gallery-total]");
+    var playBtn = lb.querySelector("[data-gallery-play]");
+    var labelPlay = lb.getAttribute("data-label-play") || "Play";
+    var labelPause = lb.getAttribute("data-label-pause") || "Pause";
+
+    if (totalEl) totalEl.textContent = String(items.length);
+
+    function stopPlay() {
+      playing = false;
+      if (timer) {
+        clearInterval(timer);
+        timer = null;
+      }
+      if (playBtn) playBtn.textContent = labelPlay;
+    }
+
+    function startPlay() {
+      playing = true;
+      if (playBtn) playBtn.textContent = labelPause;
+      if (timer) clearInterval(timer);
+      timer = setInterval(function () {
+        show((index + 1) % items.length);
+      }, INTERVAL_MS);
+    }
+
+    function show(i) {
+      index = (i + items.length) % items.length;
+      var item = items[index];
+      if (imgEl) {
+        imgEl.src = item.src;
+        imgEl.alt = (item.caption || "").slice(0, 120);
+      }
+      if (capEl) capEl.textContent = item.caption || "";
+      if (idxEl) idxEl.textContent = String(index + 1);
+    }
+
+    function open(i) {
+      show(i);
+      lb.hidden = false;
+      document.body.classList.add("lb-open");
+      // focus close for a11y
+      var closeBtn = lb.querySelector(".lb__close");
+      if (closeBtn) closeBtn.focus();
+    }
+
+    function close() {
+      stopPlay();
+      lb.hidden = true;
+      document.body.classList.remove("lb-open");
+      if (imgEl) imgEl.removeAttribute("src");
+    }
+
+    document.querySelectorAll("[data-gallery-open]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var i = parseInt(btn.getAttribute("data-gallery-open"), 10) || 0;
+        open(i);
+      });
+    });
+
+    lb.querySelectorAll("[data-gallery-close]").forEach(function (el) {
+      el.addEventListener("click", close);
+    });
+
+    var prev = lb.querySelector("[data-gallery-prev]");
+    var next = lb.querySelector("[data-gallery-next]");
+    if (prev) {
+      prev.addEventListener("click", function (e) {
+        e.stopPropagation();
+        show(index - 1);
+      });
+    }
+    if (next) {
+      next.addEventListener("click", function (e) {
+        e.stopPropagation();
+        show(index + 1);
+      });
+    }
+    if (playBtn) {
+      playBtn.addEventListener("click", function () {
+        if (playing) stopPlay();
+        else startPlay();
+      });
+    }
+
+    document.addEventListener("keydown", function (e) {
+      if (lb.hidden) return;
+      if (e.key === "Escape") {
+        e.preventDefault();
+        close();
+      } else if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        show(index - 1);
+      } else if (e.key === "ArrowRight") {
+        e.preventDefault();
+        show(index + 1);
+      } else if (e.key === " " || e.key === "Spacebar") {
+        // space toggles autoplay when lightbox open
+        if (e.target && e.target.tagName === "BUTTON") return;
+        e.preventDefault();
+        if (playing) stopPlay();
+        else startPlay();
+      }
+    });
+
+    // touch swipe
+    var touchX = null;
+    var stage = lb.querySelector(".lb__stage");
+    if (stage) {
+      stage.addEventListener(
+        "touchstart",
+        function (e) {
+          if (e.changedTouches && e.changedTouches[0]) {
+            touchX = e.changedTouches[0].clientX;
+          }
+        },
+        { passive: true }
+      );
+      stage.addEventListener(
+        "touchend",
+        function (e) {
+          if (touchX == null || !e.changedTouches || !e.changedTouches[0]) return;
+          var dx = e.changedTouches[0].clientX - touchX;
+          touchX = null;
+          if (Math.abs(dx) < 40) return;
+          if (dx > 0) show(index - 1);
+          else show(index + 1);
+        },
+        { passive: true }
+      );
+    }
+  })();
 })();
