@@ -1,0 +1,1537 @@
+[
+  {
+    "slug": "why-switzerland",
+    "cluster": "switzerland-model",
+    "source_chapters": [
+      1
+    ],
+    "cover": "image35.jpg",
+    "related": [
+      "high-value-economy",
+      "detail-and-craft",
+      "national-identity"
+    ],
+    "title": {
+      "zh": "為何對標瑞士",
+      "en": "Why Switzerland"
+    },
+    "claim": {
+      "zh": "台灣與瑞士同樣缺資源、靠腦力；方向對了，才有機會成為區域的穩定核心。",
+      "en": "Taiwan and Switzerland both lack resources and rely on brains."
+    },
+    "summary": {
+      "zh": "從高鐵工地的瑞士上司，到人均產值的差距，為什麼台灣總拿瑞士當鏡子。",
+      "en": "Why Taiwan keeps looking to Switzerland."
+    },
+    "body": {
+      "zh": [
+        "台灣在發展方向上，常比對新加坡與瑞士。新加坡被稱為東方瑞士，因為有極高的國民生產力與金融業；而台灣為什麼也老是對到瑞士？",
+        "瑞士土地約四萬多平方公里，略大於台灣的三萬六千，人口卻只有約八百萬，台灣約兩千四百萬——人口密度是瑞士的四倍。兩邊都獨立於世：瑞士被高山隔開鄰國，台灣四面環海；兩邊都沒有什麼天然資源，要活下來只有靠腦力。",
+        "2019 年 IMF 排名，瑞士人均 GDP 約 83,716 美元，台灣約 24,827 美元。差距不只是數字，而是產業選擇與制度文化的結果。",
+        "我在高鐵興建年代開始工作，任職於總部位於伯恩的瑞士公司。從結構到工期，我第一次貼身看見：一個小國如何用精密、高單價、可輸出的能力，把價值做進每一個節點。",
+        "這本書不是要把台灣變成瑞士的複製品，而是問：在同樣「靠腦力」的前提下，台灣能不能把方向對準——成為區域裡穩定、高產值、可被信任的核心。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image35.jpg",
+        "caption": {
+          "zh": "2001，中壢高鐵專案與瑞士商工作，圖中為吊梁機。",
+          "en": "HSR project with Swiss firm, 2001."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "high-value-economy",
+    "cluster": "switzerland-model",
+    "source_chapters": [
+      1,
+      4
+    ],
+    "cover": "image158.jpg",
+    "related": [
+      "why-switzerland",
+      "finance-next-wave",
+      "euthanasia-and-autonomy"
+    ],
+    "title": {
+      "zh": "高產值經濟：金融、精密、小體積",
+      "en": "High-value economy"
+    },
+    "claim": {
+      "zh": "高 GDP 來自高單價服務與精密產業，不是堆原物料。",
+      "en": "High GDP comes from high-value services and precision, not bulk materials."
+    },
+    "summary": {
+      "zh": "從瑞士銀行到鐘錶：把價值藏進小體積，才撐得起人均所得。",
+      "en": "Banking and watches: value in small packages."
+    },
+    "body": {
+      "zh": [
+        "一國的國內生產毛額高，就像一家公司員工產值高。製造業要計入原物料成本，產值不容易拉高；服務業——尤其是高端金融、保險、醫療——比較容易做出高產值。",
+        "瑞士把地理與政治上的中立，變成金融業的長期條件；鐘錶則呈現另一條路：生產力與把價值藏在極小的物品上。理性不只在哲學教室，也在商業模式與公差裡。",
+        "台灣的醫療與健保普及，其實優於瑞士的昂貴體系；但若只靠製造硬體，人均所得很難追上。金融、保險、高附加價值服務，才是下一層可以長的結構。",
+        "觀光在疫情前也是綠色、少排碳的高端服務。瑞士的山、保險與風險產業綁在一起——這提醒我們：產業選擇同時也是文化選擇。",
+        "若台灣要「變成今日的瑞士」，不是口號式轉型，而是持續把資源導向：可輸出的腦力、可信任的制度、以及體積小、價值高的能力。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image158.jpg",
+        "caption": {
+          "zh": "2018，台北富邦銀行台中；金融業會是下一波的核心？",
+          "en": "Finance as the next wave."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "detail-and-craft",
+    "cluster": "switzerland-model",
+    "source_chapters": [
+      1
+    ],
+    "cover": "image168.jpg",
+    "related": [
+      "why-switzerland",
+      "education-burden",
+      "earthquake-rebuild"
+    ],
+    "title": {
+      "zh": "魔鬼在細節：工程與實作文化",
+      "en": "Devil in the details"
+    },
+    "claim": {
+      "zh": "從高鐵工地到教育，細節文化決定品質——不是口號，是每個結點都沒有彎矩。",
+      "en": "Craft culture shows up in every joint, not in slogans."
+    },
+    "summary": {
+      "zh": "瑞士上司只要一句話：結構結點不能有彎矩。那棟臨時倉庫後來最耐用。",
+      "en": "A Swiss engineer's demand for zero moment at joints."
+    },
+    "body": {
+      "zh": [
+        "高鐵年代，我的直屬上司阿諾是瑞士工程師：溫文有禮，長髮像浪人，不抽菸不喝酒，要求卻極多。他對我說：「你的結構設計要所有的結點都沒有彎矩。」",
+        "白話就是魔鬼在細節裡。我設計的是工程結束就會拆的倉庫，他仍這樣要求。後來幾次颱風地震，那棟倉庫一直是工地裡最不漏水、最耐用的房子。",
+        "他們公司做預力結構的鋼索鋼腱：體積小、耐用、高精度、高單價。很少人知道，你從台北搭高鐵到新竹，有一半路線裡嵌著這種瑞士鐘錶般的精密。",
+        "阿諾也提到教育：每個工科畢業生都要有完成整個專案的能力——他自己就做過一棟從設計到蓋好的小房子。台灣大學裡的老師，多半沒有這種「整案做完」的實作要求。",
+        "細節不是完美主義的虛榮，而是一種可複製的文化。台灣若要高產值，先要讓細節變得理所當然，而不是例外。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image35.jpg",
+        "caption": {
+          "zh": "高鐵專案工地。",
+          "en": "HSR site."
+        }
+      },
+      {
+        "src": "image168.jpg",
+        "caption": {
+          "zh": "工地辦公室外；歐洲人喜歡在工地立旗。",
+          "en": "Flags at the site office."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "tourism-and-risk",
+    "cluster": "switzerland-model",
+    "source_chapters": [
+      1
+    ],
+    "cover": "image115.jpg",
+    "related": [
+      "high-value-economy",
+      "military-and-reserve",
+      "euthanasia-and-autonomy"
+    ],
+    "title": {
+      "zh": "觀光、保險與風險社會",
+      "en": "Tourism, insurance, and risk"
+    },
+    "claim": {
+      "zh": "瑞士能容許高風險極限運動，背後是保險、服務業與理性文化的配套。",
+      "en": "High-risk sports need insurance and a rational culture."
+    },
+    "summary": {
+      "zh": "飛鼠裝滑翔每年都有人撞山——什麼樣的社會願意承受這種風險？",
+      "en": "Wingsuit flying and what a society will tolerate."
+    },
+    "body": {
+      "zh": [
+        "瑞士多山：滑雪、高山纜車、住宿產業之外，還有每年會死幾個人的飛鼠裝滑翔（Wingsuit flying）。什麼樣的國家，能容忍世界各地的人來山裡飛行，然後撞山？",
+        "這些活動對觀光、意外險、壽險與相關服務業的衝擊與貢獻，同時存在。風險不是被消滅，而是被定價、被保險、被納入產業鏈。",
+        "台灣人會不會同意像瑞士一樣，放任國內外的人來山裡玩死亡遊戲？多數時候，答案是否定的。這不只是法規差異，而是更深層的文化與責任想像。",
+        "綠色產業與高端服務業裡，觀光在疫情前極為重要：不排碳，也沒有土地廠房與環保的硬衝突。瑞士把風景、保險與服務綁成一體。",
+        "若我們談「理性」，不能只談口號上的進步，也要談社會願意用什麼機制承擔風險——以及不願承擔時，我們失去了哪些產業可能。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image115.jpg",
+        "caption": {
+          "zh": "飛鼠裝滑翔：瑞士人怎麼容忍外國人來他們家撞山？",
+          "en": "Wingsuit flying in the Alps."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "euthanasia-and-autonomy",
+    "cluster": "life-health",
+    "source_chapters": [
+      1,
+      4
+    ],
+    "cover": "image111.jpg",
+    "related": [
+      "healthcare-export",
+      "high-value-economy",
+      "covid-as-turning-point"
+    ],
+    "title": {
+      "zh": "安樂死與生命自主",
+      "en": "Euthanasia and autonomy"
+    },
+    "claim": {
+      "zh": "決定自己的生死，是否也是一種自由——以及健保資源如何被重新想像。",
+      "en": "Is choosing one's death also a form of freedom?"
+    },
+    "summary": {
+      "zh": "傅達仁赴瑞士、母親化療的記憶：安樂死不是抽象哲學題。",
+      "en": "Personal and public faces of assisted dying."
+    },
+    "body": {
+      "zh": [
+        "2020 前後，台灣對瑞士還多了一層印象：安樂死。前體育主播傅達仁於 2018 年赴瑞士，在 Dignitas 結束生命；單就執行費用不含機票食宿，據報約需一萬美金。",
+        "若純就商業模式看，安樂死服務成本極低、利潤極高——但真正刺人的不是商業，而是自主：誰有權決定「無藥可醫」之後的路。",
+        "2002 年 12 月，家母在省立豐原醫院化療。若她當年有安樂死可選擇，故事會不會不同？這不是統計題，是每個家庭可能面對的深夜。",
+        "從經濟效益看，安樂死是否可能把健保資源留給更可治療的人？能決定自己生死，是否帶來更多人權與自由？瑞士把這件事做成制度與產業；台灣仍多半停在道德爭議。",
+        "我無意把生命簡化成成本表。我只是把問題攤開：當醫療能延長痛苦也能延長尊嚴，社會需要的是理性討論，而不是永遠迴避。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image111.jpg",
+        "caption": {
+          "zh": "瑞士 Dignitas；傅達仁在此辭世。",
+          "en": "Dignitas, Switzerland."
+        }
+      },
+      {
+        "src": "image95.jpg",
+        "caption": {
+          "zh": "2002，家母化療。",
+          "en": "Mother in chemotherapy, 2002."
+        }
+      },
+      {
+        "src": "image66.jpg",
+        "caption": {
+          "zh": "安樂死、健保資源與自由。",
+          "en": "Resources, rights, freedom."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "healthcare-export",
+    "cluster": "life-health",
+    "source_chapters": [
+      1,
+      4
+    ],
+    "cover": "image145.jpg",
+    "related": [
+      "telemedicine-hub",
+      "euthanasia-and-autonomy",
+      "covid-as-turning-point"
+    ],
+    "title": {
+      "zh": "台灣醫療輸出",
+      "en": "Exporting Taiwan healthcare"
+    },
+    "claim": {
+      "zh": "健保普及是優勢；下一步是把醫療能力輸出世界，而不只是自己用。",
+      "en": "Universal coverage is an edge—export it."
+    },
+    "summary": {
+      "zh": "瑞士醫療貴而難及；台灣普及且經濟——這是可輸出的軟實力。",
+      "en": "Affordable, accessible care as soft power."
+    },
+    "body": {
+      "zh": [
+        "瑞士在很多方面先進於台灣，但就醫療與健保的普及與經濟而言，台灣有傲人之處：保費相對低、資源相對豐沛。",
+        "美國的醫療品質可以很好，可及性卻很低——孩子做一般檢查要提前三個月。台灣則是另一種模型：大家進得去，也負擔得起。",
+        "2020 年疫情讓全球戴上口罩，台灣的醫療與公衛能量被世界看見。問題是：我們要不要、能不能，把這套能力變成可輸出的服務與制度產品？",
+        "輸出不是把醫師「賣」出去而已，而是保險、遠距、標準作業、信任與語言介面的整包設計。瑞士輸出的是金融與精密；台灣有機會輸出的是可及的健康。",
+        "當製造鏈被重組，醫療與照護是少數同時具人道價值與產值潛力的路。前提是：我們把自己的優勢當戰略，而不是當日常裡習以為常的福利。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image145.jpg",
+        "caption": {
+          "zh": "2020，口罩與國際舞台。",
+          "en": "Masks and the global stage."
+        }
+      },
+      {
+        "src": "image46.jpg",
+        "caption": {
+          "zh": "2013，美國醫院：品質高、可及性低。",
+          "en": "US care: quality vs access."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "telemedicine-hub",
+    "cluster": "life-health",
+    "source_chapters": [
+      4,
+      6
+    ],
+    "cover": "image44.jpg",
+    "related": [
+      "healthcare-export",
+      "remote-work-ai",
+      "covid-as-turning-point"
+    ],
+    "title": {
+      "zh": "遠距醫療與全球健保中心",
+      "en": "Telemedicine hub"
+    },
+    "claim": {
+      "zh": "從台灣試點全球遠距醫療健保中心：世界各地的人可買台灣保險、接受遠距診斷。",
+      "en": "A Taiwan-based hub for global telemedicine insurance."
+    },
+    "summary": {
+      "zh": "疫情讓視訊變日常；遠距醫療不再是未來式。",
+      "en": "Video care became normal overnight."
+    },
+    "body": {
+      "zh": [
+        "2020 年全球疫情使遠距視訊與相關活動突然普及。醫療若仍假設「人必須到診所」，就會錯過一整代基礎設施已經長好的機會。",
+        "一個具體想像是：以台灣為試點，成立全球遠距醫療健保中心——全球的人都可以購買台灣的醫療保險，進行遠距診斷與後續安排。",
+        "這需要法規沙盒、跨境支付、責任歸屬、語言與病歷標準，以及足夠的專科人力排班。難，但不是科幻。",
+        "台灣的優勢是：臨床經驗厚、健保體系數位化程度不差、時區與地理位置可服務多個市場。缺的是把它當成產業政策，而不是防疫權宜。",
+        "遠距不是取代所有觸診，而是把「可遠距的」先做掉，把實體醫療留給真正需要在場的事。產值與可近性，可以同時長。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image44.jpg",
+        "caption": {
+          "zh": "從台灣試點全球遠距醫療健保中心。",
+          "en": "A global telemedicine hub from Taiwan."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "covid-as-turning-point",
+    "cluster": "life-health",
+    "source_chapters": [
+      0,
+      4
+    ],
+    "cover": "image153.jpg",
+    "related": [
+      "telemedicine-hub",
+      "farmland-factories",
+      "remote-work-ai"
+    ],
+    "title": {
+      "zh": "疫情：四五百年一遇的契機",
+      "en": "COVID as a turning point"
+    },
+    "claim": {
+      "zh": "管制成功讓台灣被看見；這是重審供應鏈、醫療與生活方式的歷史時點。",
+      "en": "A rare moment to rethink supply chains and systems."
+    },
+    "summary": {
+      "zh": "一如避過亞洲金融風暴，疫情讓台灣能量更為人知。",
+      "en": "Taiwan’s competence became visible worldwide."
+    },
+    "body": {
+      "zh": [
+        "從芝加哥回到台灣後，我每年寫書，記載進步或退步，也把新知推給大眾。2019 年我投入立委選舉——對我這種追求效率與產值的人來說，選舉有時太沒效率。",
+        "書裡不少是競選時提出的想法。2020 年 COVID-19 全球大爆發，台灣管制得宜，一些想法的價值與可行性被提前照亮。",
+        "一如 1997 年避過亞洲金融風暴，這次台灣的能量更為人知。我認為這是台灣四五百年史以來，最特殊的一個時點與契機。",
+        "握手、群聚、夜市拜票的舊競選美學，一夜之間被質疑；遠距、口罩、供應鏈重組成為日常。我們被迫更新什麼叫「有效」與「負責」。",
+        "契機不會自動變成成果。它只給一個窗口：用理性重新設計能源、土地、醫療與工作方式——或讓窗口關上，回到空污、長工時與低所得的慣性。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image145.jpg",
+        "caption": {
+          "zh": "疫情中的口罩。",
+          "en": "Masks in 2020."
+        }
+      },
+      {
+        "src": "image153.jpg",
+        "caption": {
+          "zh": "2003 SARS；當年口罩都不合格。",
+          "en": "SARS 2003."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "coal-and-air",
+    "cluster": "energy-land",
+    "source_chapters": [
+      2
+    ],
+    "cover": "image152.jpg",
+    "related": [
+      "v2g-and-ev-bonds",
+      "nuclear-rationality",
+      "public-rooftop-solar"
+    ],
+    "title": {
+      "zh": "燃煤發電與空污",
+      "en": "Coal and air pollution"
+    },
+    "claim": {
+      "zh": "火力占比過高，是中部空氣與公共健康的核心問題——孩子在大氣中上課。",
+      "en": "Coal-heavy power is a public-health problem."
+    },
+    "summary": {
+      "zh": "2018 年火力占發電設備 74.6%；空污不是天氣問題，是結構問題。",
+      "en": "74.6% thermal capacity in 2018."
+    },
+    "body": {
+      "zh": [
+        "台灣與瑞士一樣多山，但瑞士近六成電力來自水力，近四成來自核能。台灣 2018 年底裝置容量中，火力占 74.6%，水力 8.9%，核能 8.6%，非水力再生 8.0%。",
+        "火力裡燃煤約 36.6%。中部空氣品質長年是政治戰場——空氣若變好，戰場就消失，這也許是空氣一直好不起來的原因之一。",
+        "競選後期我請志工把煙道 CEMS 數據攤開來算：流量、不透光率、誰才是大戶。這種分析本該是政府長期工作，卻常變成候選人在選前的業餘統計。",
+        "結論很卑微也很重：藍綠惡鬥下，中部空污很難有乾淨的一天。有錢人買清淨機，公立學校的孩子仍在大氣中上課。",
+        "能源轉型不是抽象的「綠」，而是讓人可以呼吸。每一度電的來源，最後都會變成某個人的肺。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image152.jpg",
+        "caption": {
+          "zh": "台灣火力發電占 74.6%（2018）。",
+          "en": "Thermal power 74.6% (2018)."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "public-rooftop-solar",
+    "cluster": "energy-land",
+    "source_chapters": [
+      2
+    ],
+    "cover": "image101.jpg",
+    "related": [
+      "coal-and-air",
+      "offshore-wind",
+      "time-of-use-pricing"
+    ],
+    "title": {
+      "zh": "公有屋頂光電與行政法人",
+      "en": "Public rooftop solar"
+    },
+    "claim": {
+      "zh": "把政府建築與公有土地投入光電；用行政法人簡化流程，不要只增加公務員風險。",
+      "en": "Public roofs plus a public-law body to cut friction."
+    },
+    "summary": {
+      "zh": "土地是光電瓶頸；公有屋頂是最該先動的存量。",
+      "en": "Public roofs are the stock we should use first."
+    },
+    "body": {
+      "zh": [
+        "台灣位於中低緯度，太陽能條件好，卡點常在土地。把板子放水塘或農業設施上可以討論，但我認為更該激進的是：政府機關與學校的屋頂與公有地。",
+        "公務員不情願很合理——責任與風險增加，收入卻不增加。所以不該只靠「要求公務員多做事」，而要用更簡明的流程：行政法人或財團法人專責規劃與設置。",
+        "法人可以把專業、採購、維運與風險從一般行政體系切開，讓光電變成可規模化的專案，而不是每個機關自己從頭學一次。",
+        "再生能源需要速度。公有屋頂是看得見、量得到、爭議相對小的起點——先做會做的，再談更難的地目與生態衝突。",
+        "陽光是公共財，屋頂是閒置產能。缺的是制度設計，不是緯度。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image101.jpg",
+        "caption": {
+          "zh": "公有屋頂光電需要更簡明的流程與法人機制。",
+          "en": "Simpler process for public solar."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "offshore-wind",
+    "cluster": "energy-land",
+    "source_chapters": [
+      2
+    ],
+    "cover": "image22.jpg",
+    "related": [
+      "public-rooftop-solar",
+      "v2g-and-ev-bonds",
+      "time-of-use-pricing"
+    ],
+    "title": {
+      "zh": "離岸風電與能源自由化",
+      "en": "Offshore wind and liberalization"
+    },
+    "claim": {
+      "zh": "四面環海是條件；重點是開放平台與市場機制，而不是口號或無限躉購爭議。",
+      "en": "Sea is the asset; markets make it real."
+    },
+    "summary": {
+      "zh": "離岸風電不跟居民搶地；該不該做，讓資本與技術進來就知道。",
+      "en": "No land fight—let capital test the wind."
+    },
+    "body": {
+      "zh": [
+        "台灣跟瑞士不一樣：四面環海。離岸風電對瑞士不存在，對台灣卻是結構性機會。設備站在海上，不跟居民搶地；會有意見的也許是海豚——但海豚沒有選票。",
+        "海峽風力夠不夠？我認為做下去就有答案。錢多半是外商與融資進來的，系統做不出來，錢不會持續進來。與其空轉爭論，不如維持開放平台，讓人才與資金進場。",
+        "躉購常被攻擊成有錢人或政權的遊戲。一條出路是能源自由化：工廠不必只能向台電買電，台電更像通路與調度，讓再生與多元供應競合。",
+        "離岸風電是大工程，需要時間證明；但「台灣有海」這件事不需要再證明。缺的是理性與可預期的規則。",
+        "風電也需要儲能與電價訊號搭配——否則不穩定的綠電進不了可靠的日常。這與 V2G、時間電價是同一套題目。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image22.jpg",
+        "caption": {
+          "zh": "東部山海：島嶼的能源想像不只一種。",
+          "en": "An island of energy options."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "v2g-and-ev-bonds",
+    "cluster": "energy-land",
+    "source_chapters": [
+      2
+    ],
+    "cover": "image172.jpg",
+    "related": [
+      "time-of-use-pricing",
+      "coal-and-air",
+      "offshore-wind"
+    ],
+    "title": {
+      "zh": "V2G 與抗空污電動車債券",
+      "en": "V2G and anti-pollution EV bonds"
+    },
+    "claim": {
+      "zh": "電動車當移動電廠：尖離峰價差可支撐財務，還能給婦幼家庭開車。",
+      "en": "EVs as grid storage—and family cars."
+    },
+    "summary": {
+      "zh": "30 萬台電動車的尖峰供電，大約能頂半座中火的量級想像。",
+      "en": "Fleet-scale storage vs coal plants."
+    },
+    "body": {
+      "zh": [
+        "V2G（Vehicle to Grid）描述電動車與電網的關係：不用車時，把電賣回電網；要充電時，電從電網流入車輛。車不只是交通工具，也是分散式儲能。",
+        "電力自由化之外，需要儲備電力設備，並打破「只有台電能收購」的摩擦，讓家戶屋頂與電動車更快接入。",
+        "粗算：一台約 75kWh 的車，政府若大量導入，尖峰每台供 10kW、六小時，30 萬台約 3GW；中火滿載約 5.5GW——量級上可討論「少開一半燃煤機組」的想像。",
+        "財源可來自「抗空污電動車債券」：車用來充放電賺尖離峰價差，同時低價或免費給婦幼家庭開，謝謝他們生育養育下一代納稅人。",
+        "電動車能源成本約燃油車一成；引擎污染量級也不同。電車還能吸納離岸風電等不穩定電力。空污政策若只談口號不談儲能與財務結構，很難落地。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image172.jpg",
+        "caption": {
+          "zh": "V2G：車與電網。",
+          "en": "V2G."
+        }
+      },
+      {
+        "src": "image136.jpg",
+        "caption": {
+          "zh": "時間電價是價差的前提。",
+          "en": "Time-of-use pricing."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "time-of-use-pricing",
+    "cluster": "energy-land",
+    "source_chapters": [
+      2
+    ],
+    "cover": "image136.jpg",
+    "related": [
+      "v2g-and-ev-bonds",
+      "public-rooftop-solar",
+      "offshore-wind"
+    ],
+    "title": {
+      "zh": "時間電價",
+      "en": "Time-of-use pricing"
+    },
+    "claim": {
+      "zh": "沒有價差訊號，再生能源與儲能很難長出來——市場需要聽得懂的價格。",
+      "en": "Without price signals, storage and renewables stall."
+    },
+    "summary": {
+      "zh": "尖離峰價差不是數字遊戲，是整套綠電能否運轉的語言。",
+      "en": "Peak/off-peak spreads are the language of the grid."
+    },
+    "body": {
+      "zh": [
+        "時間電價把「何時用電」變成成本。對家庭是帳單細節，對電網是調度語言：尖峰昂貴，離峰便宜，儲能與彈性負載才有理由存在。",
+        "V2G 的財務模型依賴尖離峰價差。若價差被壓平或訊號混亂，電動車當電廠的故事就只是簡報。",
+        "再生能源不穩定，需要需求端與儲能端一起跳舞。價格是最省事的指揮棒——比無限補貼或行政指派更可擴張。",
+        "電價改革常被政治化成「全民加價」。真正要設計的是：誰在尖峰浪費電、誰提供彈性、誰該被獎勵。",
+        "沒有清楚的時間電價，談能源轉型就像沒有匯率談貿易。先讓價格說話，技術與資本才跟得上。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image136.jpg",
+        "caption": {
+          "zh": "時間電價。",
+          "en": "Time-of-use pricing."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "hydropower-land",
+    "cluster": "energy-land",
+    "source_chapters": [
+      2
+    ],
+    "cover": "image142.jpg",
+    "related": [
+      "nuclear-rationality",
+      "coal-and-air",
+      "farmland-factories"
+    ],
+    "title": {
+      "zh": "水力發電與土地彈性",
+      "en": "Hydropower and land flexibility"
+    },
+    "claim": {
+      "zh": "多山本該有更高水力占比；卡在土地取得、開發模式與政治妥協。",
+      "en": "A mountainous island underuses hydro."
+    },
+    "summary": {
+      "zh": "日月潭曾是全球級 BOT；東部仍有高落差與未開發潛力。",
+      "en": "From Sun Moon Lake to the east coast."
+    },
+    "body": {
+      "zh": [
+        "日月潭水力是日本時代全球級的 BOT：向世界募資，1934 年完工，加速台灣現代化——有電才有產業。後來明潭抽蓄也是重要節點。",
+        "民主化後，環保意識與政治連結使開發門檻升高。水力需要土地；東部花蓮、台東仍有高落差，技術上並非做不到，難在取得與共識。",
+        "銅門等早期電廠提醒我們：百年前就有人看見水力。2014 我在銅門作調查，2017 在崇德遠望清水斷崖——風景背後是仍被低估的能源地理。",
+        "要減碳，選項無非是：再生、水力、核能，或繼續排碳。再生需要時間；水力與核電是已知可基載的路徑，卻最容易變成政治提款機。",
+        "更靈活的土地使用與開發模式，不是犧牲環境，而是承認：永遠不開發，也是一種對氣候與空污的選擇。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image142.jpg",
+        "caption": {
+          "zh": "日月潭涵碧樓；水力需要更靈活的開發模式。",
+          "en": "Sun Moon Lake."
+        }
+      },
+      {
+        "src": "image10.jpg",
+        "caption": {
+          "zh": "銅門電廠調查，2014。",
+          "en": "Tongmen plant, 2014."
+        }
+      },
+      {
+        "src": "image22.jpg",
+        "caption": {
+          "zh": "清水斷崖方向：東部水力想像。",
+          "en": "East coast potential."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "nuclear-rationality",
+    "cluster": "energy-land",
+    "source_chapters": [
+      2,
+      7
+    ],
+    "cover": "image54.jpg",
+    "related": [
+      "coal-and-air",
+      "hydropower-land",
+      "referendum-democracy"
+    ],
+    "title": {
+      "zh": "核能與理性討論",
+      "en": "Nuclear power and rationality"
+    },
+    "claim": {
+      "zh": "情緒與選票之外，仍需面對碳排與基載：恐懼要被理解，但不能替代計算。",
+      "en": "Fear must be heard—but not replace arithmetic."
+    },
+    "summary": {
+      "zh": "封存核電的代價、鄰國沿海核電廠，與「全班都在作弊」的比喻。",
+      "en": "Cost of mothballing and regional reality."
+    },
+    "body": {
+      "zh": [
+        "核能在台灣高度政治化。恐懼來自地狹人稠的風險想像，也來自長期政治行銷。不論對錯，行銷很成功——恐懼已成為集體直覺。",
+        "把核電封存，每人可能多付出約一千美元量級的代價（書中粗估）。這筆帳很少被放進「反核＝道德正確」的句子旁邊。",
+        "中國沿海鄰近台灣有大量核電機組。書中有個刺耳比喻：全班都在作弊時，你裝清高，可能最早變傑出青年，也可能最早被退學。能源地緣不是教室品德課。",
+        "我希望的是更理性的討論：風險、廢料、基載、碳排、進口燃料、電網穩定——逐項算，而不是用標籤結束對話。",
+        "浪漫的台灣需要一點工程師的冷靜。呼吸得到的空氣，與算得清的電價，都是理性的一部分。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image54.jpg",
+        "caption": {
+          "zh": "區域核電現實與台灣的選擇。",
+          "en": "Regional nuclear reality."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "farmland-factories",
+    "cluster": "energy-land",
+    "source_chapters": [
+      2
+    ],
+    "cover": "image7.jpg",
+    "related": [
+      "covid-as-turning-point",
+      "coal-and-air",
+      "housing-justice"
+    ],
+    "title": {
+      "zh": "農地工廠與供應鏈",
+      "en": "Farmland factories and supply chains"
+    },
+    "claim": {
+      "zh": "疫情後供應鏈重組；農地工廠要用數據與環保標準談，而不是道德口號互罵。",
+      "en": "Use data and standards, not slogans."
+    },
+    "summary": {
+      "zh": "農地工廠貢獻多少稅、多少污染？先量，再管。",
+      "en": "Measure tax and pollution first."
+    },
+    "body": {
+      "zh": [
+        "台灣農地工廠是老問題，卻很少被數據化：到底貢獻多少國家稅收？多少就業？多少排水排煙外部成本？",
+        "2020 疫情重創全球供應鏈，生產據點與備援被重新估價。台灣若只有「違建／合法」二元戰，會錯過產業與土地的真實權衡。",
+        "空拍機下的農地與疑似違建，是景觀也是政策失敗的縮影——不是單一貪念，而是長期執法、都市計畫與地方經濟的共業。",
+        "疫情證明高度管制可以成功。同樣的能力，可以用在環保標準：你要留在供應鏈，就達到排水排煙與安全規範——而不是一律消滅或一律放任。",
+        "土地政策是產業政策。把工廠從看不見的農地趕到更糟的地方，解決不了空污與食安；把標準與數據拉上桌，才開始像現代國家。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image7.jpg",
+        "caption": {
+          "zh": "2014，竹山車籠埔：空拍下的農地與建物。",
+          "en": "Farmland and buildings, 2014."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "rent-vs-own",
+    "cluster": "housing-city",
+    "source_chapters": [
+      3
+    ],
+    "cover": "image128.jpg",
+    "related": [
+      "housing-justice",
+      "finance-next-wave",
+      "high-value-economy"
+    ],
+    "title": {
+      "zh": "租屋社會 vs 有土斯有財",
+      "en": "Renting vs owning"
+    },
+    "claim": {
+      "zh": "瑞士高租屋比，與金融商品是否發達、住宅是否被過度投資有關。",
+      "en": "Deep finance can mean less forced homebuying."
+    },
+    "summary": {
+      "zh": "瑞士約四成自有住宅；金融海嘯對他們房市衝擊相對有限。",
+      "en": "About 40% homeownership in Switzerland."
+    },
+    "body": {
+      "zh": [
+        "瑞士只有約 40% 的人住在自有住宅，六成租屋。金融海嘯期間，以金融為核心的瑞士受創相對有限，房市結構與美國不同，溢價與炒作較不極端。",
+        "東方常有「有土斯有財」：金融商品少、養兒防老靠房產。金融市場活絡、商品豐富的地方，比較不需要把一生押在一棟樓。",
+        "瑞士公寓月租約台幣三至四萬，以收入衡量相對可負擔；出租供給有相當比例來自自然人，公部門出租比例也高於台灣的想像。",
+        "這不表示台灣人該「全部改租」。在金融資產市場仍不夠深的地方，買房仍是自我保護。重點是：租得起、買得起、市場不要只有一種生存劇本。",
+        "居住政策若只會喊「人人有房」，卻不處理租金市場深度與金融替代，最後往往變成口號與失望。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image128.jpg",
+        "caption": {
+          "zh": "Costco 戶外倉庫：不能房貸的房子，與居住想像。",
+          "en": "What counts as housing finance."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "housing-justice",
+    "cluster": "housing-city",
+    "source_chapters": [
+      3
+    ],
+    "cover": "image175.jpg",
+    "related": [
+      "rent-vs-own",
+      "earthquake-rebuild",
+      "tdr-and-education"
+    ],
+    "title": {
+      "zh": "居住正義與可負擔住宅",
+      "en": "Housing justice"
+    },
+    "claim": {
+      "zh": "社會住宅若導致市場崩盤，弱勢可能更慘；正義需要供給設計，不是騙票口號。",
+      "en": "Justice needs supply design, not slogans."
+    },
+    "summary": {
+      "zh": "房市被打趴，爛尾樓與失業會先打到最弱的人。",
+      "en": "A crash hurts the vulnerable first."
+    },
+    "body": {
+      "zh": [
+        "台灣常陷入迷思：政府要提供很便宜的住宅。若真的大量、夠便宜，不是房子變貧民窟分級，就是衝擊既有不動產與銀行貸款——建商停工、爛尾樓長草，弱勢更慘。",
+        "若口頭要正義、實際又不願承擔市場後果，那是騙票。真正的問題是：如何在不炸毀金融穩定的前提下，擴大可負擔供給。",
+        "瑞士的啟發是：出租市場夠深、租金相對可負擔，而不是只靠政府蓋到房價腰斬。公有土地與房屋釋出給承租的比例，台灣仍偏低。",
+        "台中七期仍有建商土地未興建；供給、稅制、貸款與都更規則，比單一口號更能決定年輕人的未來。",
+        "居住正義是工程題與制度題。它需要誠實的數量模型，而不是只在社群媒體上站隊。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image175.jpg",
+        "caption": {
+          "zh": "房市若崩：爛尾樓與長滿植生的鋼筋。",
+          "en": "Unfinished buildings after a crash."
+        }
+      },
+      {
+        "src": "image126.jpg",
+        "caption": {
+          "zh": "台中七期未興建土地。",
+          "en": "Undeveloped land in Taichung."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "earthquake-rebuild",
+    "cluster": "housing-city",
+    "source_chapters": [
+      3
+    ],
+    "cover": "image37.jpg",
+    "related": [
+      "housing-justice",
+      "detail-and-craft",
+      "adaptive-reuse"
+    ],
+    "title": {
+      "zh": "耐震、重建與標準圖時代",
+      "en": "Seismic safety and rebuild"
+    },
+    "claim": {
+      "zh": "花蓮地震提醒：老屋與耐震是公共安全，不是私領域的運氣。",
+      "en": "Old buildings are a public-safety issue."
+    },
+    "summary": {
+      "zh": "標準圖省下建築師，卻可能在下一場地震出價。",
+      "en": "Standard plans saved fees—until the quake."
+    },
+    "body": {
+      "zh": [
+        "2018 年 2 月 6 日花蓮地震震垮多棟建築；雲門翠堤單棟就有 14 人死亡。我帶孩子去東部勘災七天——倒塌不是新聞畫面，是鄰居與結構的共同失敗。",
+        "台灣早期不少房子用標準圖蓋，省下請建築師與部分程序成本。時代變了，耐震要求與使用方式都變了，該重建的不能永遠用懷舊拖延。",
+        "2020 年 3 月，我勘驗一棟斷層附近的新屋。疫情之後，我們更該檢討：風險揭露、設計責任、都更誘因是否對齊公共安全。",
+        "工程師看房子，看的是構件與路徑；社會看房子，看的是價格與學區。兩者之間缺翻譯，死傷就會用悲劇來翻譯。",
+        "重建不是炒作的另一個名字。它是把人從不可接受的風險裡撤出來——用政策與技術，而不是用祈禱。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image37.jpg",
+        "caption": {
+          "zh": "2018 花蓮地震後。",
+          "en": "After the Hualien quake."
+        }
+      },
+      {
+        "src": "image69.jpg",
+        "caption": {
+          "zh": "雲門翠堤與死傷的提醒。",
+          "en": "Yunmen building."
+        }
+      },
+      {
+        "src": "image56.jpg",
+        "caption": {
+          "zh": "標準圖時代的房子。",
+          "en": "Standard-plan era housing."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "tdr-and-education",
+    "cluster": "housing-city",
+    "source_chapters": [
+      3,
+      5
+    ],
+    "cover": "image117.jpg",
+    "related": [
+      "education-burden",
+      "housing-justice",
+      "adaptive-reuse"
+    ],
+    "title": {
+      "zh": "容積移轉與教育基金",
+      "en": "TDR and education funds"
+    },
+    "claim": {
+      "zh": "古蹟容積變現不該直接花掉；買資產用孳息養教育，才是長線公共投資。",
+      "en": "Sell density rights, invest the principal, fund education with yield."
+    },
+    "summary": {
+      "zh": "容積是錢；錢可以變成補貼，也可以變成下一代的學校。",
+      "en": "Density is capital—spend yield, not principal."
+    },
+    "body": {
+      "zh": [
+        "古蹟保存常靠容積移轉：把開發權賣出去換現金。現金若當成補貼花掉，一陣烟就沒了；若拿去買資產（例如債券），用孳息養孩子、辦教育，邏輯完全不同。",
+        "我們最需要的是教育。人才是未來的稅基；在年輕公民身上的投資，邏輯上應該回收。",
+        "容積政策常陷在「都更／保存／暴利」的口水。比較少人問：變現之後的資金治理——誰管、買什麼、孳息給誰。",
+        "把一次性的開發增益，轉成永續的教育現金流，是城市可以做的長期主義。",
+        "房子會老，孩子會長。公共理財若只會花當下，下一代只能繼承口號。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image117.jpg",
+        "caption": {
+          "zh": "容積移轉：賣權、買資產、養教育。",
+          "en": "TDR to education endowment."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "adaptive-reuse",
+    "cluster": "housing-city",
+    "source_chapters": [
+      3
+    ],
+    "cover": "image29.jpg",
+    "related": [
+      "tdr-and-education",
+      "earthquake-rebuild",
+      "culture-export"
+    ],
+    "title": {
+      "zh": "舊宿舍、糖廠與空間再生",
+      "en": "Adaptive reuse"
+    },
+    "claim": {
+      "zh": "日治宿舍變成飯店：空間可以換用途，城市就可以換想像。",
+      "en": "Old dorms become hotels—cities can reinvent space."
+    },
+    "summary": {
+      "zh": "東部糖廠宿舍的旅次：歷史不是只能博物館化。",
+      "en": "Sugar-factory housing, reused."
+    },
+    "body": {
+      "zh": [
+        "日本人在東部糖廠為日治時期員工蓋的宿舍，今天轉成飯店。2020 年 2 月我旅次於此：木構、廊道、糖業地景，住的是敘事而不只是床位。",
+        "台灣有大量閒置或低度使用的公有與產業空間。拆光重建是一種答案；縫合新用途是另一種——往往更省碳、也更有文化厚度。",
+        "再生不是懷舊商品化就結束。它需要結構安全、消防、經營模式與在地就業，否則只是打卡景點。",
+        "居住與觀光、教育與文化，可以共用同一套「把舊空間用起來」的能力。瑞士與歐洲城市對此並不陌生。",
+        "一棟宿舍的第二次生命，提醒我們：城市的存量比增量更大。會不會用，決定下一代還有沒有故事可住。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image29.jpg",
+        "caption": {
+          "zh": "東部糖廠日治宿舍轉飯店，2020/2。",
+          "en": "Reused company housing, 2020."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "finance-next-wave",
+    "cluster": "industry-tech",
+    "source_chapters": [
+      1,
+      4
+    ],
+    "cover": "image158.jpg",
+    "related": [
+      "high-value-economy",
+      "fintech-and-blockchain",
+      "healthcare-export"
+    ],
+    "title": {
+      "zh": "金融業是下一波核心",
+      "en": "Finance as the next wave"
+    },
+    "claim": {
+      "zh": "治安、信用、司法與國格，是金融業能長的地基——不只靠台積電。",
+      "en": "Trust infrastructure grows finance—not only chips."
+    },
+    "summary": {
+      "zh": "銀行興盛需要可信任的國家條件；台灣條件不是沒有，是沒長成產業。",
+      "en": "Taiwan has pieces of the puzzle."
+    },
+    "body": {
+      "zh": [
+        "瑞士所得名列前茅，金融比重是關鍵。台灣若只靠關鍵製造，人均很難跳級；金融業要長起來，需要另一套國家能力。",
+        "銀行靠存放款利差與服務，前提是治安、信用聲譽、穩定司法、可運作的國格。這些台灣不是完全沒有，但要把它們做成全球願意把資產放進來的理由。",
+        "二十一世紀初金融改革的企圖與挫敗，留下長期陰影。私人銀行與資產管理要打進國際，需要行銷高度與實質監理能力。",
+        "虛擬資產與新型態業務，反而是窗口：舊戰場已被香港、新加坡、東京占滿，新戰場規則未定。",
+        "金融不是虛擬的「炒股文化」，是把信任變現的工業。沒有它，高產值服務業少了一整塊脊椎。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image158.jpg",
+        "caption": {
+          "zh": "銀行門市日常與下一波產業想像。",
+          "en": "Everyday banking, next-wave industry."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "fintech-and-blockchain",
+    "cluster": "industry-tech",
+    "source_chapters": [
+      4,
+      7
+    ],
+    "cover": "image18.jpg",
+    "related": [
+      "finance-next-wave",
+      "blockchain-voting",
+      "remote-work-ai"
+    ],
+    "title": {
+      "zh": "金融科技與區塊鏈實作",
+      "en": "Fintech and blockchain"
+    },
+    "claim": {
+      "zh": "從韓國 Fintech 講台到沙盒：技術要落到保管、抵押、合規的產業，而不是只剩炒作。",
+      "en": "From stages to sandboxes: make it industry."
+    },
+    "summary": {
+      "zh": "ICO 充滿詐騙的地方，恰恰需要更高級、更合法的管道。",
+      "en": "Fraud thrives where legal rails are thin."
+    },
+    "body": {
+      "zh": [
+        "2017 年我在首爾 Fintech 演講，第一天幾乎是唯一未租攤位的主講者。他們對我們在區塊鏈上的開發很有興趣——技術興趣的背後是產業焦慮與機會。",
+        "東南亞 ICO 與虛擬貨幣市場常與詐騙共存，因為合法投資管道少。邏輯是：你若能做得比別人更高級、優雅，為何不去做那些血腥低級的事正在吸金的市場？",
+        "台灣可用沙盒試點虛擬資產管理：保管、孳息、抵押放款與投資保證等。傳統金融難在短時間贏過上海香港新加坡，虛擬資產反而是窗口。",
+        "區塊鏈去掉中間人的承諾，要用在真實流程：清結算、身分、合約、監理報告——不是只在幣價K線。",
+        "工程師國家若只會製造硬體，會把軟體與金融協議的未來讓給別人。實作，是唯一的護城河。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image18.jpg",
+        "caption": {
+          "zh": "2017 首爾 Fintech 演講。",
+          "en": "Fintech Seoul 2017."
+        }
+      },
+      {
+        "src": "image180.jpg",
+        "caption": {
+          "zh": "與產業界交流；算力與供應鏈的現實。",
+          "en": "Industry floor conversations."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "remote-work-ai",
+    "cluster": "industry-tech",
+    "source_chapters": [
+      6
+    ],
+    "cover": "image116.jpg",
+    "related": [
+      "remote-justice",
+      "telemedicine-hub",
+      "covid-as-turning-point"
+    ],
+    "title": {
+      "zh": "遠距上班與 AI 考核",
+      "en": "Remote work and AI evaluation"
+    },
+    "claim": {
+      "zh": "差勤不再靠打卡；用成果與目標管理，AI 影像只是工具不是監視幻想。",
+      "en": "Manage outcomes, not chair time."
+    },
+    "summary": {
+      "zh": "疫情讓遠距不可逆；共享辦公室與資訊平權是關鍵。",
+      "en": "Remote work’s real requirements."
+    },
+    "body": {
+      "zh": [
+        "Zapier 這類公司員工分散全球、全遠距。重點不是浪漫，是管理：老闆要有資訊能力、資安與帶人能力。",
+        "最忌諱的是「那天我們在台北開會你沒來所以你不知道」。遠距與現場必須有一樣的資訊存取；散會後的走廊決策，會系統性傷害不在場的人。",
+        "省下的不只是油錢，而是陪家人的時間——生產力與幸福經濟可以同一條路。",
+        "疫情使在家上班一夕普及，影響不可完全逆轉。AI 與影像辨識讓考勤、姿態、專注度的分析成為可能，但核心仍應是成果與目標，而不是更精緻的監視。",
+        "公部門也可想像：各區共享辦公室，讓公務員就近上班。技術早已就緒，缺的是信任架構與管理者習慣。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image116.jpg",
+        "caption": {
+          "zh": "遠距工作：差勤與成果管理。",
+          "en": "Remote work metrics."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "remote-justice",
+    "cluster": "industry-tech",
+    "source_chapters": [
+      6
+    ],
+    "cover": "image121.jpg",
+    "related": [
+      "remote-work-ai",
+      "blockchain-voting",
+      "finance-next-wave"
+    ],
+    "title": {
+      "zh": "遠距司法與 4K 審判",
+      "en": "Remote justice"
+    },
+    "claim": {
+      "zh": "法官與當事人線上參審，是效率也是可近性——司法不該假設人人住得起法院旁邊。",
+      "en": "Courts can be closer via video."
+    },
+    "summary": {
+      "zh": "若遠距可上班，為何審判不能系統性遠距？",
+      "en": "If work can be remote, why not hearings?"
+    },
+    "body": {
+      "zh": [
+        "同一套遠距基礎建設，可以延伸到司法：4K 畫質審判、當事人線上參審、減少奔波與延宕。",
+        "效率不是唯一理由。對離島、偏鄉、行動不便與經濟弱勢，可近性就是正義的一部分。",
+        "挑戰在程序保障：詰問、物證、身分確認、公開審理與資安。這些是設計題，不是「不能做」的咒。",
+        "疫情期間世界各地法院被迫實驗視訊開庭。實驗過後，該留下的是選項，而不是全部退回擁擠的走廊。",
+        "司法若能吸收科技，信任才跟得上時代。否則人民的生活已在線上，國家的正義卻還在紙本與排隊。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image121.jpg",
+        "caption": {
+          "zh": "遠距審判的想像。",
+          "en": "Remote hearings."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "blockchain-voting",
+    "cluster": "democracy-identity",
+    "source_chapters": [
+      7
+    ],
+    "cover": "image51.jpg",
+    "related": [
+      "referendum-democracy",
+      "fintech-and-blockchain",
+      "eighty-days-campaign"
+    ],
+    "title": {
+      "zh": "區塊鏈與手機投票",
+      "en": "Blockchain voting"
+    },
+    "claim": {
+      "zh": "點對點能否降低中間成本、讓參與更可及——民主的技術債該被攤開。",
+      "en": "Can peer-to-peer lower the cost of democracy?"
+    },
+    "summary": {
+      "zh": "瑞士公民權極高；技術能否幫助台灣提高參與而不只靠動員。",
+      "en": "High civic power meets new rails."
+    },
+    "body": {
+      "zh": [
+        "瑞士公民權力極高：直接民主、修憲與否決法律的門檻，以台灣經驗對照，連署量級並非不可想像。國民權力與所得若正相關，為何不認真討論把權力設計得更大一點？",
+        "區塊鏈透過點對點去掉中間人。若手機可安全投票，是否更民主？這是本書在政治技術上的核心提問之一。",
+        "台灣是多颱風地震的島，歷史短、變動劇烈，卻也有相對難得的人權基礎。技術應服務參與，而不是服務操控。",
+        "手機投票的對手不是「傳統投票的浪漫」，而是買票、門檻、資訊落差與系統被攻擊的風險。這些都要工程與制度一起解。",
+        "我在選戰裡看見效率與媚俗的拉扯。若民主只能靠握手與疲勞轟炸，一流人才不會進來——技術有機會改寫參與成本。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image51.jpg",
+        "caption": {
+          "zh": "區塊鏈與投票：去掉中間人？",
+          "en": "Peer-to-peer voting?"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "referendum-democracy",
+    "cluster": "democracy-identity",
+    "source_chapters": [
+      7
+    ],
+    "cover": "image160.jpg",
+    "related": [
+      "blockchain-voting",
+      "nuclear-rationality",
+      "national-identity"
+    ],
+    "title": {
+      "zh": "公投：民主或操弄",
+      "en": "Referendums: democracy or manipulation"
+    },
+    "claim": {
+      "zh": "英國脫歐提醒：公投是工具，制度設計決定它是民主還是情緒按鈕。",
+      "en": "Referendums need design, not romance."
+    },
+    "summary": {
+      "zh": "瑞士公民可啟動否決；台灣該學的是機制，不是口号。",
+      "en": "Learn mechanisms from Swiss direct democracy."
+    },
+    "body": {
+      "zh": [
+        "瑞士公民對已通過的法律，可在期限內連署啟動公投否決。門檻相對公民總量並不天文。擔心公投造成不穩定的人，被要求去看看瑞士：高權力與高所得可以並存。",
+        "2016 英國脫歐公投：大笨鐘下的決定，至今仍是「民主勝利」與「民粹操弄」的平行敘事。",
+        "公投題目的寫法、資訊對等、門檻、是否有有拘束力、與議會如何接力，決定結果是深思還是情緒。",
+        "台灣的公投經驗與兩大黨結構，使制度改革困難，但並非沒有空間：把公民權力向可操作、可驗證的方向調，而不是只在動員季出現。",
+        "民主的成熟度，常表現在：我們敢不敢把刀給人民，又有沒有把刀柄設計好。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image160.jpg",
+        "caption": {
+          "zh": "英國脫歐與公投工具。",
+          "en": "Brexit and the referendum tool."
+        }
+      },
+      {
+        "src": "image96.jpg",
+        "caption": {
+          "zh": "2006 倒扁遊行：集會後沒有髒亂與鮮血。",
+          "en": "Mass protest without chaos, 2006."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "military-and-reserve",
+    "cluster": "democracy-identity",
+    "source_chapters": [
+      1
+    ],
+    "cover": "image168.jpg",
+    "related": [
+      "why-switzerland",
+      "national-identity",
+      "nuclear-rationality"
+    ],
+    "title": {
+      "zh": "兵役、後備與防衛結構",
+      "en": "Service and reserve forces"
+    },
+    "claim": {
+      "zh": "瑞士可快速動員；台灣威脅來自空與海，結構不同，策略不能照抄。",
+      "en": "Copy principles, not templates."
+    },
+    "summary": {
+      "zh": "海陸役期記憶、後備動員，與兩岸經貿交纏的獨特難題。",
+      "en": "Reserves amid entangled economies."
+    },
+    "body": {
+      "zh": [
+        "瑞士滿二十歲男子需服兵役約 260 天，可分期。後備體系使常備可在短時間擴張到更大規模——這是小國的生存工藝。",
+        "我抽到海軍陸戰隊，父親抱歉，我倒不以為意。台灣役期多次調整，精簡與替代役改變了「全民防衛」的社會經驗。",
+        "台灣的威脅與瑞士不同：四面環海，主要來自空中與海上，而非陸鄰直接開坦克。南北韓結構也不同——南韓商人不會去北韓設廠，台灣企業卻深度參與對岸供應鏈。",
+        "防衛是戰略與產業題，不是只有口號與半年訓練的懷舊。後備是否真能動員、後勤與民防是否存在，比文宣重要。",
+        "小國的理性是：看清自己的戰場形狀，再決定兵役與預算。照抄瑞士或任何他國，都會在海峽天氣裡失真。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image168.jpg",
+        "caption": {
+          "zh": "工地旗幟與識別：和平年代的另一種動員意象。",
+          "en": "Flags, identity, readiness."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "national-identity",
+    "cluster": "democracy-identity",
+    "source_chapters": [
+      1,
+      8
+    ],
+    "cover": "image179.jpg",
+    "related": [
+      "why-switzerland",
+      "military-and-reserve",
+      "culture-export"
+    ],
+    "title": {
+      "zh": "國家與認同",
+      "en": "Nation and identity"
+    },
+    "claim": {
+      "zh": "海蒂是不是瑞士人的爭論，映照台灣：語言、歷史與「我是誰」的長期張力。",
+      "en": "Heidi’s origins mirror Taiwan’s identity tension."
+    },
+    "summary": {
+      "zh": "瑞士四語官方；台灣國語、台語與歷史層疊。",
+      "en": "Four Swiss languages; Taiwan’s layered tongues."
+    },
+    "body": {
+      "zh": [
+        "瑞士聯邦憲法承認多種國語。他們是德國人還是瑞士人？我們是台灣人還是中國人？認同錯亂的結構相似，歷史淵源完全不同。",
+        "日本殖民五十年，偏鄉與原住民仍可能聽得懂日語；閩南、客家、戰後北京話層疊。我小時講台語會被罰；我的孩子若無阿公阿嬤，可能失去台語環境。",
+        "2010 年媒體轟動：學者暗示海蒂故事可能源自德國文本——瑞士人痛心。虛構人物的國籍，竟能刺痛真實的國族神經。",
+        "媽祖來自何方、國語是哪一種話、護照與內心自我指認是否一致：這些問題不會被一場選戰結束。",
+        "認同需要敘事，也需要生活。多語、多起源的國家不是缺陷，是瑞士證明過的可治理狀態——前提是制度承認複雜，而不是強迫單一。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image179.jpg",
+        "caption": {
+          "zh": "《阿爾卑斯山的少女》與瑞士想像。",
+          "en": "Heidi and the Swiss imaginary."
+        }
+      },
+      {
+        "src": "image112.jpg",
+        "caption": {
+          "zh": "台幣千元與少子化：國家圖像也在紙鈔上。",
+          "en": "Banknotes as national images."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "education-burden",
+    "cluster": "culture-personal",
+    "source_chapters": [
+      5
+    ],
+    "cover": "image93.jpg",
+    "related": [
+      "tdr-and-education",
+      "remote-work-ai",
+      "culture-export"
+    ],
+    "title": {
+      "zh": "書包、出版社與教育綁架",
+      "en": "Schoolbags and capture"
+    },
+    "claim": {
+      "zh": "孩子書包比公事包還重，是系統問題——一綱多本與實體教科書利益。",
+      "en": "Heavy bags are a system failure."
+    },
+    "summary": {
+      "zh": "唯物定價的出版業怕電子書；遠距教學又會暴露教學現場。",
+      "en": "Publishing incentives vs digital texts."
+    },
+    "body": {
+      "zh": [
+        "台灣從學前到義務教育充滿填鴨。一綱多本之下，教科書入侵書包；家長放任主管機關與出版社綁架孩子，書包比我的公事包還重。",
+        "內容其實可用電子書，但產業怕盜版、習慣實體計價——唯物到必須摸得到才算錢。Netflix 式的知識訂閱若成熟，重量與紙價本可下降。",
+        "2020 年全球停課，遠距教學被迫登場。家長若能看見直播或錄影中的課堂，對永久聘用的教學品質會是衝擊——也是機會。",
+        "瑞士教育路徑多元：學術與應用分流較清楚。台灣科大升格時間仍短，產學實作文化尚未穩。",
+        "教育是不排碳的產業，也是未來稅基。減重書包、提升遠距與國際學生比例，比繼續印更厚的本子更像現代化。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image93.jpg",
+        "caption": {
+          "zh": "書包比公事包重。",
+          "en": "Heavier than a briefcase."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "culture-export",
+    "cluster": "culture-personal",
+    "source_chapters": [
+      5
+    ],
+    "cover": "image32.jpg",
+    "related": [
+      "education-burden",
+      "adaptive-reuse",
+      "tourism-and-risk"
+    ],
+    "title": {
+      "zh": "文化輸出與城市美學",
+      "en": "Culture export"
+    },
+    "claim": {
+      "zh": "從百老匯到在地花市，文化是產值；政府補助不是唯一商業模式。",
+      "en": "Culture is GDP—and daily beauty."
+    },
+    "summary": {
+      "zh": "琉森音樂節與台中歌劇院：內容、旅宿與稅收的循環。",
+      "en": "Festivals, hotels, and tax cycles."
+    },
+    "body": {
+      "zh": [
+        "瑞士文學國際知名度有限，但琉森音樂節是歐洲重點：政府補助比例不高，觀眾的吃住消費反而讓稅收邏輯站得住。文化可以是產業，不是純支出。",
+        "2013 年我在紐約，獅子王與歌劇魅影每晚上演——城市把故事做成可售票的基礎設施。",
+        "台中有國家歌劇院與花卉市場：生活可以便宜且美。競選期間我才大量走花市與市場，發現美學與選票地理重疊。",
+        "台灣歷史短，文學與翻譯輸出仍薄。這不是詛咒，是尚可投資的空白。",
+        "文化輸出與觀光、教育、都市再生是同一家人。當城市只會蓋硬體，不養內容，歌劇院只是大型空調空間。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image32.jpg",
+        "caption": {
+          "zh": "2013 紐約百老匯。",
+          "en": "Broadway, 2013."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "eighty-days-campaign",
+    "cluster": "culture-personal",
+    "source_chapters": [
+      9,
+      "9.2"
+    ],
+    "cover": "image120.jpg",
+    "related": [
+      "online-offline-campaign",
+      "blockchain-voting",
+      "coal-and-air"
+    ],
+    "title": {
+      "zh": "八十天競選觀察",
+      "en": "Eighty days on the trail"
+    },
+    "claim": {
+      "zh": "證明選舉非難事；也是對效率、媚俗與選民責任的省思——我已不再從政。",
+      "en": "Elections are doable—and costly in dignity."
+    },
+    "summary": {
+      "zh": "83 天、約 1.3 萬票、一面帆布：素人第三高票的筆記。",
+      "en": "83 days, ~13k votes, one banner."
+    },
+    "body": {
+      "zh": [
+        "2019 年 10 月 20 日提名，到 2020 年 1 月 10 日停擺，約 83 天。我從未參選任何公職，只用一面不顯眼的帆布看板，拿下 13,434 票，選區第三，與第二名差約一萬票。",
+        "目的很清楚：讓理念被聽到；證明有料的人可以下來選。選不上，對的資訊仍可能被別人落實。",
+        "市場握手、追垃圾車、背氣球——有些是有效接觸，有些是我認為傷害專業門檻的媚俗。疫情後來暫停了握手，也暫停了某種舊美學。",
+        "主軸是空污與能源。工程師出身的我，把 CEMS 與統計攤開，在選前被笑也做。空氣是孩子的肺，不是藍綠的道具。",
+        "我帶著滿滿收獲敗選，結束一生中第一次也是刻意的最後一次政治活動。這網站是文集，不是競選遺跡；紀錄是為了理解，不是為了回鍋。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image120.jpg",
+        "caption": {
+          "zh": "競選旅程的影像切片。",
+          "en": "From the campaign trail."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "online-offline-campaign",
+    "cluster": "culture-personal",
+    "source_chapters": [
+      "9.2"
+    ],
+    "cover": "image171.jpg",
+    "related": [
+      "eighty-days-campaign",
+      "remote-work-ai",
+      "fintech-and-blockchain"
+    ],
+    "title": {
+      "zh": "線上線下行銷實驗",
+      "en": "Online/offline campaign labs"
+    },
+    "claim": {
+      "zh": "沒有樁腳時，臉書、路線規劃與量入為出的廣告，是素人僅有的工具箱。",
+      "en": "A toolbox without factions."
+    },
+    "summary": {
+      "zh": "三萬包面紙、特斯拉宣傳車、Google 退出政治廣告後的現實。",
+      "en": "Tissues, a Tesla, and ad-platform limits."
+    },
+    "body": {
+      "zh": [
+        "台灣開票效率驚人：總統有效票約 1430 萬，從投到大致開完約半天節奏，島嶼很熟練。",
+        "線上：臉書與部落格先行，11 月文宣、12 月才大量夜市市場。Google 退出政治廣告後，精準投放更難，Line 與網頁廣告不準，最後常只剩臉書。",
+        "線下：看板×1（六千元、鄰居陽台）、面紙約三萬包、手拿板、志工自有車與我的特斯拉改裝宣傳——監察院還不准把車列為支出。我曾想用無人機當廣告車，音量不夠作罷。",
+        "Google 地圖九年前就用於工程路線；拿來規劃拜票與掌握里民結構，是數字決策，不是感覺。",
+        "選舉花錢，但不怎麼花錢也能選。真正稀缺的是同時具備政見、行銷與募款的人——而那樣的人往往有更好人生選項。這正是我想留下的觀察：降低一流人才入場的羞辱成本。"
+      ]
+    },
+    "figures": [
+      {
+        "src": "image171.jpg",
+        "caption": {
+          "zh": "選後分析與工具檢討。",
+          "en": "Post-election notes."
+        }
+      },
+      {
+        "src": "image3.jpg",
+        "caption": {
+          "zh": "數據與得票結構。",
+          "en": "Vote structure."
+        }
+      }
+    ]
+  }
+]

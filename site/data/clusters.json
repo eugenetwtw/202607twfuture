@@ -1,0 +1,51 @@
+[
+  {
+    "id": "switzerland-model",
+    "title": {
+      "zh": "瑞士參照與發展模型",
+      "en": "Switzerland as reference"
+    }
+  },
+  {
+    "id": "life-health",
+    "title": {
+      "zh": "生命、醫療與人權",
+      "en": "Life, health & rights"
+    }
+  },
+  {
+    "id": "energy-land",
+    "title": {
+      "zh": "能源、空污與土地",
+      "en": "Energy, air & land"
+    }
+  },
+  {
+    "id": "housing-city",
+    "title": {
+      "zh": "居住、建築與城市",
+      "en": "Housing & city"
+    }
+  },
+  {
+    "id": "industry-tech",
+    "title": {
+      "zh": "產業、金融與科技",
+      "en": "Industry, finance & tech"
+    }
+  },
+  {
+    "id": "democracy-identity",
+    "title": {
+      "zh": "民主、制度與認同",
+      "en": "Democracy & identity"
+    }
+  },
+  {
+    "id": "culture-personal",
+    "title": {
+      "zh": "文化、教育與個人紀錄",
+      "en": "Culture, education & memoir"
+    }
+  }
+]

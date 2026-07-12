@@ -1,0 +1,20 @@
+# Source book (too large for GitHub; keep local)
+*.docx
+*.DOCX
+
+# Uncompressed media extracted from docx
+_docx_media_original/
+site/media/original/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
