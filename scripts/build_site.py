@@ -632,7 +632,6 @@ def build_issue(lang: str, issue: dict, issues: list, books: dict) -> str:
         <div class="related-list">{"".join(related)}</div>
       </div>
       <p class="source-note">{esc(ui["source"])}: {esc(t(books["title"], lang))} — {esc(t(books["author"], lang))} · {esc(" · ".join(chapters))}</p>
-      {compose_box(lang, title, claim, cover, depth)}
     </div>
   </article>
 """
