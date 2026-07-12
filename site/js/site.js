@@ -171,7 +171,7 @@
     });
   });
 
-  // Gallery lightbox + slideshow
+  // Gallery lightbox + slideshow (photo mode vs video mode)
   (function initGallery() {
     var dataEl = document.getElementById("gallery-data");
     var lb = document.querySelector("[data-gallery-lightbox]");
@@ -186,6 +186,7 @@
     if (!items.length) return;
 
     var index = 0;
+    var slideMode = "photo"; // "photo" | "video"
     var playing = false;
     var playTimer = null;
     var MIN_SEC = 2;
@@ -196,10 +197,14 @@
     var remainSec = intervalSec;
 
     var imgEl = lb.querySelector("[data-gallery-img]");
-    var videoEl = lb.querySelector("[data-gallery-video]");
+    var clipEl = lb.querySelector("[data-gallery-clip]");
+    var ytEl = lb.querySelector("[data-gallery-video]");
+    var stillPane = lb.querySelector("[data-gallery-still-pane]");
+    var clipPane = lb.querySelector("[data-gallery-clip-pane]");
     var capEl = lb.querySelector("[data-gallery-caption]");
     var idxEl = lb.querySelector("[data-gallery-index]");
     var totalEl = lb.querySelector("[data-gallery-total]");
+    var modeLabel = lb.querySelector("[data-gallery-mode-label]");
     var playBtn = lb.querySelector("[data-gallery-play]");
     var countdownEl = lb.querySelector("[data-gallery-countdown]");
     var delayLabel = lb.querySelector("[data-gallery-delay-label]");
@@ -213,9 +218,38 @@
     var labelPause = lb.getAttribute("data-label-pause") || "Pause";
     var labelFs = lb.getAttribute("data-label-fs") || "Fullscreen";
     var labelFsExit = lb.getAttribute("data-label-fs-exit") || "Exit fullscreen";
+    var labelModePhoto = lb.getAttribute("data-label-mode-photo") || "Photos";
+    var labelModeVideo = lb.getAttribute("data-label-mode-video") || "Clips";
     var isZh = (document.documentElement.lang || "").indexOf("zh") === 0;
 
-    if (totalEl) totalEl.textContent = String(items.length);
+    function photoPool() {
+      var out = [];
+      for (var i = 0; i < items.length; i++) {
+        if (!items[i].youtube_id) out.push(i);
+      }
+      return out.length ? out : items.map(function (_, i) { return i; });
+    }
+
+    function videoPool() {
+      var out = [];
+      for (var i = 0; i < items.length; i++) {
+        if (items[i].clip && !items[i].youtube_id) out.push(i);
+      }
+      return out;
+    }
+
+    function activePool() {
+      if (slideMode === "video") {
+        var v = videoPool();
+        return v.length ? v : photoPool();
+      }
+      return photoPool();
+    }
+
+    function poolPos(pool) {
+      var p = pool.indexOf(index);
+      return p < 0 ? 0 : p;
+    }
 
     function clampSec(n) {
       n = parseInt(n, 10);
@@ -242,8 +276,7 @@
     }
 
     function formatSec(sec) {
-      if (isZh) return sec + " 秒";
-      return sec + "s";
+      return isZh ? sec + " 秒" : sec + "s";
     }
 
     function renderDelayControls() {
@@ -256,19 +289,15 @@
       intervalSec = clampSec(next);
       saveInterval();
       renderDelayControls();
-      // If autoplay is running, restart window with new delay
-      if (playing) {
-        armPlayTimer();
-      } else {
+      if (playing) armPlayTimer();
+      else {
         remainSec = intervalSec;
         renderCountdown();
       }
     }
 
     function formatCountdown(sec) {
-      // Distinguish "time left this slide" from "setting"
-      if (isZh) return "下張 " + sec + " 秒";
-      return "next " + sec + "s";
+      return isZh ? "下張 " + sec + " 秒" : "next " + sec + "s";
     }
 
     function renderCountdown() {
@@ -293,19 +322,29 @@
       clearPlayTimer();
       remainSec = intervalSec;
       renderCountdown();
-      // One tick per second: countdown UI + advance when it hits 0
       playTimer = setInterval(function () {
         remainSec -= 1;
         if (remainSec <= 0) {
-          show((index + 1) % items.length);
+          step(1);
           remainSec = intervalSec;
         }
         renderCountdown();
       }, 1000);
     }
 
-    loadInterval();
-    renderDelayControls();
+    function stopPlay() {
+      playing = false;
+      clearPlayTimer();
+      remainSec = intervalSec;
+      renderCountdown();
+      if (playBtn) playBtn.textContent = labelPlay;
+    }
+
+    function startPlay() {
+      playing = true;
+      if (playBtn) playBtn.textContent = labelPause;
+      armPlayTimer();
+    }
 
     function fsElement() {
       return (
@@ -324,7 +363,6 @@
     function updateFsButton() {
       if (!fsBtn) return;
       fsBtn.textContent = isFs() ? labelFsExit : labelFs;
-      fsBtn.setAttribute("aria-pressed", isFs() ? "true" : "false");
     }
 
     function requestFs(el) {
@@ -342,70 +380,56 @@
     }
 
     function toggleFullscreen() {
-      var p;
-      if (isFs()) {
-        p = exitFs();
-      } else {
-        p = requestFs(panel);
-      }
+      var p = isFs() ? exitFs() : requestFs(panel);
       if (p && typeof p.then === "function") {
-        p.then(updateFsButton).catch(function () {
-          // Some browsers only allow fullscreen after a direct user gesture;
-          // button click already is one — ignore abort errors.
-          updateFsButton();
-        });
-      } else {
-        updateFsButton();
-      }
+        p.then(updateFsButton).catch(updateFsButton);
+      } else updateFsButton();
     }
 
-    function stopPlay() {
-      playing = false;
-      clearPlayTimer();
-      remainSec = intervalSec;
-      renderCountdown();
-      if (playBtn) playBtn.textContent = labelPlay;
+    function clearMedia() {
+      if (ytEl) {
+        ytEl.innerHTML = "";
+        ytEl.hidden = true;
+      }
+      if (clipEl) {
+        try {
+          clipEl.pause();
+        } catch (e) {}
+        clipEl.removeAttribute("src");
+        clipEl.load();
+      }
+      if (clipPane) clipPane.hidden = true;
+      if (stillPane) stillPane.hidden = false;
     }
 
-    function closeLightbox(e) {
-      if (e) {
-        e.preventDefault();
-        e.stopPropagation();
+    function setMode(mode, opts) {
+      opts = opts || {};
+      var next = mode === "video" ? "video" : "photo";
+      var changed = next !== slideMode;
+      slideMode = next;
+      if (modeLabel) {
+        modeLabel.textContent =
+          slideMode === "video" ? labelModeVideo : labelModePhoto;
       }
-      try {
-        stopPlay();
-      } catch (err) {}
-      try {
-        if (isFs()) {
-          var p = exitFs();
-          if (p && typeof p.catch === "function") p.catch(function () {});
+      lb.setAttribute("data-slide-mode", slideMode);
+      if (stillPane) {
+        stillPane.classList.toggle("is-active-mode", slideMode === "photo");
+      }
+      if (clipPane) {
+        clipPane.classList.toggle("is-active-mode", slideMode === "video");
+      }
+      // Refresh counter / media behavior for the active pool
+      if (opts.refresh !== false && !lb.hidden) {
+        var pool = activePool();
+        if (slideMode === "video" && pool.length && pool.indexOf(index) < 0) {
+          index = pool[0];
         }
-      } catch (err2) {}
-      clearVideo();
-      lb.hidden = true;
-      lb.setAttribute("hidden", "");
-      document.body.classList.remove("lb-open");
-      if (imgEl) {
-        imgEl.hidden = false;
-        imgEl.removeAttribute("src");
+        show(index, {
+          userOpen: slideMode === "video",
+          restartTimer: playing || !!opts.restartTimer,
+        });
       }
-      updateFsButton();
-    }
-
-    function startPlay() {
-      playing = true;
-      if (playBtn) playBtn.textContent = labelPause;
-      armPlayTimer();
-    }
-
-    function clearVideo() {
-      if (videoEl) {
-        videoEl.innerHTML = "";
-        videoEl.hidden = true;
-      }
-      if (imgEl) {
-        imgEl.hidden = false;
-              }
+      return changed;
     }
 
     function show(i, opts) {
@@ -413,42 +437,81 @@
       index = (i + items.length) % items.length;
       var item = items[index] || {};
       var yt = item.youtube_id || "";
-      var link = item.link || "";
+      var clip = item.clip || "";
+      var pool = activePool();
+      // If current item is outside the active pool, snap to nearest in-pool item
+      if (pool.length && pool.indexOf(index) < 0) {
+        index = pool[0];
+        item = items[index] || {};
+        yt = item.youtube_id || "";
+        clip = item.clip || "";
+      }
 
-      // Stop previous YouTube when switching slides
-      clearVideo();
+      clearMedia();
 
-      if (yt && videoEl) {
-        // Embed playable YouTube (autoplay only when user opened this slide, not slideshow)
-        var autoplay = opts.userOpen ? "1" : "0";
-        videoEl.hidden = false;
-        if (imgEl) {
-          imgEl.hidden = true;
-                  }
-        videoEl.innerHTML =
+      if (yt && ytEl) {
+        // YouTube tiles stay standalone (not part of photo/video dual stack)
+        if (stillPane) stillPane.hidden = true;
+        if (clipPane) clipPane.hidden = true;
+        ytEl.hidden = false;
+        ytEl.innerHTML =
           '<iframe src="https://www.youtube.com/embed/' +
           encodeURIComponent(yt) +
-          "?rel=0&modestbranding=1&autoplay=" +
-          autoplay +
-          '" title="YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>';
-      } else if (imgEl) {
-        imgEl.hidden = false;
-        imgEl.src = item.poster || item.src;
-        imgEl.alt = (item.caption || "").slice(0, 120);
+          '?rel=0&modestbranding=1&autoplay=0" title="YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>';
+      } else {
+        if (stillPane) stillPane.hidden = false;
+        if (imgEl) {
+          imgEl.src = item.src || item.poster || "";
+          imgEl.alt = (item.caption || "").slice(0, 120);
+        }
+        if (clip && clipEl && clipPane) {
+          clipPane.hidden = false;
+          clipEl.poster = item.src || "";
+          if (clipEl.getAttribute("src") !== clip) {
+            clipEl.src = clip;
+            clipEl.load();
+          }
+          // Autoplay clip only while in video slideshow mode
+          if (slideMode === "video" && (opts.userOpen || playing)) {
+            var p = clipEl.play();
+            if (p && typeof p.catch === "function") p.catch(function () {});
+          } else {
+            try {
+              clipEl.pause();
+            } catch (e2) {}
+          }
+        } else if (clipPane) {
+          clipPane.hidden = true;
+        }
       }
 
       if (capEl) capEl.textContent = item.caption || "";
-      if (idxEl) idxEl.textContent = String(index + 1);
+      // counter within active pool
+      if (idxEl) idxEl.textContent = String(poolPos(pool) + 1);
+      if (totalEl) totalEl.textContent = String(pool.length);
+      if (modeLabel) {
+        modeLabel.textContent =
+          slideMode === "video" ? labelModeVideo : labelModePhoto;
+      }
+      if (stillPane) {
+        stillPane.classList.toggle("is-active-mode", slideMode === "photo");
+      }
+      if (clipPane) {
+        clipPane.classList.toggle(
+          "is-active-mode",
+          slideMode === "video" && !clipPane.hidden
+        );
+      }
 
       if (extLink) {
-        if (link && !yt) {
+        if (item.link && !yt) {
           extLink.hidden = false;
-          extLink.href = link;
+          extLink.href = item.link;
           extLink.textContent = labelOpenLink;
         } else if (yt) {
-          // optional: also offer open on YouTube
           extLink.hidden = false;
-          extLink.href = link || "https://www.youtube.com/watch?v=" + yt;
+          extLink.href =
+            item.link || "https://www.youtube.com/watch?v=" + yt;
           extLink.textContent = "YouTube";
         } else {
           extLink.hidden = true;
@@ -456,30 +519,74 @@
         }
       }
 
-      // Pause autoplay while a video is on screen (don't skip mid-watch)
-      if (yt && playing) {
-        stopPlay();
-      }
-
-      // Manual nav while autoplay: restart the full delay window
-      if (playing && opts.restartTimer) {
-        armPlayTimer();
-      }
+      if (playing && opts.restartTimer) armPlayTimer();
     }
 
-    function open(i) {
+    function step(dir) {
+      var pool = activePool();
+      if (!pool.length) return;
+      var pos = poolPos(pool);
+      pos = (pos + dir + pool.length) % pool.length;
+      show(pool[pos], {
+        restartTimer: true,
+        userOpen: slideMode === "video",
+      });
+    }
+
+    function open(i, mode) {
+      // Photo thumb → photo pool; clip thumb → video pool
+      setMode(mode === "video" ? "video" : "photo", { refresh: false });
       show(i, { userOpen: true });
       lb.hidden = false;
+      lb.removeAttribute("hidden");
       document.body.classList.add("lb-open");
       updateFsButton();
       var closeBtn = lb.querySelector(".lb__close");
       if (closeBtn) closeBtn.focus();
     }
 
+    function closeLightbox(e) {
+      if (e) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+      stopPlay();
+      try {
+        if (isFs()) {
+          var p = exitFs();
+          if (p && typeof p.catch === "function") p.catch(function () {});
+        }
+      } catch (err) {}
+      clearMedia();
+      lb.hidden = true;
+      lb.setAttribute("hidden", "");
+      document.body.classList.remove("lb-open");
+      if (imgEl) imgEl.removeAttribute("src");
+      updateFsButton();
+    }
+
+    loadInterval();
+    renderDelayControls();
+    setMode("photo");
+
     document.querySelectorAll("[data-gallery-open]").forEach(function (btn) {
-      btn.addEventListener("click", function () {
+      btn.addEventListener("click", function (e) {
         var i = parseInt(btn.getAttribute("data-gallery-open"), 10) || 0;
-        open(i);
+        // Clicking the clip badge (or a clip-marked thumb) can enter video mode
+        var wantVideo = false;
+        if (e.target && e.target.closest) {
+          if (e.target.closest(".gallery-thumb__badge--clip")) wantVideo = true;
+        }
+        if (
+          !wantVideo &&
+          btn.classList.contains("gallery-thumb--clip") &&
+          e.shiftKey
+        ) {
+          wantVideo = true;
+        }
+        // Default: open in photo mode (top still). Video mode via badge or
+        // by clicking the bottom clip once the lightbox is open.
+        open(i, wantVideo ? "video" : "photo");
       });
     });
 
@@ -492,13 +599,13 @@
     if (prev) {
       prev.addEventListener("click", function (e) {
         e.stopPropagation();
-        show(index - 1, { restartTimer: true });
+        step(-1);
       });
     }
     if (next) {
       next.addEventListener("click", function (e) {
         e.stopPropagation();
-        show(index + 1, { restartTimer: true });
+        step(1);
       });
     }
     if (playBtn) {
@@ -526,36 +633,71 @@
       });
     }
 
+    // Click photo pane → photo slideshow mode (carousel only photos)
+    if (stillPane) {
+      stillPane.addEventListener("click", function (e) {
+        if (e.target && e.target.closest("a,button")) return;
+        if (slideMode === "photo") return;
+        setMode("photo");
+        if (clipEl) {
+          try {
+            clipEl.pause();
+          } catch (err) {}
+        }
+      });
+    }
+    // Click / play video pane → video slideshow mode (carousel only clips)
+    if (clipPane) {
+      clipPane.addEventListener("click", function (e) {
+        // Let native video controls work; still switch mode
+        if (slideMode === "video") return;
+        setMode("video");
+      });
+    }
+    if (clipEl) {
+      clipEl.addEventListener("play", function () {
+        if (slideMode === "video") return;
+        setMode("video", { refresh: false });
+        // Update counter only
+        var pool = activePool();
+        if (idxEl) idxEl.textContent = String(poolPos(pool) + 1);
+        if (totalEl) totalEl.textContent = String(pool.length);
+        if (modeLabel) modeLabel.textContent = labelModeVideo;
+        if (stillPane) stillPane.classList.remove("is-active-mode");
+        if (clipPane) clipPane.classList.add("is-active-mode");
+        lb.setAttribute("data-slide-mode", "video");
+      });
+    }
+
     document.addEventListener("fullscreenchange", updateFsButton);
     document.addEventListener("webkitfullscreenchange", updateFsButton);
 
     document.addEventListener("keydown", function (e) {
       if (lb.hidden) return;
       if (e.key === "Escape") {
-        // Browser exits fullscreen first; second Esc closes lightbox
         if (isFs()) return;
         e.preventDefault();
         closeLightbox(e);
       } else if (e.key === "ArrowLeft") {
         e.preventDefault();
-        show(index - 1, { restartTimer: true });
+        step(-1);
       } else if (e.key === "ArrowRight") {
         e.preventDefault();
-        show(index + 1, { restartTimer: true });
+        step(1);
       } else if (e.key === "f" || e.key === "F") {
-        if (e.target && (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA")) return;
+        if (e.target && (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA"))
+          return;
         e.preventDefault();
         toggleFullscreen();
       } else if (e.key === " " || e.key === "Spacebar") {
-        // space toggles autoplay when lightbox open
         if (e.target && e.target.tagName === "BUTTON") return;
+        if (e.target && e.target.tagName === "VIDEO") return;
         e.preventDefault();
         if (playing) stopPlay();
         else startPlay();
       }
     });
 
-    // touch swipe
     var touchX = null;
     var stage = lb.querySelector(".lb__stage");
     if (stage) {
@@ -575,11 +717,12 @@
           var dx = e.changedTouches[0].clientX - touchX;
           touchX = null;
           if (Math.abs(dx) < 40) return;
-          if (dx > 0) show(index - 1, { restartTimer: true });
-          else show(index + 1, { restartTimer: true });
+          if (dx > 0) step(-1);
+          else step(1);
         },
         { passive: true }
       );
     }
   })();
+
 })();

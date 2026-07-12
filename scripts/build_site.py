@@ -63,8 +63,13 @@ UI = {
         "gallery_delay_dec": "減少秒數",
         "gallery_delay_inc": "增加秒數",
         "gallery_video": "影片",
+        "gallery_clip": "動態",
         "gallery_open_link": "開啟連結",
         "gallery_of": "/",
+        "gallery_mode_photo": "輪播：相片",
+        "gallery_mode_video": "輪播：短片",
+        "gallery_still_label": "原圖",
+        "gallery_clip_label": "短片",
         "home": "首頁",
         "issues": "議題",
         "issue_no": "議題",
@@ -136,8 +141,13 @@ UI = {
         "gallery_delay_dec": "Decrease seconds",
         "gallery_delay_inc": "Increase seconds",
         "gallery_video": "Video",
+        "gallery_clip": "Clip",
         "gallery_open_link": "Open link",
         "gallery_of": "/",
+        "gallery_mode_photo": "Slideshow: photos",
+        "gallery_mode_video": "Slideshow: clips",
+        "gallery_still_label": "Photo",
+        "gallery_clip_label": "Clip",
         "home": "Home",
         "issues": "Issues",
         "issue_no": "Issue",
@@ -779,6 +789,7 @@ def build_gallery(lang: str, gallery_data: dict) -> str:
     depth = 2
     items = gallery_data.get("items") or []
     intro = t(gallery_data.get("intro") or {}, lang)
+    clips_dir = SITE / "media" / "clips"
     thumbs = []
     payload = []
     for idx, item in enumerate(items):
@@ -789,13 +800,20 @@ def build_gallery(lang: str, gallery_data: dict) -> str:
         yt_id = item.get("youtube_id") or ""
         link = item.get("link") or ""
         link_type = item.get("link_type") or ""
-        # QR images were replaced on disk with video/post preview frames
+        stem = Path(item.get("src") or "").stem
+        clip_rel = ""
+        clip_file = clips_dir / f"img-{stem}.mp4"
+        if clip_file.exists() and not yt_id:
+            clip_rel = f"clips/img-{stem}.mp4"
         thumb_src = src
         badge = ""
         extra_cls = ""
         if yt_id:
             badge = f'<span class="gallery-thumb__badge">{esc(ui["gallery_video"])}</span>'
             extra_cls = " gallery-thumb--video"
+        elif clip_rel:
+            badge = f'<span class="gallery-thumb__badge gallery-thumb__badge--clip">{esc(ui["gallery_clip"])}</span>'
+            extra_cls = " gallery-thumb--clip"
         elif link_type in ("facebook", "web") and link:
             badge = f'<span class="gallery-thumb__badge">Link</span>'
             extra_cls = " gallery-thumb--link"
@@ -815,6 +833,8 @@ def build_gallery(lang: str, gallery_data: dict) -> str:
                 "link": link,
                 "link_type": link_type,
                 "poster": thumb_src if yt_id else src,
+                "clip": media_src(clip_rel, depth) if clip_rel else "",
+                "kind": "youtube" if yt_id else ("clip" if clip_rel else "photo"),
             }
         )
 
@@ -842,6 +862,10 @@ def build_gallery(lang: str, gallery_data: dict) -> str:
        data-label-fs="{esc(ui["gallery_fullscreen"])}"
        data-label-fs-exit="{esc(ui["gallery_fullscreen_exit"])}"
        data-label-open-link="{esc(ui["gallery_open_link"])}"
+       data-label-mode-photo="{esc(ui["gallery_mode_photo"])}"
+       data-label-mode-video="{esc(ui["gallery_mode_video"])}"
+       data-label-still="{esc(ui["gallery_still_label"])}"
+       data-label-clip="{esc(ui["gallery_clip_label"])}"
        data-label-of="{esc(ui["gallery_of"])}">
     <div class="lb__backdrop" data-gallery-close tabindex="-1"></div>
     <div class="lb__panel" role="dialog" aria-modal="true" aria-label="{esc(ui["gallery_title"])}" data-gallery-panel>
@@ -849,13 +873,25 @@ def build_gallery(lang: str, gallery_data: dict) -> str:
       <div class="lb__stage">
         <button type="button" class="lb__nav lb__nav--prev" data-gallery-prev aria-label="{esc(ui["gallery_prev"])}">‹</button>
         <div class="lb__media">
-          <img class="lb__img" data-gallery-img alt="" />
-          <div class="lb__video" data-gallery-video hidden></div>
+          <div class="lb__stack" data-gallery-stack>
+            <div class="lb__pane lb__pane--still" data-gallery-still-pane>
+              <div class="lb__pane-label" data-gallery-still-label>{esc(ui["gallery_still_label"])}</div>
+              <img class="lb__img" data-gallery-img alt="" />
+            </div>
+            <div class="lb__pane lb__pane--clip" data-gallery-clip-pane hidden>
+              <div class="lb__pane-label" data-gallery-clip-label>{esc(ui["gallery_clip_label"])}</div>
+              <video class="lb__clip" data-gallery-clip controls playsinline preload="metadata"></video>
+            </div>
+            <div class="lb__video" data-gallery-video hidden></div>
+          </div>
         </div>
         <button type="button" class="lb__nav lb__nav--next" data-gallery-next aria-label="{esc(ui["gallery_next"])}">›</button>
       </div>
       <div class="lb__footer">
-        <div class="lb__counter"><span data-gallery-index>1</span>{esc(ui["gallery_of"])}<span data-gallery-total>{len(items)}</span></div>
+        <div class="lb__counter">
+          <span data-gallery-mode-label></span>
+          · <span data-gallery-index>1</span>{esc(ui["gallery_of"])}<span data-gallery-total>{len(items)}</span>
+        </div>
         <div class="lb__actions">
           <button type="button" class="btn btn-secondary lb__play" data-gallery-play>{esc(ui["gallery_play"])}</button>
           <span class="lb__countdown" data-gallery-countdown hidden aria-live="polite"></span>
