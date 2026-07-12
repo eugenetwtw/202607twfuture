@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 import shutil
 from pathlib import Path
@@ -12,8 +13,16 @@ SITE = ROOT / "site"
 DATA = SITE / "data"
 OUT = SITE  # pages live under site/zh, site/en, etc.
 
+# Optional production origin for absolute canonical / OG URLs, e.g. https://example.com
+# Set TW_SITE_BASE_URL when deploying; empty keeps root-absolute paths (/zh/…).
+BASE_URL = os.environ.get("TW_SITE_BASE_URL", "").rstrip("/")
+
 LANGS = ("zh", "en", "ja")
 LANG_LABELS = {"zh": "中文", "en": "EN", "ja": "日本語"}
+# BCP 47 tags for <html lang> and hreflang
+HTML_LANG = {"zh": "zh-Hant", "en": "en", "ja": "ja"}
+HREFLANG = {"zh": "zh-Hant", "en": "en", "ja": "ja"}
+OG_LOCALE = {"zh": "zh_TW", "en": "en_US", "ja": "ja_JP"}
 
 SITE_NAME = {
     "zh": "台灣大未來",
@@ -344,19 +353,73 @@ def page_url(lang: str, path: str = "") -> str:
     return f"/{lang}/"
 
 
-def og_tags(title: str, desc: str, image: str, depth: int, page_path: str) -> str:
-    # relative image for local; absolute preferred when domain known
-    img = media_src(image, depth) if image else ""
+def abs_url(path: str) -> str:
+    """Root-absolute or fully-qualified URL for canonical / hreflang / OG."""
+    path = "/" + path.lstrip("/")
+    if BASE_URL:
+        return BASE_URL + path
+    return path
+
+
+def media_abs_url(filename: str) -> str:
+    name = str(filename or "author-avatar.jpg").lstrip("/")
+    if name.startswith("clips/") or Path(name).suffix.lower() in {
+        ".mp4",
+        ".webm",
+        ".mov",
+        ".svg",
+    }:
+        rel = f"media/{name}"
+    else:
+        rel = f"media/{Path(name).stem}.jpg"
+    return abs_url(rel)
+
+
+def og_tags(title: str, desc: str, image: str, lang: str, page_path: str) -> str:
+    img = media_abs_url(image or "author-avatar.jpg")
+    page = abs_url(page_url(lang, page_path).lstrip("/"))
+    locale = OG_LOCALE.get(lang, "en_US")
+    alts = []
+    for L in LANGS:
+        if L == lang:
+            continue
+        alts.append(
+            f'  <meta property="og:locale:alternate" content="{OG_LOCALE.get(L, L)}" />'
+        )
+    alts_html = "\n".join(alts)
     return f"""
   <meta property="og:type" content="article" />
   <meta property="og:title" content="{esc(title)}" />
   <meta property="og:description" content="{esc(desc)}" />
   <meta property="og:image" content="{esc(img)}" />
+  <meta property="og:url" content="{esc(page)}" />
+  <meta property="og:locale" content="{locale}" />
+{alts_html}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{esc(title)}" />
   <meta name="twitter:description" content="{esc(desc)}" />
+  <meta name="twitter:image" content="{esc(img)}" />
   <meta name="description" content="{esc(desc)}" />
 """
+
+
+def alternate_links(lang: str, path: str) -> str:
+    """hreflang alternates + canonical for the current page."""
+    suffix = path.strip("/")
+    links = []
+    for L in LANGS:
+        href = abs_url(f"{L}/{suffix}/" if suffix else f"{L}/")
+        links.append(
+            f'  <link rel="alternate" hreflang="{HREFLANG[L]}" href="{esc(href)}" />'
+        )
+    # x-default → Chinese (primary audience)
+    default_href = abs_url(f"zh/{suffix}/" if suffix else "zh/")
+    links.append(
+        f'  <link rel="alternate" hreflang="x-default" href="{esc(default_href)}" />'
+    )
+    self_href = abs_url(f"{lang}/{suffix}/" if suffix else f"{lang}/")
+    links.append(f'  <link rel="canonical" href="{esc(self_href)}" />')
+    return "\n".join(links)
 
 
 def layout(
@@ -420,13 +483,15 @@ def layout(
     author_role = esc(ui.get("author_role") or "")
     footer_by = esc(ui.get("footer_by") or author_name)
 
+    html_lang = HTML_LANG.get(lang, lang)
     return f"""<!DOCTYPE html>
-<html lang="{lang}">
+<html lang="{html_lang}">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{esc(full_title)}</title>
-  {og_tags(full_title, desc, image or "author-avatar.jpg", depth, path)}
+  {alternate_links(lang, path)}
+  {og_tags(full_title, desc, image or "author-avatar.jpg", lang, path)}
   <link rel="icon" href="{asset("favicon.svg", depth)}" type="image/svg+xml" />
   <link rel="icon" href="{asset("favicon.ico", depth)}" sizes="any" />
   <link rel="icon" href="{asset("favicon-32.png", depth)}" type="image/png" sizes="32x32" />
