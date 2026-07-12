@@ -1,0 +1,77 @@
+{
+  "image34": {
+    "link": "https://epec.work/fp2",
+    "link_type": "web",
+    "source": "docx_hyperlink_near_qr",
+    "image": "image34.jpg",
+    "preview": "link-previews/image34.jpg",
+    "poster_local": "image34.jpg"
+  },
+  "image67": {
+    "link": "https://youtu.be/XnePad56vI0",
+    "link_type": "youtube",
+    "youtube_id": "XnePad56vI0",
+    "source": "docx_hyperlink_near_qr",
+    "image": "image67.png",
+    "preview": "link-previews/image67.jpg"
+  },
+  "image84": {
+    "link": "https://www.facebook.com/eugenepechang/",
+    "link_type": "facebook",
+    "source": "docx_hyperlink_near_qr",
+    "image": "image84.jpg",
+    "preview": "link-previews/image84.jpg",
+    "poster_local": "image84.jpg"
+  },
+  "image154": {
+    "link": "https://www.facebook.com/eugenepechang/videos/544767882772397/",
+    "link_type": "facebook",
+    "source": "docx_hyperlink_near_qr",
+    "image": "image154.png",
+    "preview": "link-previews/image154.jpg",
+    "poster_local": "image154.jpg"
+  },
+  "image124": {
+    "link": "https://www.youtube.com/watch?v=_UQvzxq8Jdk",
+    "link_type": "youtube",
+    "youtube_id": "_UQvzxq8Jdk",
+    "source": "qr_decode_prefer_for_qr_image",
+    "preview": "link-previews/image124.jpg"
+  },
+  "image105": {
+    "link": "https://www.youtube.com/watch?v=VcaGKmlXlgk",
+    "link_type": "youtube",
+    "youtube_id": "VcaGKmlXlgk",
+    "source": "qr_decode_prefer_for_qr_image",
+    "preview": "link-previews/image105.jpg"
+  },
+  "image76": {
+    "link": "https://www.youtube.com/watch?v=rruQfDc7-0o",
+    "link_type": "youtube",
+    "youtube_id": "rruQfDc7-0o",
+    "source": "qr_decode_prefer_for_qr_image",
+    "preview": "link-previews/image76.jpg"
+  },
+  "image137": {
+    "link": "https://donation.tpp.org.tw/donate/step1",
+    "link_type": "web",
+    "source": "qr_decode_prefer_for_qr_image",
+    "preview": "link-previews/image137.jpg",
+    "poster_local": "image137.jpg"
+  },
+  "image78": {
+    "link": "https://business.facebook.com/eugenepechang/photos/a.1098614346850454/2973070602738143/?type=3&theater",
+    "link_type": "facebook",
+    "source": "docx_hyperlink_near_qr",
+    "image": "image78.png",
+    "preview": "link-previews/image78.jpg",
+    "poster_local": "image78.jpg"
+  },
+  "image43": {
+    "link": "https://www.youtube.com/watch?v=JMnpM0G7FaY",
+    "link_type": "youtube",
+    "youtube_id": "JMnpM0G7FaY",
+    "source": "qr_decode_prefer_for_qr_image",
+    "preview": "link-previews/image43.jpg"
+  }
+}

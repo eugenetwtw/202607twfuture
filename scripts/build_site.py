@@ -670,12 +670,11 @@ def build_gallery(lang: str, gallery_data: dict) -> str:
         yt_id = item.get("youtube_id") or ""
         link = item.get("link") or ""
         link_type = item.get("link_type") or ""
-        # YouTube QR → use official poster thumbnail instead of barcode image
+        # QR images were replaced on disk with video/post preview frames
         thumb_src = src
         badge = ""
         extra_cls = ""
         if yt_id:
-            thumb_src = f"https://i.ytimg.com/vi/{esc(yt_id)}/hqdefault.jpg"
             badge = f'<span class="gallery-thumb__badge">{esc(ui["gallery_video"])}</span>'
             extra_cls = " gallery-thumb--video"
         elif link_type in ("facebook", "web") and link:
