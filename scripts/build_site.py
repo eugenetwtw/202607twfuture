@@ -1143,7 +1143,11 @@ def main():
   <script>location.replace("zh/");</script>
 </head>
 <body>
-  <p><a href="zh/">進入中文版 / Enter Chinese site</a></p>
+  <p>
+    <a href="zh/">中文</a> ·
+    <a href="en/">English</a> ·
+    <a href="ja/">日本語</a>
+  </p>
 </body>
 </html>
 """,
