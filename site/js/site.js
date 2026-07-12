@@ -196,6 +196,7 @@
     var remainSec = intervalSec;
 
     var imgEl = lb.querySelector("[data-gallery-img]");
+    var videoEl = lb.querySelector("[data-gallery-video]");
     var capEl = lb.querySelector("[data-gallery-caption]");
     var idxEl = lb.querySelector("[data-gallery-index]");
     var totalEl = lb.querySelector("[data-gallery-total]");
@@ -205,7 +206,9 @@
     var delayDec = lb.querySelector("[data-gallery-delay-dec]");
     var delayInc = lb.querySelector("[data-gallery-delay-inc]");
     var fsBtn = lb.querySelector("[data-gallery-fullscreen]");
+    var extLink = lb.querySelector("[data-gallery-extlink]");
     var panel = lb.querySelector("[data-gallery-panel]") || lb;
+    var labelOpenLink = lb.getAttribute("data-label-open-link") || "Open link";
     var labelPlay = lb.getAttribute("data-label-play") || "Play";
     var labelPause = lb.getAttribute("data-label-pause") || "Pause";
     var labelFs = lb.getAttribute("data-label-fs") || "Fullscreen";
@@ -378,10 +381,14 @@
           if (p && typeof p.catch === "function") p.catch(function () {});
         }
       } catch (err2) {}
+      clearVideo();
       lb.hidden = true;
       lb.setAttribute("hidden", "");
       document.body.classList.remove("lb-open");
-      if (imgEl) imgEl.removeAttribute("src");
+      if (imgEl) {
+        imgEl.hidden = false;
+        imgEl.removeAttribute("src");
+      }
       updateFsButton();
     }
 
@@ -391,16 +398,65 @@
       armPlayTimer();
     }
 
+    function clearVideo() {
+      if (videoEl) {
+        videoEl.innerHTML = "";
+        videoEl.hidden = true;
+      }
+      if (imgEl) imgEl.hidden = false;
+    }
+
     function show(i, opts) {
       opts = opts || {};
       index = (i + items.length) % items.length;
-      var item = items[index];
-      if (imgEl) {
-        imgEl.src = item.src;
+      var item = items[index] || {};
+      var yt = item.youtube_id || "";
+      var link = item.link || "";
+
+      // Stop previous YouTube when switching slides
+      clearVideo();
+
+      if (yt && videoEl) {
+        // Embed playable YouTube (autoplay only when user opened this slide, not slideshow)
+        var autoplay = opts.userOpen ? "1" : "0";
+        videoEl.hidden = false;
+        if (imgEl) imgEl.hidden = true;
+        videoEl.innerHTML =
+          '<iframe src="https://www.youtube.com/embed/' +
+          encodeURIComponent(yt) +
+          "?rel=0&modestbranding=1&autoplay=" +
+          autoplay +
+          '" title="YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>';
+      } else if (imgEl) {
+        imgEl.hidden = false;
+        imgEl.src = item.poster || item.src;
         imgEl.alt = (item.caption || "").slice(0, 120);
       }
+
       if (capEl) capEl.textContent = item.caption || "";
       if (idxEl) idxEl.textContent = String(index + 1);
+
+      if (extLink) {
+        if (link && !yt) {
+          extLink.hidden = false;
+          extLink.href = link;
+          extLink.textContent = labelOpenLink;
+        } else if (yt) {
+          // optional: also offer open on YouTube
+          extLink.hidden = false;
+          extLink.href = link || "https://www.youtube.com/watch?v=" + yt;
+          extLink.textContent = "YouTube";
+        } else {
+          extLink.hidden = true;
+          extLink.removeAttribute("href");
+        }
+      }
+
+      // Pause autoplay while a video is on screen (don't skip mid-watch)
+      if (yt && playing) {
+        stopPlay();
+      }
+
       // Manual nav while autoplay: restart the full delay window
       if (playing && opts.restartTimer) {
         armPlayTimer();
@@ -408,11 +464,10 @@
     }
 
     function open(i) {
-      show(i);
+      show(i, { userOpen: true });
       lb.hidden = false;
       document.body.classList.add("lb-open");
       updateFsButton();
-      // focus close for a11y
       var closeBtn = lb.querySelector(".lb__close");
       if (closeBtn) closeBtn.focus();
     }

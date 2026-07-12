@@ -61,6 +61,8 @@ UI = {
         "gallery_delay": "每張秒數",
         "gallery_delay_dec": "減少秒數",
         "gallery_delay_inc": "增加秒數",
+        "gallery_video": "影片",
+        "gallery_open_link": "開啟連結",
         "gallery_of": "/",
         "home": "首頁",
         "issues": "議題",
@@ -125,6 +127,8 @@ UI = {
         "gallery_delay": "Seconds per photo",
         "gallery_delay_dec": "Decrease seconds",
         "gallery_delay_inc": "Increase seconds",
+        "gallery_video": "Video",
+        "gallery_open_link": "Open link",
         "gallery_of": "/",
         "home": "Home",
         "issues": "Issues",
@@ -661,22 +665,44 @@ def build_gallery(lang: str, gallery_data: dict) -> str:
     for idx, item in enumerate(items):
         src = media_src(item["src"], depth)
         cap = t(item.get("caption") or {}, lang)
-        # Prefer zh caption for payload when en empty
         if not cap:
             cap = t(item.get("caption") or {}, "zh")
+        yt_id = item.get("youtube_id") or ""
+        link = item.get("link") or ""
+        link_type = item.get("link_type") or ""
+        # YouTube QR → use official poster thumbnail instead of barcode image
+        thumb_src = src
+        badge = ""
+        extra_cls = ""
+        if yt_id:
+            thumb_src = f"https://i.ytimg.com/vi/{esc(yt_id)}/hqdefault.jpg"
+            badge = f'<span class="gallery-thumb__badge">{esc(ui["gallery_video"])}</span>'
+            extra_cls = " gallery-thumb--video"
+        elif link_type in ("facebook", "web") and link:
+            badge = f'<span class="gallery-thumb__badge">Link</span>'
+            extra_cls = " gallery-thumb--link"
         alt = esc((cap[:60] if cap else f"Photo {idx + 1}").replace("\n", " "))
         thumbs.append(
-            f"""<button type="button" class="gallery-thumb" data-gallery-open="{idx}" aria-label="{esc(ui["gallery_open"])} {idx + 1}">
-          <img src="{src}" alt="{alt}" loading="lazy" />
+            f"""<button type="button" class="gallery-thumb{extra_cls}" data-gallery-open="{idx}" aria-label="{esc(ui["gallery_open"])} {idx + 1}">
+          <img src="{thumb_src}" alt="{alt}" loading="lazy" />
           <span class="gallery-thumb__n">{idx + 1}</span>
+          {badge}
         </button>"""
         )
-        payload.append({"src": src, "caption": cap})
+        payload.append(
+            {
+                "src": src,
+                "caption": cap,
+                "youtube_id": yt_id,
+                "link": link,
+                "link_type": link_type,
+                "poster": thumb_src if yt_id else src,
+            }
+        )
 
     cover = items[0]["src"] if items else "image35.jpg"
     count_label = ui["gallery_count"].replace("{n}", str(len(items)))
     intro_html = f'<p class="gallery-intro">{esc(intro)}</p>' if intro else ""
-    # JSON for lightbox (safe embed)
     payload_json = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")
 
     body = f"""
@@ -697,6 +723,7 @@ def build_gallery(lang: str, gallery_data: dict) -> str:
        data-label-pause="{esc(ui["gallery_pause"])}"
        data-label-fs="{esc(ui["gallery_fullscreen"])}"
        data-label-fs-exit="{esc(ui["gallery_fullscreen_exit"])}"
+       data-label-open-link="{esc(ui["gallery_open_link"])}"
        data-label-of="{esc(ui["gallery_of"])}">
     <div class="lb__backdrop" data-gallery-close tabindex="-1"></div>
     <div class="lb__panel" role="dialog" aria-modal="true" aria-label="{esc(ui["gallery_title"])}" data-gallery-panel>
@@ -705,6 +732,7 @@ def build_gallery(lang: str, gallery_data: dict) -> str:
         <button type="button" class="lb__nav lb__nav--prev" data-gallery-prev aria-label="{esc(ui["gallery_prev"])}">‹</button>
         <div class="lb__media">
           <img class="lb__img" data-gallery-img alt="" />
+          <div class="lb__video" data-gallery-video hidden></div>
         </div>
         <button type="button" class="lb__nav lb__nav--next" data-gallery-next aria-label="{esc(ui["gallery_next"])}">›</button>
       </div>
@@ -719,6 +747,7 @@ def build_gallery(lang: str, gallery_data: dict) -> str:
             <button type="button" class="lb__delay-btn" data-gallery-delay-inc aria-label="{esc(ui["gallery_delay_inc"])}">+</button>
           </div>
           <button type="button" class="btn btn-secondary lb__fs" data-gallery-fullscreen>{esc(ui["gallery_fullscreen"])}</button>
+          <a class="btn btn-secondary" data-gallery-extlink hidden target="_blank" rel="noopener noreferrer">{esc(ui["gallery_open_link"])}</a>
         </div>
         <div class="lb__caption" data-gallery-caption></div>
       </div>
