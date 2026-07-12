@@ -897,7 +897,7 @@ def build_gallery(lang: str, gallery_data: dict) -> str:
           <span class="lb__countdown" data-gallery-countdown hidden aria-live="polite"></span>
           <div class="lb__delay" role="group" aria-label="{esc(ui["gallery_delay"])}">
             <button type="button" class="lb__delay-btn" data-gallery-delay-dec aria-label="{esc(ui["gallery_delay_dec"])}">−</button>
-            <span class="lb__delay-val" data-gallery-delay-label>5 秒</span>
+            <span class="lb__delay-val" data-gallery-delay-label>{"5 秒" if lang == "zh" else "5s"}</span>
             <button type="button" class="lb__delay-btn" data-gallery-delay-inc aria-label="{esc(ui["gallery_delay_inc"])}">+</button>
           </div>
           <button type="button" class="btn btn-secondary lb__fs" data-gallery-fullscreen>{esc(ui["gallery_fullscreen"])}</button>
