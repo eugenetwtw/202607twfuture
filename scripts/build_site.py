@@ -256,6 +256,10 @@ def layout(
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{esc(full_title)}</title>
   {og_tags(full_title, desc, image or "image35.jpg", depth, path)}
+  <link rel="icon" href="{asset("favicon.svg", depth)}" type="image/svg+xml" />
+  <link rel="icon" href="{asset("favicon.ico", depth)}" sizes="any" />
+  <link rel="icon" href="{asset("favicon-32.png", depth)}" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="{asset("apple-touch-icon.png", depth)}" />
   <link rel="stylesheet" href="{css}" />
 </head>
 <body>
