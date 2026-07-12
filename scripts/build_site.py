@@ -287,7 +287,8 @@ def layout(
     about_href = "../" * depth + f"{lang}/about/"
     css = asset("css/site.css", depth)
     js = asset("js/site.js", depth)
-    author_img = asset("media/author.jpg", depth)
+    # Circular UI uses head-and-shoulders crop (full-body original was cutting off the head)
+    author_img = asset("media/author-avatar.jpg", depth)
     author_name = esc(ui.get("author_name") or "張渝江")
     author_role = esc(ui.get("author_role") or "")
     footer_by = esc(ui.get("footer_by") or author_name)
@@ -298,7 +299,7 @@ def layout(
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{esc(full_title)}</title>
-  {og_tags(full_title, desc, image or "author.jpg", depth, path)}
+  {og_tags(full_title, desc, image or "author-avatar.jpg", depth, path)}
   <link rel="icon" href="{asset("favicon.svg", depth)}" type="image/svg+xml" />
   <link rel="icon" href="{asset("favicon.ico", depth)}" sizes="any" />
   <link rel="icon" href="{asset("favicon-32.png", depth)}" type="image/png" sizes="32x32" />
@@ -459,7 +460,8 @@ def build_home(lang: str, issues: list, clusters: list, books: dict) -> str:
         )
 
     cover_src = media_src("cover.jpg", 0)
-    author_src = media_src("author.jpg", 0)
+    author_src = media_src("author-avatar.jpg", 0)
+    author_portrait = media_src("author-upper.jpg", 0)
     body = f"""
   <section class="hero">
     <div class="wrap hero-layout">
@@ -487,7 +489,7 @@ def build_home(lang: str, issues: list, clusters: list, books: dict) -> str:
           <figcaption>{esc(ui["cover_caption"])}</figcaption>
         </figure>
         <figure class="hero-portrait">
-          <img src="{author_src}" alt="{esc(ui["author_name"])}" width="680" height="1024" />
+          <img src="{author_portrait}" alt="{esc(ui["author_name"])}" width="600" height="800" />
           <figcaption>{esc(ui["author_name"])}</figcaption>
         </figure>
       </div>
@@ -649,7 +651,8 @@ def build_issue(lang: str, issue: dict, issues: list, books: dict) -> str:
 def build_about(lang: str, books: dict) -> str:
     ui = UI[lang]
     depth = 2
-    author = media_src("author.jpg", depth)
+    author = media_src("author-upper.jpg", depth)
+    author_avatar = media_src("author-avatar.jpg", depth)
     campaign = media_src("author-campaign.jpg", depth)
     if lang == "zh":
         content = f"""
@@ -658,7 +661,7 @@ def build_about(lang: str, books: dict) -> str:
       <p>著有《無人機大未來》《比特幣區塊鏈大未來》《台灣大未來》等。這一站，是他的<strong>個人品牌入口</strong>：短議題好分享，長論證在書裡、在圖書館、在你願意往下點的地方。</p>
       <div class="about-photos">
         <figure>
-          <img src="{author}" alt="{esc(ui["author_name"])}" width="680" height="1024" />
+          <img src="{author}" alt="{esc(ui["author_name"])}" width="600" height="800" />
           <figcaption>{esc(ui["author_name"])} · {esc(ui["author_role"])}</figcaption>
         </figure>
         <figure>
@@ -675,7 +678,7 @@ def build_about(lang: str, books: dict) -> str:
       <p>Author of books on drones, bitcoin, and Taiwan’s future. This site is his <strong>personal brand front door</strong>: short issues you can share, full arguments in the book.</p>
       <div class="about-photos">
         <figure>
-          <img src="{author}" alt="{esc(ui["author_name"])}" width="680" height="1024" />
+          <img src="{author}" alt="{esc(ui["author_name"])}" width="600" height="800" />
           <figcaption>{esc(ui["author_name"])} · {esc(ui["author_role"])}</figcaption>
         </figure>
         <figure>
@@ -689,7 +692,7 @@ def build_about(lang: str, books: dict) -> str:
   <section class="section">
     <div class="wrap about-page">
       <div class="about-hero">
-        <img class="about-hero__photo" src="{author}" alt="{esc(ui["author_name"])}" width="680" height="1024" />
+        <img class="about-hero__photo" src="{author}" alt="{esc(ui["author_name"])}" width="600" height="800" />
         <div>
           <h1>{esc(ui["about_title"])}</h1>
           <p class="about-name">{esc(ui["author_name"])}</p>
@@ -710,7 +713,7 @@ def build_about(lang: str, books: dict) -> str:
         depth,
         current="about",
         path="about",
-        image="author.jpg",
+        image="author-avatar.jpg",
         desc=ui.get("about_hook") or DEFAULT_DESC[lang],
     )
 

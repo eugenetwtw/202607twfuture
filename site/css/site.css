@@ -104,9 +104,11 @@ a:hover {
   height: 36px;
   border-radius: 999px;
   object-fit: cover;
+  object-position: center 18%;
   border: 2px solid #fff;
   box-shadow: 0 0 0 1px var(--line);
   flex-shrink: 0;
+  background: var(--paper-2);
 }
 
 .brand-text {
@@ -224,8 +226,10 @@ a:hover {
   height: 56px;
   border-radius: 999px;
   object-fit: cover;
+  object-position: center 18%;
   border: 2px solid #fff;
   box-shadow: 0 0 0 1px var(--line);
+  background: var(--paper-2);
 }
 
 .hero-author-chip strong {
@@ -1351,7 +1355,9 @@ body.lb-open {
   height: 40px;
   border-radius: 999px;
   object-fit: cover;
+  object-position: center 18%;
   border: 1px solid var(--line);
+  background: var(--paper-2);
 }
 
 .footer-author strong {
