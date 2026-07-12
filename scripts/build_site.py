@@ -72,6 +72,7 @@ UI = {
         "isbn": "ISBN",
         "also_search": "亦可於所屬縣市公共圖書館搜尋書名借閱。",
         "featured": "從這裡開始",
+        "cover_caption": "《台灣大未來》封面",
         "compose_title": "發表框",
         "compose_hint": "編輯文案後，一鍵複製或發到社群。貼上連結時，平台會抓取下方預覽卡的標題與說明。",
         "compose_preview": "連結預覽（示意）",
@@ -138,6 +139,7 @@ UI = {
         "isbn": "ISBN",
         "also_search": "You can also search the title at your local public library.",
         "featured": "Start here",
+        "cover_caption": "Book cover — Taiwan's Great Future",
         "compose_title": "Share box",
         "compose_hint": "Edit the draft, then copy or post to social. When you paste the link, platforms use the preview card below.",
         "compose_preview": "Link preview (mock)",
@@ -431,17 +433,24 @@ def build_home(lang: str, issues: list, clusters: list, books: dict) -> str:
       </a>"""
         )
 
+    cover_src = media_src("cover.jpg", 0)
     body = f"""
   <section class="hero">
-    <div class="wrap">
-      <p class="hero-kicker">{esc(ui["kicker"])}</p>
-      <h1>{esc(ui["hero_title"])}</h1>
-      <p class="subtitle">{esc(ui["hero_sub"])}</p>
-      <p class="lede">{esc(ui["hero_lede"])}</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#map">{esc(ui["cta_map"])}</a>
-        <a class="btn btn-secondary" href="books/">{esc(ui["cta_books"])}</a>
+    <div class="wrap hero-layout">
+      <div class="hero-copy">
+        <p class="hero-kicker">{esc(ui["kicker"])}</p>
+        <h1>{esc(ui["hero_title"])}</h1>
+        <p class="subtitle">{esc(ui["hero_sub"])}</p>
+        <p class="lede">{esc(ui["hero_lede"])}</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#map">{esc(ui["cta_map"])}</a>
+          <a class="btn btn-secondary" href="books/">{esc(ui["cta_books"])}</a>
+        </div>
       </div>
+      <figure class="hero-cover">
+        <img src="{cover_src}" alt="{esc(ui["cover_caption"])}" width="640" height="1008" />
+        <figcaption>{esc(ui["cover_caption"])}</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -479,7 +488,7 @@ def build_home(lang: str, issues: list, clusters: list, books: dict) -> str:
         body,
         depth=1,
         desc=DEFAULT_DESC[lang],
-        image="image35.jpg",
+        image="cover.jpg",
         path="",
         current="home",
     )

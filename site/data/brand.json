@@ -1,0 +1,10 @@
+{
+  "primary": "#901818",
+  "paper": "#fcf8f2",
+  "ink": "#1c1210",
+  "cover": "media/cover.jpg",
+  "removed_qr": [
+    "image137",
+    "image34"
+  ]
+}
