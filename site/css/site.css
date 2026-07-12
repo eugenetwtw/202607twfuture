@@ -145,6 +145,13 @@ a:hover {
   color: var(--accent);
 }
 
+.lang-switchers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+}
+
 .lang-switch {
   font-family: var(--sans);
   font-size: 0.8rem;
@@ -154,6 +161,18 @@ a:hover {
   padding: 0.2rem 0.65rem;
   text-decoration: none;
   background: var(--card);
+  line-height: 1.2;
+}
+
+a.lang-switch:hover {
+  color: var(--ink);
+  border-color: var(--brand, #901818);
+}
+
+.lang-switch.is-current {
+  color: #fff;
+  background: var(--brand, #901818);
+  border-color: var(--brand, #901818);
 }
 
 /* Hero */

@@ -1,15 +1,18 @@
 {
   "title": {
     "zh": "台灣大未來 — 今日瑞士，明日台灣",
-    "en": "Taiwan's Great Future — Switzerland Today, Taiwan Tomorrow"
+    "en": "Taiwan's Great Future — Switzerland Today, Taiwan Tomorrow",
+    "ja": "台湾の大未来 — 今日のスイス、明日の台湾"
   },
   "subtitle": {
     "zh": "與我的競選八十天記錄",
-    "en": "And a record of eighty days on the campaign trail"
+    "en": "And a record of eighty days on the campaign trail",
+    "ja": "そして選挙戦80日の記録"
   },
   "author": {
     "zh": "張渝江",
-    "en": "Eugene Chang"
+    "en": "Eugene Chang",
+    "ja": "張渝江"
   },
   "isbn_print": "978-957-43-7441-0",
   "isbn_ebook": "9789574377404",
@@ -18,7 +21,8 @@
       "id": "hyread",
       "label": {
         "zh": "台北市立圖書館借電子書",
-        "en": "Borrow via Taipei Public Library"
+        "en": "Borrow via Taipei Public Library",
+        "ja": "台北市立図書館で電子書籍を借りる"
       },
       "url": "https://tpml.ebook.hyread.com.tw/bookDetail.jsp?id=231869",
       "primary": true
@@ -27,7 +31,8 @@
       "id": "google",
       "label": {
         "zh": "Google Play Books",
-        "en": "Google Play Books"
+        "en": "Google Play Books",
+        "ja": "Google Play Books"
       },
       "url": "https://play.google.com/store/books/details/%E5%BC%B5%E6%B8%9D%E6%B1%9F_%E5%8F%B0%E7%81%A3%E5%A4%A7%E6%9C%AA%E4%BE%86_%E4%BB%8A%E6%97%A5%E7%91%9E%E5%A3%AB_%E6%98%8E%E6%97%A5%E5%8F%B0%E7%81%A3?id=bsH2DwAAQBAJ",
       "primary": false
@@ -36,7 +41,8 @@
       "id": "pubu",
       "label": {
         "zh": "Pubu 電子書",
-        "en": "Pubu"
+        "en": "Pubu",
+        "ja": "Pubu 電子書籍"
       },
       "url": "https://www.pubu.com.tw/ebook/200261",
       "primary": false
@@ -45,7 +51,8 @@
       "id": "apple",
       "label": {
         "zh": "Apple Books",
-        "en": "Apple Books"
+        "en": "Apple Books",
+        "ja": "Apple Books"
       },
       "url": "https://books.apple.com/us/book/%E5%8F%B0%E7%81%A3%E5%A4%A7%E6%9C%AA%E4%BE%86/id1528029318",
       "primary": false

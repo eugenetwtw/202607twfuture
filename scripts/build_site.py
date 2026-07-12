@@ -12,13 +12,18 @@ SITE = ROOT / "site"
 DATA = SITE / "data"
 OUT = SITE  # pages live under site/zh, site/en, etc.
 
+LANGS = ("zh", "en", "ja")
+LANG_LABELS = {"zh": "中文", "en": "EN", "ja": "日本語"}
+
 SITE_NAME = {
     "zh": "台灣大未來",
     "en": "Taiwan's Great Future",
+    "ja": "台湾の大未来",
 }
 DEFAULT_DESC = {
     "zh": "瑞士人均八萬美金、台灣兩萬四——差在哪？工程師張渝江把瑞士當鏡子，拆解台灣的能源、居住、醫療與未來。",
     "en": "Switzerland's GDP per capita is triple Taiwan's—why? Engineer Eugene Chang uses Switzerland as a mirror for Taiwan's future.",
+    "ja": "スイスの一人当たりGDPは台湾の約3倍——なぜ？エンジニア張渝江（ユージン・チャン）がスイスを鏡に、台湾のエネルギー・住宅・医療・未来を読み解く。",
 }
 
 UI = {
@@ -178,21 +183,111 @@ UI = {
         "compose_site_tag": "Eugene Chang · Taiwan's Great Future",
         "compose_footer_line": "— Eugene Chang, Taiwan's Great Future",
     },
+    "ja": {
+        "nav_home": "論点マップ",
+        "nav_about": "著者について",
+        "nav_books": "本を借りる／買う",
+        "nav_gallery": "フォトギャラリー",
+        "kicker": "張渝江 · エンジニアが見る台湾の次の一手",
+        "hero_title": "もし台湾がスイスになったら？",
+        "hero_sub": "『台湾の大未来』— 今日のスイス、明日の台湾",
+        "hero_lede": "一人当たりGDPは約3倍。空気はきれいで、住宅は若者を押しつぶさない。説教ではなく現場のファイルを開く：新幹線工事、ブロックチェーン、80日の選挙戦。1論点2〜3分。気になったらクリック。",
+        "cta_map": "刺さる論点から",
+        "cta_books": "本を借りる／買う",
+        "filter_all": "すべて",
+        "section_map": "論点マップ",
+        "section_map_hint": "エネルギー、住宅、医療、テック——気になるところから。各ページはそのままシェアできます。",
+        "read_full": "全文の論証が必要？",
+        "read_full_body": "ここは入口です。データと現場の記録は本に——電子書籍を借りるか、購入を。",
+        "related": "次に開きそうな論点",
+        "source": "出典",
+        "share": "シェア",
+        "copied": "リンクをコピーしました",
+        "copy": "このページのURLをコピー",
+        "minutes": "約2〜3分",
+        "from_book": "原書より",
+        "about_title": "この人は誰？",
+        "about_hook": "台湾大学の土木と法律、シカゴのMBA。現場で育ったエンジニア——80日で1万4千票を取ったこともある。本を書くのは応援のためではなく、「台湾はスイスになれるか」をはっきり言うため。",
+        "books_title": "本を借りる／買う",
+        "gallery_title": "フォトギャラリー",
+        "gallery_lede": "80日、市場、テスラの宣伝車、開票の夜——コマを開けば現場と、彼の歩き方が見える。",
+        "gallery_count": "全 {n} 枚",
+        "gallery_open": "説明を開く",
+        "gallery_close": "閉じる",
+        "gallery_prev": "前へ",
+        "gallery_next": "次へ",
+        "gallery_play": "自動再生",
+        "gallery_pause": "一時停止",
+        "gallery_fullscreen": "全画面",
+        "gallery_fullscreen_exit": "全画面を終了",
+        "gallery_delay": "1枚あたりの秒数",
+        "gallery_delay_dec": "秒数を減らす",
+        "gallery_delay_inc": "秒数を増やす",
+        "gallery_video": "動画",
+        "gallery_clip": "クリップ",
+        "gallery_open_link": "リンクを開く",
+        "gallery_of": "/",
+        "gallery_mode_photo": "スライド：写真",
+        "gallery_mode_video": "スライド：短編",
+        "gallery_still_label": "写真",
+        "gallery_clip_label": "短編",
+        "home": "ホーム",
+        "issues": "論点",
+        "issue_no": "論点",
+        "photo_clip": "このページの写真から生成した短編",
+        "primary_lib": "図書館で電子書籍を借りる",
+        "fallback_en": "日本語本文は準備中です。英語（または中国語）を表示しています。",
+        "footer": "張渝江『台湾の大未来』— エンジニアの視点から見た台湾の次。画像は特記なき限り著者に帰属。",
+        "footer_by": "著者 張渝江",
+        "isbn": "ISBN",
+        "also_search": "お住まいの地域の公共図書館でも書名で検索・貸出できます。",
+        "featured": "まずはこの論点から",
+        "cover_caption": "書影 — 『台湾の大未来』",
+        "author_name": "張渝江",
+        "author_role": "エンジニア · 著者 · 80日選挙の記録者",
+        "compose_title": "投稿ボックス",
+        "compose_hint": "一文直してSNSへ。プレビューカードにタイトルと表紙が乗ります。",
+        "compose_preview": "リンクプレビュー（イメージ）",
+        "compose_draft": "投稿文案",
+        "compose_copy_text": "文案をコピー",
+        "compose_copy_link": "リンクをコピー",
+        "compose_native": "共有…",
+        "compose_fb": "Facebook",
+        "compose_x": "X",
+        "compose_line": "LINE",
+        "compose_threads": "Threads",
+        "compose_copied_text": "文案をコピーしました",
+        "compose_copied_link": "リンクをコピーしました",
+        "compose_site_tag": "張渝江 · 台湾の大未来",
+        "compose_footer_line": "— 張渝江『台湾の大未来』",
+    },
 }
 
 CHAPTER_LABEL = {
-    0: {"zh": "0. 序", "en": "0. Preface"},
-    1: {"zh": "1. 瑞士與台灣", "en": "1. Switzerland & Taiwan"},
-    2: {"zh": "2. 能源政策與環境污染", "en": "2. Energy & environment"},
-    3: {"zh": "3. 居住正義與建築營造", "en": "3. Housing & building"},
-    4: {"zh": "4. 產業與金融，保險與醫療", "en": "4. Industry, finance, insurance & health"},
-    5: {"zh": "5. 文化與教育", "en": "5. Culture & education"},
-    6: {"zh": "6. AI, IoT, 遠距上班與司法", "en": "6. AI, IoT, remote work & justice"},
-    7: {"zh": "7. 區塊鏈與選舉、內政", "en": "7. Blockchain, elections & governance"},
-    8: {"zh": "8. 國家與認同", "en": "8. Nation & identity"},
-    9: {"zh": "9. 我的競選歷程", "en": "9. Campaign journal"},
-    "9.2": {"zh": "9.2 選後分析", "en": "9.2 Post-election notes"},
-    10: {"zh": "10. 後記", "en": "10. Afterword"},
+    0: {"zh": "0. 序", "en": "0. Preface", "ja": "0. 序"},
+    1: {"zh": "1. 瑞士與台灣", "en": "1. Switzerland & Taiwan", "ja": "1. スイスと台湾"},
+    2: {"zh": "2. 能源政策與環境污染", "en": "2. Energy & environment", "ja": "2. エネルギーと環境"},
+    3: {"zh": "3. 居住正義與建築營造", "en": "3. Housing & building", "ja": "3. 住宅と建築"},
+    4: {
+        "zh": "4. 產業與金融，保險與醫療",
+        "en": "4. Industry, finance, insurance & health",
+        "ja": "4. 産業・金融・保険・医療",
+    },
+    5: {"zh": "5. 文化與教育", "en": "5. Culture & education", "ja": "5. 文化と教育"},
+    6: {
+        "zh": "6. AI, IoT, 遠距上班與司法",
+        "en": "6. AI, IoT, remote work & justice",
+        "ja": "6. AI・IoT・リモートワークと司法",
+    },
+    7: {
+        "zh": "7. 區塊鏈與選舉、內政",
+        "en": "7. Blockchain, elections & governance",
+        "ja": "7. ブロックチェーン・選挙・内政",
+    },
+    8: {"zh": "8. 國家與認同", "en": "8. Nation & identity", "ja": "8. 国家とアイデンティティ"},
+    9: {"zh": "9. 我的競選歷程", "en": "9. Campaign journal", "ja": "9. 選挙戦の記録"},
+    "9.2": {"zh": "9.2 選後分析", "en": "9.2 Post-election notes", "ja": "9.2 選挙後の分析"},
+    10: {"zh": "10. 後記", "en": "10. Afterword", "ja": "10. あとがき"},
 }
 
 
@@ -204,7 +299,12 @@ def t(obj, lang: str, fallback: str = "zh"):
     if isinstance(obj, dict):
         if lang in obj and obj[lang]:
             return obj[lang]
-        return obj.get(fallback) or next(iter(obj.values()), "")
+        # Prefer English before Chinese for non-zh locales (e.g. Japanese)
+        if lang != "zh" and obj.get("en"):
+            return obj["en"]
+        if obj.get(fallback):
+            return obj[fallback]
+        return next((v for v in obj.values() if v), "")
     return obj
 
 
@@ -270,20 +370,24 @@ def layout(
     current: str = "home",
 ) -> str:
     ui = UI[lang]
-    desc = desc or DEFAULT_DESC[lang]
+    desc = desc or DEFAULT_DESC.get(lang) or DEFAULT_DESC["en"]
     full_title = title if title == SITE_NAME[lang] else f"{title} · {SITE_NAME[lang]}"
-    other = "en" if lang == "zh" else "zh"
-    other_label = "EN" if other == "en" else "中文"
-    # language switch keeps same path suffix
+    # language switch keeps same path suffix (zh / en / ja)
     suffix = path.strip("/")
-    lang_href = asset(f"{other}/{suffix}/" if suffix else f"{other}/", depth)
+    lang_switch_parts = []
+    for L in LANGS:
+        label = LANG_LABELS[L]
+        if L == lang:
+            lang_switch_parts.append(
+                f'<span class="lang-switch is-current" aria-current="true">{esc(label)}</span>'
+            )
+        else:
+            href = asset(f"{L}/{suffix}/" if suffix else f"{L}/", depth)
+            lang_switch_parts.append(
+                f'<a class="lang-switch" href="{href}" hreflang="{L}">{esc(label)}</a>'
+            )
+    lang_switch_html = '<div class="lang-switchers">' + "".join(lang_switch_parts) + "</div>"
 
-    nav = [
-        ("home", ui["nav_home"], asset(f"{lang}/", depth) if depth else f"{lang}/"),
-        ("about", ui["nav_about"], asset(f"{lang}/about/", depth)),
-        ("books", ui["nav_books"], asset(f"{lang}/books/", depth)),
-        ("gallery", ui["nav_gallery"], asset(f"{lang}/gallery/", depth)),
-    ]
     # Fix nav when already under lang/
     nav = [
         ("home", ui["nav_home"], asset(f"{lang}/index.html", depth).replace("index.html", "") or asset(f"{lang}/", depth)),
@@ -337,7 +441,7 @@ def layout(
         <span class="brand-text">{esc(SITE_NAME[lang])} <span class="brand-sub">— {author_name}</span></span>
       </a>
       <nav class="nav">{"".join(nav_html)}</nav>
-      <a class="lang-switch" href="{lang_href}">{other_label}</a>
+      {lang_switch_html}
     </div>
   </header>
   <main>
@@ -579,8 +683,15 @@ def body_paragraphs(issue: dict, lang: str) -> tuple[str, bool]:
     used_fallback = False
     paras = body.get(lang)
     if not paras:
-        paras = body.get("zh") or []
-        used_fallback = lang != "zh"
+        # Prefer English over Chinese for non-source locales
+        for fb in ("en", "zh"):
+            if fb != lang and body.get(fb):
+                paras = body.get(fb)
+                used_fallback = True
+                break
+        if not paras:
+            paras = body.get("zh") or []
+            used_fallback = lang != "zh"
     if isinstance(paras, str):
         paras = [paras]
     return "".join(f"<p>{esc(p)}</p>" for p in paras), used_fallback
@@ -613,8 +724,13 @@ def build_issue(lang: str, issue: dict, issues: list, books: dict, clips: dict |
     clip = (clips or {}).get(issue["slug"])
     clip_html = ""
     if clip and clip.get("src"):
-        clip_label = clip.get("label_zh") if lang == "zh" else clip.get("label_en")
-        clip_label = clip_label or ui.get("photo_clip") or ""
+        clip_label = (
+            clip.get(f"label_{lang}")
+            or clip.get("label_en")
+            or clip.get("label_zh")
+            or ui.get("photo_clip")
+            or ""
+        )
         poster = media_src(clip.get("poster") or cover, depth)
         src_v = media_src(clip["src"], depth)
         clip_html = f"""
@@ -664,7 +780,11 @@ def build_issue(lang: str, issue: dict, issues: list, books: dict, clips: dict |
         else:
             chapters.append(str(ch))
 
-    fb = f'<div class="lang-fallback">{esc(ui["fallback_en"])}</div>' if fallback else ""
+    fb = (
+        f'<div class="lang-fallback">{esc(ui.get("fallback_en") or "")}</div>'
+        if fallback and ui.get("fallback_en")
+        else ""
+    )
 
     body = f"""
   <article class="article article-hero">
@@ -717,6 +837,13 @@ def build_about(lang: str, books: dict) -> str:
       <p>台大土木與法律雙學士、碩士；芝加哥伊利諾大學 MBA（財務與風險）。土木工程技師、綠圖顧問負責人，也做區塊鏈與營造。他在工地學細節，再把視野寫進書裡。</p>
       <p>著有《無人機大未來》《比特幣區塊鏈大未來》《台灣大未來》等。這一站，是他的<strong>個人品牌入口</strong>：短議題好分享，長論證在書裡、在圖書館、在你願意往下點的地方。</p>
       <p>《台灣大未來》寫於 2019–2020：瑞士參照、能源與空污、居住、醫療與科技。他要回答的不是口號，是：方向對了，台灣能不能站上另一個量級。</p>
+"""
+    elif lang == "ja":
+        content = f"""
+      <p class="about-hook">{esc(ui.get("about_hook") or "")}</p>
+      <p>台湾大学で土木と法律、イリノイ大学シカゴ校でMBA（財務とリスク）。土木技師、コンサルティング事業の経営者であり、ブロックチェーンと建設にも関わる。現場で細部を学び、長い視座を本に落とした。</p>
+      <p>著書に『ドローンの大未来』『ビットコイン・ブロックチェーンの大未来』『台湾の大未来』など。このサイトは彼の<strong>個人ブランドの入口</strong>：短い論点はシェアしやすく、長い論証は本・図書館・あなたが先へ進む場所にある。</p>
+      <p>『台湾の大未来』（2019–2020）はスイスを鏡に、エネルギー、住宅、医療、テックを扱う。問いは単純で難しい——方向が正しければ、台湾はどれだけ上へ行けるか。</p>
 """
     else:
         content = f"""
@@ -897,7 +1024,7 @@ def build_gallery(lang: str, gallery_data: dict) -> str:
           <span class="lb__countdown" data-gallery-countdown hidden aria-live="polite"></span>
           <div class="lb__delay" role="group" aria-label="{esc(ui["gallery_delay"])}">
             <button type="button" class="lb__delay-btn" data-gallery-delay-dec aria-label="{esc(ui["gallery_delay_dec"])}">−</button>
-            <span class="lb__delay-val" data-gallery-delay-label>{"5 秒" if lang == "zh" else "5s"}</span>
+            <span class="lb__delay-val" data-gallery-delay-label>{"5 秒" if lang in ("zh", "ja") else "5s"}</span>
             <button type="button" class="lb__delay-btn" data-gallery-delay-inc aria-label="{esc(ui["gallery_delay_inc"])}">+</button>
           </div>
           <button type="button" class="btn btn-secondary lb__fs" data-gallery-fullscreen>{esc(ui["gallery_fullscreen"])}</button>
@@ -957,7 +1084,7 @@ def main():
 """,
     )
 
-    for lang in ("zh", "en"):
+    for lang in LANGS:
         write(OUT / lang / "index.html", build_home(lang, issues, clusters, books))
         write(OUT / lang / "about" / "index.html", build_about(lang, books))
         write(OUT / lang / "books" / "index.html", build_books(lang, books))
@@ -969,7 +1096,10 @@ def main():
             )
 
     n_gal = len(gallery_data.get("items") or [])
-    print(f"Built {len(issues)} issues × 2 langs + home/about/books/gallery")
+    print(
+        f"Built {len(issues)} issues × {len(LANGS)} langs ({', '.join(LANGS)}) "
+        f"+ home/about/books/gallery"
+    )
     print(f"Gallery photos: {n_gal}")
     print(f"Output: {OUT}")
 

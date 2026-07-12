@@ -13,15 +13,18 @@
     ],
     "title": {
       "zh": "為何對標瑞士",
-      "en": "Why Switzerland"
+      "en": "Why Switzerland",
+      "ja": "なぜスイスを基準にするのか"
     },
     "claim": {
       "zh": "台灣與瑞士同樣缺資源、靠腦力；方向對了，才有機會成為區域的穩定核心。",
-      "en": "Taiwan and Switzerland both lack resources and rely on brains."
+      "en": "Taiwan and Switzerland both lack resources and rely on brains.",
+      "ja": "台湾もスイスも資源が乏しく頭脳に頼る。方向が正しければ、地域の安定した中核になれる。"
     },
     "summary": {
       "zh": "從高鐵工地的瑞士上司，到人均產值的差距，為什麼台灣總拿瑞士當鏡子。",
-      "en": "Why Taiwan keeps looking to Switzerland."
+      "en": "Why Taiwan keeps looking to Switzerland.",
+      "ja": "なぜ台湾はスイスを鏡にし続けるのか。"
     },
     "body": {
       "zh": [
@@ -37,6 +40,13 @@
         "In the 2019 IMF rankings, Swiss GDP per capita was about US$83,716; Taiwan’s about US$24,827. The gap is not just a number—it is the result of industry choices and institutional culture.",
         "I started work during Taiwan’s high-speed rail build, at a Swiss firm headquartered in Bern. From structure to schedule, I saw up close how a small country embeds value at every joint: precision, high unit price, and skills that export.",
         "This book is not about turning Taiwan into a Swiss replica. It asks whether, under the same ‘brains only’ constraint, Taiwan can aim true—becoming a stable, high-value, trusted core in the region."
+      ],
+      "ja": [
+        "台湾が発展モデルを語るとき、よくシンガポールとスイスを引き合いに出す。シンガポールは高い生産性と金融で「東洋のスイス」と呼ばれる——だがなぜ台湾もまたスイスに並ぶのか。",
+        "スイスは約4万平方キロで台湾（約3.6万）より少し大きいが、人口は約800万、台湾は約2400万。密度はおよそ4倍。どちらも孤立しがちだ：スイスは山、台湾は海。天然資源は乏しい。生き残るには頭脳しかない。",
+        "2019年IMFでスイスの一人当たりGDPは約83,716ドル、台湾は約24,827ドル。差は数字だけでなく、産業選択と制度文化の結果だ。",
+        "私は台湾新幹線の建設期にベルン本社のスイス企業で働き始めた。構造から工程まで、小国がいかに精度・高単価・輸出可能な能力を接合部に埋め込むかを間近で見た。",
+        "この本は台湾をスイスの複製にする話ではない。同じ「頭脳だけ」という制約の下で、台湾が正しく照準を合わせ——地域で安定し、高付加価値で、信頼される中核になれるかを問う。"
       ]
     },
     "figures": [
@@ -44,7 +54,8 @@
         "src": "image35.jpg",
         "caption": {
           "zh": "2001，中壢高鐵專案與瑞士商工作，圖中為吊梁機。",
-          "en": "HSR project with Swiss firm, 2001."
+          "en": "HSR project with Swiss firm, 2001.",
+          "ja": "2001年、中壢の新幹線プロジェクトとスイス企業。写真は吊り梁機。"
         }
       }
     ]
@@ -64,15 +75,18 @@
     ],
     "title": {
       "zh": "高產值經濟：金融、精密、小體積",
-      "en": "High-value economy"
+      "en": "High-value economy",
+      "ja": "高付加価値経済"
     },
     "claim": {
       "zh": "高 GDP 來自高單價服務與精密產業，不是堆原物料。",
-      "en": "High GDP comes from high-value services and precision, not bulk materials."
+      "en": "High GDP comes from high-value services and precision, not bulk materials.",
+      "ja": "高いGDPは高付加価値のサービスと精密なものづくりから来る。"
     },
     "summary": {
       "zh": "從瑞士銀行到鐘錶：把價值藏進小體積，才撐得起人均所得。",
-      "en": "Banking and watches: value in small packages."
+      "en": "Banking and watches: value in small packages.",
+      "ja": "銀行と時計：小さな体積に大きな価値。"
     },
     "body": {
       "zh": [
@@ -88,6 +102,13 @@
         "Taiwan’s healthcare and NHI coverage are, in many ways, better than Switzerland’s expensive system. But hardware manufacturing alone will not catch Swiss income levels. Finance, insurance, and high-value services are the next layer that can grow.",
         "Before the pandemic, tourism was also a green, low-carbon high-end service. Swiss mountains, insurance, and risk industries are bound together—a reminder that industry choice is also cultural choice.",
         "If Taiwan wants to ‘become today’s Switzerland,’ that is not slogan-driven transformation. It means steadily steering resources toward exportable intellect, trustworthy institutions, and compact, high-value capability."
+      ],
+      "ja": [
+        "国のGDPが高いのは、会社で従業員一人当たりの生産が高いのに似る。製造業は原材料コストを計上するため付加価値を上げにくい。サービス——特に金融・保険・医療の高付加価値——の方が価値を伸ばしやすい。",
+        "スイスは地理と政治の中立を金融の長期条件に変え、時計は別の道を示す：生産性、そして極小の物に価値を封じ込めること。合理性は哲学の教室だけでなく、ビジネスモデルと公差の中にある。",
+        "台湾の医療と全民健保は、多くの点でスイスの高額制度より優れる。しかしハード製造だけではスイスの所得水準に追いつかない。金融・保険・高付加価値サービスが次の層だ。",
+        "コロナ前、観光も低炭素の高付加価値サービスだった。スイスの山・保険・リスク産業は一体だ——産業選択は文化選択でもあるという警告。",
+        "台湾が「今日のスイス」になるとはスローガンではなく、輸出可能な頭脳、信頼できる制度、小さくて価値の高い能力へ資源を向け続けることだ。"
       ]
     },
     "figures": [
@@ -95,7 +116,8 @@
         "src": "image158.jpg",
         "caption": {
           "zh": "2018，台北富邦銀行台中；金融業會是下一波的核心？",
-          "en": "Finance as the next wave."
+          "en": "Finance as the next wave.",
+          "ja": "Finance as the next wave."
         }
       }
     ]
@@ -114,15 +136,18 @@
     ],
     "title": {
       "zh": "魔鬼在細節：工程與實作文化",
-      "en": "Devil in the details"
+      "en": "Devil in the details",
+      "ja": "細部に宿る悪魔"
     },
     "claim": {
       "zh": "從高鐵工地到教育，細節文化決定品質——不是口號，是每個結點都沒有彎矩。",
-      "en": "Craft culture shows up in every joint, not in slogans."
+      "en": "Craft culture shows up in every joint, not in slogans.",
+      "ja": "精密さは虚栄ではなく、再現可能な文化だ。"
     },
     "summary": {
       "zh": "瑞士上司只要一句話：結構結點不能有彎矩。那棟臨時倉庫後來最耐用。",
-      "en": "A Swiss engineer's demand for zero moment at joints."
+      "en": "A Swiss engineer's demand for zero moment at joints.",
+      "ja": "スイスの上司と、仮設倉庫にまで求めた接合部の基準。"
     },
     "body": {
       "zh": [
@@ -138,6 +163,13 @@
         "Their firm made prestressed cables and tendons: small volume, durable, high precision, high unit price. Few riders know that on the Taipei–Hsinchu HSR stretch, half the route embeds Swiss-watch-level precision.",
         "Arnold also talked education: every engineering graduate should be able to complete a whole project—he himself had designed and built a small house end to end. Most university teachers in Taiwan never face that ‘finish the whole job’ demand.",
         "Detail is not vain perfectionism; it is a reproducible culture. If Taiwan wants high value-added, detail must become ordinary—not the exception."
+      ],
+      "ja": [
+        "新幹線の現場で直属の上司アーノルドはスイス人技術者だった：礼儀正しく、長髪の放浪者のようで、酒も煙草もやらない——要求は極めて厳しい。「接合部に曲げモーメントがないように設計しろ」と言われた。",
+        "つまり悪魔は細部にいる。工事後に解体する仮設倉庫でも同じ基準だった。その後の台風と地震でも、その倉庫は現場で最も漏れず、最も頑丈だった。",
+        "彼らの会社はプレストレス用のケーブルとテンドンを作る：小さく、耐久、高精度、高単価。台北—新竹の新幹線区間の半分には、スイスの時計並みの精度が埋まっていることを知る人は少ない。",
+        "アーノルドは教育の話もした：工科の卒業生は案件を最初から最後まで完遂できるべきだ——彼自身、小さな家を設計から完成までやった。台湾の大学教員の多くは「案件を仕上げる」要求に直面しない。",
+        "細部は虚栄の完璧主義ではなく、複製可能な文化だ。高付加価値を望むなら、細部を例外ではなく当たり前にしなければならない。"
       ]
     },
     "figures": [
@@ -145,14 +177,16 @@
         "src": "image35.jpg",
         "caption": {
           "zh": "高鐵專案工地。",
-          "en": "HSR site."
+          "en": "HSR site.",
+          "ja": "HSR site."
         }
       },
       {
         "src": "image168.jpg",
         "caption": {
           "zh": "工地辦公室外；歐洲人喜歡在工地立旗。",
-          "en": "Flags at the site office."
+          "en": "Flags at the site office.",
+          "ja": "Flags at the site office."
         }
       }
     ]
@@ -171,15 +205,18 @@
     ],
     "title": {
       "zh": "觀光、保險與風險社會",
-      "en": "Tourism, insurance, and risk"
+      "en": "Tourism, insurance, and risk",
+      "ja": "観光・保険とリスク"
     },
     "claim": {
       "zh": "瑞士能容許高風險極限運動，背後是保險、服務業與理性文化的配套。",
-      "en": "High-risk sports need insurance and a rational culture."
+      "en": "High-risk sports need insurance and a rational culture.",
+      "ja": "リスクは消すものではなく、価格を付け、保険し、産業に織り込むものだ。"
     },
     "summary": {
       "zh": "飛鼠裝滑翔每年都有人撞山——什麼樣的社會願意承受這種風險？",
-      "en": "Wingsuit flying and what a society will tolerate."
+      "en": "Wingsuit flying and what a society will tolerate.",
+      "ja": "ウィングスーツと、リスクを許容する文化。"
     },
     "body": {
       "zh": [
@@ -195,6 +232,13 @@
         "Would Taiwanese accept, as Switzerland does, letting locals and foreigners play death games in the mountains? Usually the answer is no. That is not only regulation—it is a deeper culture of responsibility.",
         "Among green and high-end services, tourism mattered enormously before COVID: low carbon, less clash with land and factories. Switzerland binds scenery, insurance, and service into one system.",
         "If we talk about ‘rationality,’ we cannot only chant progress. We must ask what mechanisms society will use to bear risk—and which industries we forfeit when we refuse."
+      ],
+      "ja": [
+        "スイスは山国：スキー、ロープウェイ、宿泊——そして毎年死者が出るウィングスーツ飛行。世界中から山へ飛んできて時に山にぶつかる人を、どんな国が許すのか。",
+        "それらの活動は観光・傷害生命保険・関連サービスに打撃と貢献の両方を与える。リスクは消し去られず、価格付けされ、保険され、産業チェーンに織り込まれる。",
+        "台湾人はスイスのように国内外の人が山で死のゲームをすることを許すか。多くは否だ。それは規制差だけでなく、責任の想像の深さの差でもある。",
+        "グリーンで高付加価値のサービスでは、コロナ前の観光は極めて重要だった：低炭素で、土地・工場との衝突が少ない。スイスは風景・保険・サービスを一つの系にする。",
+        "「合理性」を語るなら進歩のスローガンだけでは足りない。社会がどんな仕組みでリスクを負うか——拒否するときどの産業可能性を失うか——も問わねばならない。"
       ]
     },
     "figures": [
@@ -202,7 +246,8 @@
         "src": "image115.jpg",
         "caption": {
           "zh": "飛鼠裝滑翔：瑞士人怎麼容忍外國人來他們家撞山？",
-          "en": "Wingsuit flying in the Alps."
+          "en": "Wingsuit flying in the Alps.",
+          "ja": "Wingsuit flying in the Alps."
         }
       }
     ]
@@ -222,15 +267,18 @@
     ],
     "title": {
       "zh": "安樂死與生命自主",
-      "en": "Euthanasia and autonomy"
+      "en": "Euthanasia and autonomy",
+      "ja": "安楽死と自己決定"
     },
     "claim": {
       "zh": "決定自己的生死，是否也是一種自由——以及健保資源如何被重新想像。",
-      "en": "Is choosing one's death also a form of freedom?"
+      "en": "Is choosing one's death also a form of freedom?",
+      "ja": "誰が「治療の先」の道を決めるのか——その問いを避け続けてはいけない。"
     },
     "summary": {
       "zh": "傅達仁赴瑞士、母親化療的記憶：安樂死不是抽象哲學題。",
-      "en": "Personal and public faces of assisted dying."
+      "en": "Personal and public faces of assisted dying.",
+      "ja": "スイスの制度と、家庭の真夜中の問い。"
     },
     "body": {
       "zh": [
@@ -246,6 +294,13 @@
         "In December 2002, my mother underwent chemotherapy at provincial Fengyuan Hospital. If she had had a legal choice then, would the story have been different? This is not a statistics problem; it is a midnight every family may face.",
         "Economically, could assisted dying free NHI resources for more treatable patients? Does the right to choose bring more human rights and freedom? Switzerland built this into institution and industry; Taiwan mostly stays in moral dispute.",
         "I will not reduce life to a cost sheet. I only open the question: when medicine can prolong both pain and dignity, society needs rational debate—not permanent avoidance."
+      ],
+      "ja": [
+        "2020年前後、台湾のスイス像に安楽死の層が加わった。スポーツキャスターの傅達仁は2018年にスイスのDignitasで生を終えた。執行費用だけで渡航費を除き約1万ドルと報じられた。",
+        "ビジネスだけ見れば低コスト高マージン——しかし真の刺さりは商業ではなく自律：誰が「もう手がない」後の道を決める権利を持つか。",
+        "2002年12月、母は豊原の病院で化学療法を受けた。当時合法的な選択があれば物語は違ったか。統計問題ではなく、どの家庭も直面しうる真夜中だ。",
+        "経済的には、安楽死がより治療可能な人へ健保資源を空けられるか。自分で生死を選べることが人権と自由を増やすか。スイスは制度と産業にした。台湾はまだ道徳論争に留まりがちだ。",
+        "私は命をコスト表に還元しない。ただ問を開く：医療が苦痛も尊厳も延ばせるとき、社会に必要なのは理性的な議論であり、永遠の回避ではない。"
       ]
     },
     "figures": [
@@ -253,21 +308,24 @@
         "src": "image111.jpg",
         "caption": {
           "zh": "瑞士 Dignitas；傅達仁在此辭世。",
-          "en": "Dignitas, Switzerland."
+          "en": "Dignitas, Switzerland.",
+          "ja": "Dignitas, Switzerland."
         }
       },
       {
         "src": "image95.jpg",
         "caption": {
           "zh": "2002，家母化療。",
-          "en": "Mother in chemotherapy, 2002."
+          "en": "Mother in chemotherapy, 2002.",
+          "ja": "Mother in chemotherapy, 2002."
         }
       },
       {
         "src": "image66.jpg",
         "caption": {
           "zh": "安樂死、健保資源與自由。",
-          "en": "Resources, rights, freedom."
+          "en": "Resources, rights, freedom.",
+          "ja": "Resources, rights, freedom."
         }
       }
     ]
@@ -287,15 +345,18 @@
     ],
     "title": {
       "zh": "台灣醫療輸出",
-      "en": "Exporting Taiwan healthcare"
+      "en": "Exporting Taiwan healthcare",
+      "ja": "台湾医療の輸出"
     },
     "claim": {
       "zh": "健保普及是優勢；下一步是把醫療能力輸出世界，而不只是自己用。",
-      "en": "Universal coverage is an edge—export it."
+      "en": "Universal coverage is an edge—export it.",
+      "ja": "アクセス可能な健康こそ、台湾が輸出できる戦略資産になりうる。"
     },
     "summary": {
       "zh": "瑞士醫療貴而難及；台灣普及且經濟——這是可輸出的軟實力。",
-      "en": "Affordable, accessible care as soft power."
+      "en": "Affordable, accessible care as soft power.",
+      "ja": "安く入れる医療を、制度パッケージとして外へ。"
     },
     "body": {
       "zh": [
@@ -311,6 +372,13 @@
         "The 2020 pandemic put masks on the world and put Taiwan’s medical and public-health capacity on display. The question is whether we can and will turn that capacity into exportable services and institutional products.",
         "Export is not merely ‘selling doctors.’ It is the full package: insurance, telemedicine, SOP, trust, and language interfaces. Switzerland exports finance and precision; Taiwan could export accessible health.",
         "As manufacturing chains reconfigure, care is one of the few paths with both human value and economic potential—if we treat our advantage as strategy, not as everyday entitlement we take for granted."
+      ],
+      "ja": [
+        "スイスは多くの分野で台湾より先を行くが、医療アクセスと健保経済では台湾が誇れる：保険料は比較的安く、資源は比較的豊か。",
+        "米国の医療は質が高くてもアクセスが低い——子どもの一般健診に3か月待ちもありうる。台湾は別モデル：入れる、払える。",
+        "2020年のパンデミックは世界にマスクを被せ、台湾の医療と公衆衛生力を見せた。問いは、その力を輸出可能なサービスと制度製品にできるか、するか。",
+        "輸出は医師を「売る」ことだけではない。保険、遠隔、SOP、信頼、言語インターフェースの一式だ。スイスは金融と精密を輸出する。台湾はアクセス可能な健康を輸出できる。",
+        "製造チェーンが再編される中、ケアは人道価値と産出の両方を持つ数少ない道の一つ——利点を日常の権利としてだけでなく、戦略として扱うなら。"
       ]
     },
     "figures": [
@@ -318,14 +386,16 @@
         "src": "image145.jpg",
         "caption": {
           "zh": "2020，口罩與國際舞台。",
-          "en": "Masks and the global stage."
+          "en": "Masks and the global stage.",
+          "ja": "Masks and the global stage."
         }
       },
       {
         "src": "image46.jpg",
         "caption": {
           "zh": "2013，美國醫院：品質高、可及性低。",
-          "en": "US care: quality vs access."
+          "en": "US care: quality vs access.",
+          "ja": "US care: quality vs access."
         }
       }
     ]
@@ -345,15 +415,18 @@
     ],
     "title": {
       "zh": "遠距醫療與全球健保中心",
-      "en": "Telemedicine hub"
+      "en": "Telemedicine hub",
+      "ja": "遠隔医療ハブ"
     },
     "claim": {
       "zh": "從台灣試點全球遠距醫療健保中心：世界各地的人可買台灣保險、接受遠距診斷。",
-      "en": "A Taiwan-based hub for global telemedicine insurance."
+      "en": "A Taiwan-based hub for global telemedicine insurance.",
+      "ja": "すでに整ったインフラで、まず「遠隔できること」を片付ける。"
     },
     "summary": {
       "zh": "疫情讓視訊變日常；遠距醫療不再是未來式。",
-      "en": "Video care became normal overnight."
+      "en": "Video care became normal overnight.",
+      "ja": "台湾を世界の遠隔健保の試行地に。"
     },
     "body": {
       "zh": [
@@ -369,6 +442,13 @@
         "That needs regulatory sandboxes, cross-border payment, liability rules, language and record standards, and enough specialist staffing. Hard—but not science fiction.",
         "Taiwan’s strengths: deep clinical experience, a reasonably digitized NHI system, time zones and geography that can serve multiple markets. What is missing is treating this as industrial policy, not a pandemic expedient.",
         "Telemedicine does not replace every hands-on exam; it does the remote-capable work first and saves physical care for what truly needs presence. Value and access can grow together."
+      ],
+      "ja": [
+        "2020年の世界的パンデミックはビデオと遠隔を急に日常にした。医療が「必ずクリニックへ」を前提にし続けるなら、すでに育ったインフラの世代を逃す。",
+        "具体案の一つ：台湾を世界の遠隔医療・健保センターの試行地にし、世界中の人が台湾の保険を買い、遠隔診断とフォローを受けられるようにする。",
+        "規制サンドボックス、国境を越える決済、責任分界、言語と記録の標準、十分な専門医のシフトが要る。難しいがSFではない。",
+        "台湾の強みは臨床経験の厚み、健保のデジタル化、複数市場をカバーできる時差と位置。欠けているのは産業政策として扱うことであり、防疫の場当たりではない。",
+        "遠隔は触診のすべてを置き換えない。遠隔できることを先に片づけ、本当に現場が必要なことに実地医療を残す。産出とアクセスは同時に伸びうる。"
       ]
     },
     "figures": [
@@ -376,7 +456,8 @@
         "src": "image44.jpg",
         "caption": {
           "zh": "從台灣試點全球遠距醫療健保中心。",
-          "en": "A global telemedicine hub from Taiwan."
+          "en": "A global telemedicine hub from Taiwan.",
+          "ja": "A global telemedicine hub from Taiwan."
         }
       }
     ]
@@ -396,15 +477,18 @@
     ],
     "title": {
       "zh": "疫情：四五百年一遇的契機",
-      "en": "COVID as a turning point"
+      "en": "COVID as a turning point",
+      "ja": "転換点としてのCOVID"
     },
     "claim": {
       "zh": "管制成功讓台灣被看見；這是重審供應鏈、醫療與生活方式的歷史時點。",
-      "en": "A rare moment to rethink supply chains and systems."
+      "en": "A rare moment to rethink supply chains and systems.",
+      "ja": "窓は自動で成果にならない——理性で設計し直すか、慣性に戻るか。"
     },
     "summary": {
       "zh": "一如避過亞洲金融風暴，疫情讓台灣能量更為人知。",
-      "en": "Taiwan’s competence became visible worldwide."
+      "en": "Taiwan’s competence became visible worldwide.",
+      "ja": "パンデミックが早送りした、台湾のチャンス。"
     },
     "body": {
       "zh": [
@@ -420,6 +504,13 @@
         "As in 1997 when Taiwan dodged the Asian financial crisis, this time the island’s capacity became more widely known. I see it as one of the most unusual openings in four or five centuries of Taiwan’s history.",
         "Old campaign aesthetics—handshakes, crowds, night-market vote-hunting—were questioned overnight; remote work, masks, and supply-chain reshuffles became daily life. We were forced to redefine ‘effective’ and ‘responsible.’",
         "An opening does not automatically become results. It only offers a window: redesign energy, land, healthcare, and work with reason—or let the window close and return to pollution, long hours, and low-income inertia."
+      ],
+      "ja": [
+        "シカゴから台湾に戻った後、毎年本を書いて進歩や退歩を記し、新しい知を広めた。2019年に立法委員選挙へ——効率と産出を追う私には、選挙は時にひどく非効率に感じた。",
+        "本書の多くは選挙戦のアイデアから始まる。2020年にCOVID-19が爆発し台湾がうまく管理すると、それらの価値と実現可能性が予想より早く照らされた。",
+        "1997年にアジア通貨危機をかわしたように、今回も島の力が広く知られた。私は台湾の四五百年史で最も特殊な開口部の一つだと見る。",
+        "握手、群衆、夜市の票漁りという古い美学は一夜で疑われ、遠隔・マスク・サプライチェーン再編が日常になった。「有効」と「責任」の定義を更新せざるを得なかった。",
+        "開口は自動では成果にならない。窓を与えるだけだ：エネルギー・土地・医療・働き方を理性で設計し直すか、閉じて汚染・長時間労働・低所得の慣性に戻るか。"
       ]
     },
     "figures": [
@@ -427,14 +518,16 @@
         "src": "image145.jpg",
         "caption": {
           "zh": "疫情中的口罩。",
-          "en": "Masks in 2020."
+          "en": "Masks in 2020.",
+          "ja": "Masks in 2020."
         }
       },
       {
         "src": "image153.jpg",
         "caption": {
           "zh": "2003 SARS；當年口罩都不合格。",
-          "en": "SARS 2003."
+          "en": "SARS 2003.",
+          "ja": "SARS 2003."
         }
       }
     ]
@@ -453,15 +546,18 @@
     ],
     "title": {
       "zh": "燃煤發電與空污",
-      "en": "Coal and air pollution"
+      "en": "Coal and air pollution",
+      "ja": "石炭と大気汚染"
     },
     "claim": {
       "zh": "火力占比過高，是中部空氣與公共健康的核心問題——孩子在大氣中上課。",
-      "en": "Coal-heavy power is a public-health problem."
+      "en": "Coal-heavy power is a public-health problem.",
+      "ja": "エネルギーの転換は抽象的な「緑」ではなく、息ができるかどうかだ。"
     },
     "summary": {
       "zh": "2018 年火力占發電設備 74.6%；空污不是天氣問題，是結構問題。",
-      "en": "74.6% thermal capacity in 2018."
+      "en": "74.6% thermal capacity in 2018.",
+      "ja": "中部の空気と、CEMSの数字。"
     },
     "body": {
       "zh": [
@@ -477,6 +573,13 @@
         "Late in the campaign I asked volunteers to open CEMS stack data: flow, opacity, who the real big emitters were. That analysis should be government’s long-term work; too often it becomes a candidate’s pre-election amateur stats.",
         "The conclusion is humble and heavy: under blue–green trench warfare, central Taiwan’s pollution rarely gets a clean day. The wealthy buy purifiers; public-school children still study in the open air.",
         "Energy transition is not abstract ‘green.’ It is whether people can breathe. Every kilowatt-hour’s source ends up in someone’s lungs."
+      ],
+      "ja": [
+        "台湾もスイスも山が多いが、スイスの電力の約6割は水力、約4割は原子力。2018年末、台湾の設備容量は火力約74.6%、水力8.9%、原子力8.6%、非水力再エネ8.0%。",
+        "火力のうち石炭は約36.6%。中部台湾の大気は長い政治戦場——空気が良くなれば戦場は縮む。それが良くならない理由の一つかもしれない。",
+        "選挙終盤、ボランティアに煙道CEMSデータを開かせた：流量、不透明度、本当の大口は誰か。本来は政府の長期仕事なのに、候補者の選挙前アマ統計になりがちだ。",
+        "結論は謙遜で重い：青緑の塹壕戦の下、中部の汚染にきれいな日はほぼ来ない。富裕層は空気清浄機を買い、公立学校の子どもは外気の中で学ぶ。",
+        "エネルギー転換は抽象の「緑」ではない。人が息できるかどうかだ。キロワット時の源は、最終的に誰かの肺に入る。"
       ]
     },
     "figures": [
@@ -484,7 +587,8 @@
         "src": "image152.jpg",
         "caption": {
           "zh": "台灣火力發電占 74.6%（2018）。",
-          "en": "Thermal power 74.6% (2018)."
+          "en": "Thermal power 74.6% (2018).",
+          "ja": "Thermal power 74.6% (2018)."
         }
       }
     ]
@@ -503,15 +607,18 @@
     ],
     "title": {
       "zh": "公有屋頂光電與行政法人",
-      "en": "Public rooftop solar"
+      "en": "Public rooftop solar",
+      "ja": "公有屋根の太陽光"
     },
     "claim": {
       "zh": "把政府建築與公有土地投入光電；用行政法人簡化流程，不要只增加公務員風險。",
-      "en": "Public roofs plus a public-law body to cut friction."
+      "en": "Public roofs plus a public-law body to cut friction.",
+      "ja": "足りないのは緯度ではなく制度設計だ。"
     },
     "summary": {
       "zh": "土地是光電瓶頸；公有屋頂是最該先動的存量。",
-      "en": "Public roofs are the stock we should use first."
+      "en": "Public roofs are the stock we should use first.",
+      "ja": "役所と学校の屋根から、速度のある再エネを。"
     },
     "body": {
       "zh": [
@@ -527,6 +634,13 @@
         "Such entities can separate expertise, procurement, O&M, and risk from ordinary bureaucracy, turning solar into scalable projects instead of every agency reinventing the wheel.",
         "Renewables need speed. Public rooftops are visible, measurable, and relatively low-conflict—do what we can first, then tackle harder land-use and ecological fights.",
         "Sunlight is a public good; roofs are idle capacity. What we lack is institutional design, not latitude."
+      ],
+      "ja": [
+        "台湾は中低緯度で太陽光に恵まれ、ボトルネックはしばしば土地。池や農業施設へのパネルは議論できるが、より急進的なのは官公庁と学校の屋根、公有地だ。",
+        "公務員の消極は合理的——責任とリスクが増え収入は増えない。「もっとやれ」だけでは足りない。行政法人や財団が計画と設置を専門に担う、より明快な手続きが要る。",
+        "法人は専門・調達・運用・リスクを一般行政から切り、太陽光をスケール可能なプロジェクトにし、各機関が毎回ゼロから学ばなくて済む。",
+        "再エネには速度が要る。公有屋根は見え、測れ、紛争が相対的に少ない起点——できることを先にやり、難しい地目と生態の対立は後で。",
+        "陽光は公共財、屋根は遊休の能力。欠けているのは制度設計であり、緯度ではない。"
       ]
     },
     "figures": [
@@ -534,7 +648,8 @@
         "src": "image101.jpg",
         "caption": {
           "zh": "公有屋頂光電需要更簡明的流程與法人機制。",
-          "en": "Simpler process for public solar."
+          "en": "Simpler process for public solar.",
+          "ja": "Simpler process for public solar."
         }
       }
     ]
@@ -553,15 +668,18 @@
     ],
     "title": {
       "zh": "離岸風電與能源自由化",
-      "en": "Offshore wind and liberalization"
+      "en": "Offshore wind and liberalization",
+      "ja": "洋上風力と自由化"
     },
     "claim": {
       "zh": "四面環海是條件；重點是開放平台與市場機制，而不是口號或無限躉購爭議。",
-      "en": "Sea is the asset; markets make it real."
+      "en": "Sea is the asset; markets make it real.",
+      "ja": "台湾には海がある——証明不要。必要なのは理性と予測可能なルールだ。"
     },
     "summary": {
       "zh": "離岸風電不跟居民搶地；該不該做，讓資本與技術進來就知道。",
-      "en": "No land fight—let capital test the wind."
+      "en": "No land fight—let capital test the wind.",
+      "ja": "陸上スイスにない、海峡の構造的チャンス。"
     },
     "body": {
       "zh": [
@@ -577,6 +695,13 @@
         "Feed-in tariffs are often attacked as games for the rich or the ruling party. One path is energy liberalization: factories need not buy only from Taipower; Taipower becomes more like a network and dispatcher while renewables and other supply compete.",
         "Offshore wind is heavy engineering that needs time to prove itself—but ‘Taiwan has a sea’ needs no more proof. What is missing is reason and predictable rules.",
         "Wind also needs storage and price signals—or unstable green power never becomes reliable daily supply. That is the same problem set as V2G and time-of-use pricing."
+      ],
+      "ja": [
+        "内陸のスイスと違い、台湾は海に囲まれる。洋上風力は彼らに無縁で、我々には構造的機会だ。タービンは洋上に立ち住民と土地を奪い合わない。イルカは反対するかも——だがイルカは投票しない。",
+        "海峡の風は足りるか。作れば分かる。資金は多くが外資とプロジェクトファイナンス。システムが届かなければ金は続かない。空転する論争より、人材と資本が入る開かれた平台の方がいい。",
+        "固定価格買取は富裕層や政権のゲームだと攻撃されがちだ。一つの道はエネルギー自由化：工場は台電からしか買えないのではなく、台電はネットワークとディスパッチにより近く、再エネと多元供給が競合する。",
+        "洋上風力は時間を要する大工事——だが「台湾には海がある」はもう証明不要。欠けているのは理性と予測可能なルールだ。",
+        "風力には蓄電と価格シグナルも要る——さもなくば不安定な緑の電気は信頼できる日常にならない。V2Gや時間帯別料金と同じ問題群だ。"
       ]
     },
     "figures": [
@@ -584,7 +709,8 @@
         "src": "image22.jpg",
         "caption": {
           "zh": "東部山海：島嶼的能源想像不只一種。",
-          "en": "An island of energy options."
+          "en": "An island of energy options.",
+          "ja": "An island of energy options."
         }
       }
     ]
@@ -603,15 +729,18 @@
     ],
     "title": {
       "zh": "V2G 與抗空污電動車債券",
-      "en": "V2G and anti-pollution EV bonds"
+      "en": "V2G and anti-pollution EV bonds",
+      "ja": "V2Gと反汚染EV債"
     },
     "claim": {
       "zh": "電動車當移動電廠：尖離峰價差可支撐財務，還能給婦幼家庭開車。",
-      "en": "EVs as grid storage—and family cars."
+      "en": "EVs as grid storage—and family cars.",
+      "ja": "電気自動車は移動手段であり、分散型の蓄電でもある。"
     },
     "summary": {
       "zh": "30 萬台電動車的尖峰供電，大約能頂半座中火的量級想像。",
-      "en": "Fleet-scale storage vs coal plants."
+      "en": "Fleet-scale storage vs coal plants.",
+      "ja": "ピークの差益と、子ども世代への無料貸与という想像。"
     },
     "body": {
       "zh": [
@@ -627,6 +756,13 @@
         "Rough math: a ~75 kWh car, if government scaled fleets, at 10 kW peak for six hours—300,000 vehicles ≈ 3 GW. Full load at Taichung coal is about 5.5 GW—enough to discuss ‘running half as many coal units.’",
         "Funding could come from ‘anti-pollution EV bonds’: vehicles earn peak/off-peak spreads while being offered cheap or free to families with young children—thanks for raising the next taxpayers.",
         "EV energy cost is about a tenth of ICE; engine pollution is a different order of magnitude. EVs can also absorb unstable offshore wind. Air policy that never talks storage and finance structure will not land."
+      ],
+      "ja": [
+        "V2G（Vehicle to Grid）はEVと電網の関係を描く：駐車中は売電、充電時は電網から流入。車は交通手段であり分散蓄電でもある。",
+        "電力自由化のほか、予備力と「台電しか買えない」摩擦の低減が要り、家庭の屋根とEVがより速く接続する。",
+        "粗い計算：約75kWhの車を政府が大量導入し、ピークで1台10kW×6時間——30万台で約3GW。台中火力の満載は約5.5GW——「石炭機を半分に」の想像は量級として議論できる。",
+        "財源は「反汚染EV債」：車がピーク／オフピークの差で稼ぎ、同時に子育て家庭へ安価または無料で貸す——次の納税者を育てるお礼として。",
+        "EVのエネルギーコストは内燃の約1割。エンジン汚染の桁も違う。洋上風力など不安定な電力も吸収できる。蓄電と財務構造を語らない大気政策は着地しない。"
       ]
     },
     "figures": [
@@ -634,14 +770,16 @@
         "src": "image172.jpg",
         "caption": {
           "zh": "V2G：車與電網。",
-          "en": "V2G."
+          "en": "V2G.",
+          "ja": "V2G."
         }
       },
       {
         "src": "image136.jpg",
         "caption": {
           "zh": "時間電價是價差的前提。",
-          "en": "Time-of-use pricing."
+          "en": "Time-of-use pricing.",
+          "ja": "Time-of-use pricing."
         }
       }
     ]
@@ -660,15 +798,18 @@
     ],
     "title": {
       "zh": "時間電價",
-      "en": "Time-of-use pricing"
+      "en": "Time-of-use pricing",
+      "ja": "時間帯別料金"
     },
     "claim": {
       "zh": "沒有價差訊號，再生能源與儲能很難長出來——市場需要聽得懂的價格。",
-      "en": "Without price signals, storage and renewables stall."
+      "en": "Without price signals, storage and renewables stall.",
+      "ja": "価格が語らなければ、技術も資本もついてこない。"
     },
     "summary": {
       "zh": "尖離峰價差不是數字遊戲，是整套綠電能否運轉的語言。",
-      "en": "Peak/off-peak spreads are the language of the grid."
+      "en": "Peak/off-peak spreads are the language of the grid.",
+      "ja": "ピークを高く、オフピークを安く——蓄電の理由を作る。"
     },
     "body": {
       "zh": [
@@ -684,6 +825,13 @@
         "Unstable renewables need demand and storage to dance together. Price is the cheapest conductor—more scalable than endless subsidies or administrative assignment.",
         "Tariff reform is often politicized as ‘everyone pays more.’ The real design is who wastes power at peak, who provides flexibility, and who should be rewarded.",
         "Without clear time-of-use prices, energy transition is like trade without an exchange rate. Let prices speak so technology and capital can follow."
+      ],
+      "ja": [
+        "時間帯別料金は「いつ使うか」をコストにする。家庭には請求の細部、電網にはディスパッチの言語：ピークは高く、オフピークは安く——蓄電と柔軟負荷が存在する理由になる。",
+        "V2Gの財務はピーク差に依存する。シグナルが平坦なら「車＝発電所」はスライドのまま。",
+        "不安定な再エネは需要と蓄電のダンスが要る。価格は最も安い指揮棒——無限の補助金や行政割当より拡張しやすい。",
+        "料金改革は「みんな値上げ」と政治化されがちだ。本当に設計すべきは、誰がピークを浪費し、誰が柔軟性を提供し、誰が報われるか。",
+        "明確な時間帯別料金がなければ、エネルギー転換は為替のない貿易のようなもの。価格に語らせ、技術と資本がついてくる。"
       ]
     },
     "figures": [
@@ -691,7 +839,8 @@
         "src": "image136.jpg",
         "caption": {
           "zh": "時間電價。",
-          "en": "Time-of-use pricing."
+          "en": "Time-of-use pricing.",
+          "ja": "Time-of-use pricing."
         }
       }
     ]
@@ -710,15 +859,18 @@
     ],
     "title": {
       "zh": "水力發電與土地彈性",
-      "en": "Hydropower and land flexibility"
+      "en": "Hydropower and land flexibility",
+      "ja": "水力と土地の柔軟性"
     },
     "claim": {
       "zh": "多山本該有更高水力占比；卡在土地取得、開發模式與政治妥協。",
-      "en": "A mountainous island underuses hydro."
+      "en": "A mountainous island underuses hydro.",
+      "ja": "永遠に開発しないことも、気候と大気への選択だ。"
     },
     "summary": {
       "zh": "日月潭曾是全球級 BOT；東部仍有高落差與未開發潛力。",
-      "en": "From Sun Moon Lake to the east coast."
+      "en": "From Sun Moon Lake to the east coast.",
+      "ja": "日月潭から東部の落差まで、まだ過小評価されるエネルギー地理。"
     },
     "body": {
       "zh": [
@@ -734,6 +886,13 @@
         "Early plants like Tongmen remind us: a century ago people already saw hydro. In 2014 I surveyed Tongmen; in 2017 from Chongde I looked toward the Qingshui cliffs—scenery sits on still-undervalued energy geography.",
         "To cut carbon, options are renewables, hydro, nuclear—or keep emitting. Renewables take time; hydro and nuclear are known baseload paths, yet easiest to turn into political ATMs.",
         "More flexible land use is not sacrificing the environment; it admits that never developing is also a choice about climate and air."
+      ],
+      "ja": [
+        "日月潭水力は日本時代の世界級BOT：国際資金で1934年完成、台湾近代化を加速——産業には電気が要る。後の明潭揚水も重要な節点だ。",
+        "民主化後、環境意識と政治が開発のハードルを上げた。水力には土地が要る。花蓮・台東にはまだ落差がある——技術的には可能でも、取得と合意が難しい。",
+        "銅門など初期発電所は、百年前から水力を見ていたことを思い起こす。2014年に銅門を調査し、2017年に崇徳から清水断崖を見た——風景の下にはまだ過小評価されたエネルギー地理がある。",
+        "炭素を減らす選択肢は再エネ、水力、原子力——あるいは排出し続けること。再エネには時間が要る。水力と原子力は既知のベースロードだが、政治のATMにもなりやすい。",
+        "より柔軟な土地利用は環境を犠牲にすることではなく、「永遠に開発しない」ことも気候と大気への選択だと認めることだ。"
       ]
     },
     "figures": [
@@ -741,21 +900,24 @@
         "src": "image142.jpg",
         "caption": {
           "zh": "日月潭涵碧樓；水力需要更靈活的開發模式。",
-          "en": "Sun Moon Lake."
+          "en": "Sun Moon Lake.",
+          "ja": "Sun Moon Lake."
         }
       },
       {
         "src": "image10.jpg",
         "caption": {
           "zh": "銅門電廠調查，2014。",
-          "en": "Tongmen plant, 2014."
+          "en": "Tongmen plant, 2014.",
+          "ja": "Tongmen plant, 2014."
         }
       },
       {
         "src": "image22.jpg",
         "caption": {
           "zh": "清水斷崖方向：東部水力想像。",
-          "en": "East coast potential."
+          "en": "East coast potential.",
+          "ja": "East coast potential."
         }
       }
     ]
@@ -775,15 +937,18 @@
     ],
     "title": {
       "zh": "核能與理性討論",
-      "en": "Nuclear power and rationality"
+      "en": "Nuclear power and rationality",
+      "ja": "原子力と合理性"
     },
     "claim": {
       "zh": "情緒與選票之外，仍需面對碳排與基載：恐懼要被理解，但不能替代計算。",
-      "en": "Fear must be heard—but not replace arithmetic."
+      "en": "Fear must be heard—but not replace arithmetic.",
+      "ja": "ラベルで対話を終わらせず、項目ごとに計算する。"
     },
     "summary": {
       "zh": "封存核電的代價、鄰國沿海核電廠，與「全班都在作弊」的比喻。",
-      "en": "Cost of mothballing and regional reality."
+      "en": "Cost of mothballing and regional reality.",
+      "ja": "恐怖が集団の直感になった島で、エンジニアの冷静を。"
     },
     "body": {
       "zh": [
@@ -799,6 +964,13 @@
         "China’s coast near Taiwan hosts many reactors. The book’s harsh analogy: when the whole class cheats, playing pure may make you the model student—or the first expelled. Energy geopolitics is not a civics lesson.",
         "I want cooler discussion: risk, waste, baseload, carbon, imported fuel, grid stability—item by item, not ended by labels.",
         "Romantic Taiwan needs an engineer’s calm. Breathable air and accountable power prices are both parts of rationality."
+      ],
+      "ja": [
+        "台湾の原子力は高度に政治化されている。恐怖は狭い島のリスク想像と長い政治マーケティングから来る。正誤を別としてマーケティングは成功し、恐怖は集団の直感になった。",
+        "原発を封印すると一人当たり約1000ドル級のコスト（本書の粗算）がかかりうる。「反核＝道徳的に正しい」の隣にこの帳簿はほとんど並ばない。",
+        "台湾に近い中国沿岸には多くの原子炉がある。本書の厳しい比喩：クラス全員がカンニングするとき、清廉を装うと優等生にも最初の退学にもなりうる。エネルギー地政学は道徳の授業ではない。",
+        "より冷静な議論を望む：リスク、廃棄物、ベースロード、炭素、輸入燃料、電網安定——項目ごとに計算し、ラベルで終わらせない。",
+        "ロマンチックな台湾にはエンジニアの冷静が少し要る。息できる空気と説明できる電気料金は、どちらも合理性の一部だ。"
       ]
     },
     "figures": [
@@ -806,7 +978,8 @@
         "src": "image54.jpg",
         "caption": {
           "zh": "區域核電現實與台灣的選擇。",
-          "en": "Regional nuclear reality."
+          "en": "Regional nuclear reality.",
+          "ja": "Regional nuclear reality."
         }
       }
     ]
@@ -825,15 +998,18 @@
     ],
     "title": {
       "zh": "農地工廠與供應鏈",
-      "en": "Farmland factories and supply chains"
+      "en": "Farmland factories and supply chains",
+      "ja": "農地の工場とサプライチェーン"
     },
     "claim": {
       "zh": "疫情後供應鏈重組；農地工廠要用數據與環保標準談，而不是道德口號互罵。",
-      "en": "Use data and standards, not slogans."
+      "en": "Use data and standards, not slogans.",
+      "ja": "土地政策は産業政策だ。基準とデータを机に載せろ。"
     },
     "summary": {
       "zh": "農地工廠貢獻多少稅、多少污染？先量，再管。",
-      "en": "Measure tax and pollution first."
+      "en": "Measure tax and pollution first.",
+      "ja": "違法／合法の二元論を超えて。"
     },
     "body": {
       "zh": [
@@ -849,6 +1025,13 @@
         "Aerial views of farmland and suspected illegal builds are landscape and a snapshot of policy failure—not one greed, but long co-responsibility among enforcement, planning, and local economies.",
         "The pandemic proved strict control can work. The same capacity can set environmental standards: stay in the supply chain only if you meet wastewater, emissions, and safety rules—not blanket wipeout or blanket laissez-faire.",
         "Land policy is industrial policy. Driving factories from invisible farmland to worse places does not fix pollution or food safety; putting standards and data on the table is how a modern state starts."
+      ],
+      "ja": [
+        "台湾の農地工場は古い問題だが、ほとんど定量化されない：税はいくらか、雇用は、排水排煙の外部コストは。",
+        "2020年COVIDは世界のサプライチェーンを壊し、生産拠点とバックアップが再評価された。「違法／合法」だけ戦うと、産業と土地の本当のトレードオフを逃す。",
+        "空撮の農地と疑わしい違法建築は景観であり、政策失敗の縮図でもある——一つの貪欲ではなく、執行・都市計画・地方経済の共業。",
+        "パンデミックは厳しい統制が成功しうることを示した。同じ能力を環境基準に使える：サプライチェーンに残るなら排水・排出・安全を満たせ——一律撲滅でも一律放置でもない。",
+        "土地政策は産業政策だ。見えない農地からより悪い場所へ工場を追い出すだけでは汚染も食の安全も解決しない。基準とデータを机に載せて初めて近代国家に近づく。"
       ]
     },
     "figures": [
@@ -856,7 +1039,8 @@
         "src": "image7.jpg",
         "caption": {
           "zh": "2014，竹山車籠埔：空拍下的農地與建物。",
-          "en": "Farmland and buildings, 2014."
+          "en": "Farmland and buildings, 2014.",
+          "ja": "Farmland and buildings, 2014."
         }
       }
     ]
@@ -875,15 +1059,18 @@
     ],
     "title": {
       "zh": "租屋社會 vs 有土斯有財",
-      "en": "Renting vs owning"
+      "en": "Renting vs owning",
+      "ja": "借りるか持つか"
     },
     "claim": {
       "zh": "瑞士高租屋比，與金融商品是否發達、住宅是否被過度投資有關。",
-      "en": "Deep finance can mean less forced homebuying."
+      "en": "Deep finance can mean less forced homebuying.",
+      "ja": "借りられ、買え、生存のシナリオが一つではないこと。"
     },
     "summary": {
       "zh": "瑞士約四成自有住宅；金融海嘯對他們房市衝擊相對有限。",
-      "en": "About 40% homeownership in Switzerland."
+      "en": "About 40% homeownership in Switzerland.",
+      "ja": "スイスは約6割が賃貸——市場の深さの話。"
     },
     "body": {
       "zh": [
@@ -899,6 +1086,13 @@
         "Swiss apartment rents around NT$30–40k/month can be relatively affordable versus income; a large share of rental supply comes from private owners, and public rental is higher than many Taiwanese imagine.",
         "That does not mean Taiwan should ‘all switch to renting.’ Where financial asset markets are still shallow, buying remains self-protection. The point is: rentable, buyable, and more than one survival script.",
         "Housing policy that only shouts ‘a home for everyone’ without deepening the rental market and financial alternatives often ends as slogan and disappointment."
+      ],
+      "ja": [
+        "スイスで持ち家に住む人は約4割、6割は賃貸。金融危機でも金融中心のスイスは比較的傷が浅く、住宅構造は米国と違い、プレミアムと投機が極端になりにくい。",
+        "東アジアには「土ある者に財あり」：金融商品が少なく、老後を不動産に寄せる。市場が深く商品が豊かな場所では、一生を一棟に賭ける必要は薄れる。",
+        "スイスのアパート月額は台幣3〜4万前後で、所得比では比較的負担可能。賃貸供給のかなりは個人から、公的賃貸の比率も台湾人の想像より高い。",
+        "だから台湾が「全部賃貸」になるべきだとは言わない。金融資産市場が浅い間は購入が自己防衛でもある。要点は借りられ、買え、生存のシナリオが一つでないこと。",
+        "「全員に家を」と叫ぶだけで賃貸市場の深さと金融の代替を扱わない居住政策は、しばしばスローガンと失望で終わる。"
       ]
     },
     "figures": [
@@ -906,7 +1100,8 @@
         "src": "image128.jpg",
         "caption": {
           "zh": "Costco 戶外倉庫：不能房貸的房子，與居住想像。",
-          "en": "What counts as housing finance."
+          "en": "What counts as housing finance.",
+          "ja": "What counts as housing finance."
         }
       }
     ]
@@ -925,15 +1120,18 @@
     ],
     "title": {
       "zh": "居住正義與可負擔住宅",
-      "en": "Housing justice"
+      "en": "Housing justice",
+      "ja": "居住正義"
     },
     "claim": {
       "zh": "社會住宅若導致市場崩盤，弱勢可能更慘；正義需要供給設計，不是騙票口號。",
-      "en": "Justice needs supply design, not slogans."
+      "en": "Justice needs supply design, not slogans.",
+      "ja": "金融安定を壊さずに、手が届く供給を広げる設計問題だ。"
     },
     "summary": {
       "zh": "房市被打趴，爛尾樓與失業會先打到最弱的人。",
-      "en": "A crash hurts the vulnerable first."
+      "en": "A crash hurts the vulnerable first.",
+      "ja": "安い公営住宅の神話と、市場の結果を拒む「正義」。"
     },
     "body": {
       "zh": [
@@ -949,6 +1147,13 @@
         "Switzerland’s lesson is a deep, relatively affordable rental market—not only government building until prices halve. Taiwan still releases too little public land and housing into rental.",
         "In Taichung’s seventh redevelopment zone, some builder land still sits empty; supply, tax, lending, and urban-renewal rules shape young people’s futures more than any single slogan.",
         "Housing justice is an engineering and institutional problem. It needs honest quantity models, not only team-picking on social media."
+      ],
+      "ja": [
+        "台湾は政府がとても安い住宅を出すべきだという神話に陥りがちだ。本当に大量かつ十分安く出せば、スラム階層化か、既存不動産と銀行融資を揺らし、建設停止と未完成の塔、弱者への打撃を招く。",
+        "正義を口にしつつ市場の結果を拒むのは票の詐欺だ。本当の問いは、金融安定を爆破せずに手の届く供給をどう広げるか。",
+        "スイスの教訓は深い比較的負担可能な賃貸市場であり、政府が建てて価格を半減させることだけではない。台湾は公有地・公有住宅の賃貸放出がまだ少ない。",
+        "台中七期には未着工の建設用地もある。供給・税制・融資・都市更新の規則は、単一のスローガンより若者の未来を決める。",
+        "居住正義は工学と制度の問題だ。誠実な数量モデルが要り、SNSの陣営選びだけでは足りない。"
       ]
     },
     "figures": [
@@ -956,14 +1161,16 @@
         "src": "image175.jpg",
         "caption": {
           "zh": "房市若崩：爛尾樓與長滿植生的鋼筋。",
-          "en": "Unfinished buildings after a crash."
+          "en": "Unfinished buildings after a crash.",
+          "ja": "Unfinished buildings after a crash."
         }
       },
       {
         "src": "image126.jpg",
         "caption": {
           "zh": "台中七期未興建土地。",
-          "en": "Undeveloped land in Taichung."
+          "en": "Undeveloped land in Taichung.",
+          "ja": "Undeveloped land in Taichung."
         }
       }
     ]
@@ -982,15 +1189,18 @@
     ],
     "title": {
       "zh": "耐震、重建與標準圖時代",
-      "en": "Seismic safety and rebuild"
+      "en": "Seismic safety and rebuild",
+      "ja": "耐震と再建"
     },
     "claim": {
       "zh": "花蓮地震提醒：老屋與耐震是公共安全，不是私領域的運氣。",
-      "en": "Old buildings are a public-safety issue."
+      "en": "Old buildings are a public-safety issue.",
+      "ja": "再建は投機の別名ではない。受け入れがたいリスクから人を移すことだ。"
     },
     "summary": {
       "zh": "標準圖省下建築師，卻可能在下一場地震出價。",
-      "en": "Standard plans saved fees—until the quake."
+      "en": "Standard plans saved fees—until the quake.",
+      "ja": "花蓮地震と、標準図で建てられた時代の負債。"
     },
     "body": {
       "zh": [
@@ -1006,6 +1216,13 @@
         "In March 2020 I inspected a new house near a fault. After the pandemic we should ask harder: risk disclosure, design liability, and renewal incentives—are they aligned with public safety?",
         "Engineers see members and load paths; society sees price and school districts. Without translation between them, tragedy does the translating.",
         "Rebuild is not another name for speculation. It is moving people out of unacceptable risk—with policy and technique, not prayer."
+      ],
+      "ja": [
+        "2018年2月6日の花蓮地震で複数棟が倒壊。雲門翠堤だけで14人が死亡した。私は子どもを連れて東部で7日調査した——倒壊はニュースのフレームではなく、隣人構造と構造の共有失敗だ。",
+        "台湾の初期建物の多くは標準図で建て、建築家と手続きコストを省いた。時代は変わり、耐震要求と使い方も変わった。再建すべきものを懐古で永遠に先送りできない。",
+        "2020年3月、断層近くの新築を検査した。パンデミック後はより厳しく問うべきだ：リスク開示、設計責任、更新インセンティブは公共安全に揃っているか。",
+        "エンジニアは部材と荷重経路を見、社会は価格と学区を見る。翻訳がなければ悲劇が翻訳する。",
+        "再建は投機の別名ではない。政策と技術で、受け入れがたいリスクから人を移すことだ——祈りではなく。"
       ]
     },
     "figures": [
@@ -1013,21 +1230,24 @@
         "src": "image37.jpg",
         "caption": {
           "zh": "2018 花蓮地震後。",
-          "en": "After the Hualien quake."
+          "en": "After the Hualien quake.",
+          "ja": "After the Hualien quake."
         }
       },
       {
         "src": "image69.jpg",
         "caption": {
           "zh": "雲門翠堤與死傷的提醒。",
-          "en": "Yunmen building."
+          "en": "Yunmen building.",
+          "ja": "Yunmen building."
         }
       },
       {
         "src": "image56.jpg",
         "caption": {
           "zh": "標準圖時代的房子。",
-          "en": "Standard-plan era housing."
+          "en": "Standard-plan era housing.",
+          "ja": "Standard-plan era housing."
         }
       }
     ]
@@ -1047,15 +1267,18 @@
     ],
     "title": {
       "zh": "容積移轉與教育基金",
-      "en": "TDR and education funds"
+      "en": "TDR and education funds",
+      "ja": "容積移転と教育資金"
     },
     "claim": {
       "zh": "古蹟容積變現不該直接花掉；買資產用孳息養教育，才是長線公共投資。",
-      "en": "Sell density rights, invest the principal, fund education with yield."
+      "en": "Sell density rights, invest the principal, fund education with yield.",
+      "ja": "一度きりの開発益を、持続可能な教育キャッシュフローへ。"
     },
     "summary": {
       "zh": "容積是錢；錢可以變成補貼，也可以變成下一代的學校。",
-      "en": "Density is capital—spend yield, not principal."
+      "en": "Density is capital—spend yield, not principal.",
+      "ja": "現金を煙にせず、利回りで子どもを育てる。"
     },
     "body": {
       "zh": [
@@ -1071,6 +1294,13 @@
         "TDR policy often drowns in ‘renewal / preservation / windfall’ noise. Fewer ask about post-cash governance: who manages, what is bought, who receives the yield.",
         "Turning one-time development gain into a lasting education cash flow is long-termism a city can choose.",
         "Buildings age; children grow. Public finance that only spends the present leaves the next generation slogans."
+      ],
+      "ja": [
+        "文化財保存はしばしば容積移転に頼る：開発権を売って現金に。補助金として使えば煙のように消える。債券など資産を買い、利回りで子どもと教育を養えば論理はまったく違う。",
+        "最も必要なのは教育だ。人材は未来の税基盤。若い市民への投資は論理的には回収されるべきだ。",
+        "容積政策は「更新／保存／暴利」の口水に溺れがちだ。現金化後のガバナンス——誰が管理し何を買い、利回りは誰へ——を問う人は少ない。",
+        "一度きりの開発益を持続可能な教育キャッシュフローに変えるのは、都市が選べる長期主義だ。",
+        "建物は老い、子どもは育つ。現在だけ使う公共財務は、次世代にスローガンだけを残す。"
       ]
     },
     "figures": [
@@ -1078,7 +1308,8 @@
         "src": "image117.jpg",
         "caption": {
           "zh": "容積移轉：賣權、買資產、養教育。",
-          "en": "TDR to education endowment."
+          "en": "TDR to education endowment.",
+          "ja": "TDR to education endowment."
         }
       }
     ]
@@ -1097,15 +1328,18 @@
     ],
     "title": {
       "zh": "舊宿舍、糖廠與空間再生",
-      "en": "Adaptive reuse"
+      "en": "Adaptive reuse",
+      "ja": "適応的再利用"
     },
     "claim": {
       "zh": "日治宿舍變成飯店：空間可以換用途，城市就可以換想像。",
-      "en": "Old dorms become hotels—cities can reinvent space."
+      "en": "Old dorms become hotels—cities can reinvent space.",
+      "ja": "都市のストックは新築より大きい。使えるかどうかが物語を決める。"
     },
     "summary": {
       "zh": "東部糖廠宿舍的旅次：歷史不是只能博物館化。",
-      "en": "Sugar-factory housing, reused."
+      "en": "Sugar-factory housing, reused.",
+      "ja": "東部の製糖工場宿舎がホテルになるとき。"
     },
     "body": {
       "zh": [
@@ -1121,6 +1355,13 @@
         "Reuse is not finished when nostalgia becomes a product. It needs structural safety, fire code, business models, and local jobs—or it is only a check-in spot.",
         "Housing and tourism, education and culture can share the same skill: putting old space back to work. Swiss and European cities know this well.",
         "A dormitory’s second life reminds us: urban stock is larger than new build. Whether we can use it decides if the next generation still has stories to live in."
+      ],
+      "ja": [
+        "東部の製糖工場従業員向け日本時代の宿舎は、今日ホテルだ。2020年2月、私はそこに泊まった：木造、回廊、製糖の景観——ベッドだけでなく物語に住む。",
+        "台湾には遊休・低利用の公有・産業空間が多い。全部壊して新築も答え、新しい用途を縫い合わせるのも答え——しばしば低炭素で文化の厚みがある。",
+        "再生は懐古の商品化で終わらない。構造安全、消防、事業モデル、地元雇用が要る。さもなくばチェックインの名所だけ。",
+        "居住と観光、教育と文化は「古い空間を使う」同じ技能を共有できる。スイスとヨーロッパの都市はこれをよく知る。",
+        "宿舎の第二の生は思い起こす：都市のストックは増分より大きい。使えるかが、次世代に住める物語があるかを決める。"
       ]
     },
     "figures": [
@@ -1128,7 +1369,8 @@
         "src": "image29.jpg",
         "caption": {
           "zh": "東部糖廠日治宿舍轉飯店，2020/2。",
-          "en": "Reused company housing, 2020."
+          "en": "Reused company housing, 2020.",
+          "ja": "Reused company housing, 2020."
         }
       }
     ]
@@ -1148,15 +1390,18 @@
     ],
     "title": {
       "zh": "金融業是下一波核心",
-      "en": "Finance as the next wave"
+      "en": "Finance as the next wave",
+      "ja": "次の波としての金融"
     },
     "claim": {
       "zh": "治安、信用、司法與國格，是金融業能長的地基——不只靠台積電。",
-      "en": "Trust infrastructure grows finance—not only chips."
+      "en": "Trust infrastructure grows finance—not only chips.",
+      "ja": "金融は信頼を現金化する産業。なければ高付加価値サービスは背骨を欠く。"
     },
     "summary": {
       "zh": "銀行興盛需要可信任的國家條件；台灣條件不是沒有，是沒長成產業。",
-      "en": "Taiwan has pieces of the puzzle."
+      "en": "Taiwan has pieces of the puzzle.",
+      "ja": "製造だけでは一人当たり所得は跳びにくい。"
     },
     "body": {
       "zh": [
@@ -1172,6 +1417,13 @@
         "Early-2000s financial reform ambitions and setbacks left long shadows. Private banking and asset management need both marketing height and real supervisory capacity to go global.",
         "Virtual assets and new business lines are openings: old battlefields are taken by Hong Kong, Singapore, Tokyo; new ones still lack fixed rules.",
         "Finance is not mere ‘stock-trading culture’; it is the industry of monetizing trust. Without it, high-value services miss a whole spine."
+      ],
+      "ja": [
+        "スイスの所得が上位なのは金融の比重が大きいからだ。台湾が基幹製造だけなら一人当たりは跳ねにくい。金融を育てるには別種の国家能力が要る。",
+        "銀行はスプレッドとサービスで生きる——治安、信用、安定した司法、機能する国格が前提。台湾に全くないわけではないが、世界が資産を預ける理由にまで高めねばならない。",
+        "2000年代初頭の金融改革の野心と挫折は長い影を残した。プライベートバンクと資産管理が世界へ行くには、マーケティングの高さと実質監督能力の両方が要る。",
+        "仮想資産と新業務は窓口だ：古い戦場は香港・シンガポール・東京が占め、新しい戦場はルールが未定。",
+        "金融は単なる「株いじり文化」ではなく、信頼を現金化する産業だ。それがなければ高付加価値サービスは背骨を一本欠く。"
       ]
     },
     "figures": [
@@ -1179,7 +1431,8 @@
         "src": "image158.jpg",
         "caption": {
           "zh": "銀行門市日常與下一波產業想像。",
-          "en": "Everyday banking, next-wave industry."
+          "en": "Everyday banking, next-wave industry.",
+          "ja": "Everyday banking, next-wave industry."
         }
       }
     ]
@@ -1199,15 +1452,18 @@
     ],
     "title": {
       "zh": "金融科技與區塊鏈實作",
-      "en": "Fintech and blockchain"
+      "en": "Fintech and blockchain",
+      "ja": "フィンテックとブロックチェーン"
     },
     "claim": {
       "zh": "從韓國 Fintech 講台到沙盒：技術要落到保管、抵押、合規的產業，而不是只剩炒作。",
-      "en": "From stages to sandboxes: make it industry."
+      "en": "From stages to sandboxes: make it industry.",
+      "ja": "実装だけが堀になる。ハードだけではプロトコルの未来を譲る。"
     },
     "summary": {
       "zh": "ICO 充滿詐騙的地方，恰恰需要更高級、更合法的管道。",
-      "en": "Fraud thrives where legal rails are thin."
+      "en": "Fraud thrives where legal rails are thin.",
+      "ja": "ソウルの講演から、サンドボックスの窓口まで。"
     },
     "body": {
       "zh": [
@@ -1223,6 +1479,13 @@
         "Taiwan can sandbox virtual-asset management: custody, yield, collateral lending, investment guarantees. Traditional finance will not quickly beat Shanghai, Hong Kong, or Singapore; virtual assets are a window.",
         "Blockchain’s promise to cut middlemen belongs in real flows: clearing, identity, contracts, regulatory reporting—not only coin-price charts.",
         "An engineer nation that only builds hardware will cede software and financial protocols to others. Implementation is the only moat."
+      ],
+      "ja": [
+        "2017年、ソウルのフィンテックで講演した。初日、ブースなしの基調に近い登壇者はほぼ私だけ。ブロックチェーン開発への関心の裏には産業の不安と機会がある。",
+        "東南アジアのICOと仮想通貨市場は詐欺と共存しがちだ——合法投資の道が細いから。論理は：より高級で優雅な仕事ができるなら、粗野な資金吸い上げ市場をなぜ捨てるのか。",
+        "台湾は仮想資産管理をサンドボックスで試せる：保管、利回り、担保融資、投資保証。伝統金融が上海・香港・シンガポールに短期間で勝つのは難しい。仮想資産は窓口だ。",
+        "中間者を外すブロックチェーンの約束は、実フロー——清算、身分、契約、規制報告——に置く。コインのチャートだけではない。",
+        "ハードだけ作るエンジニア国家は、ソフトと金融プロトコルの未来を他人に譲る。実装だけが堀だ。"
       ]
     },
     "figures": [
@@ -1230,14 +1493,16 @@
         "src": "image18.jpg",
         "caption": {
           "zh": "2017 首爾 Fintech 演講。",
-          "en": "Fintech Seoul 2017."
+          "en": "Fintech Seoul 2017.",
+          "ja": "Fintech Seoul 2017."
         }
       },
       {
         "src": "image180.jpg",
         "caption": {
           "zh": "與產業界交流；算力與供應鏈的現實。",
-          "en": "Industry floor conversations."
+          "en": "Industry floor conversations.",
+          "ja": "Industry floor conversations."
         }
       }
     ]
@@ -1256,15 +1521,18 @@
     ],
     "title": {
       "zh": "遠距上班與 AI 考核",
-      "en": "Remote work and AI evaluation"
+      "en": "Remote work and AI evaluation",
+      "ja": "リモートワークとAI評価"
     },
     "claim": {
       "zh": "差勤不再靠打卡；用成果與目標管理，AI 影像只是工具不是監視幻想。",
-      "en": "Manage outcomes, not chair time."
+      "en": "Manage outcomes, not chair time.",
+      "ja": "監視の精緻化ではなく、成果と目標が核心であるべきだ。"
     },
     "summary": {
       "zh": "疫情讓遠距不可逆；共享辦公室與資訊平權是關鍵。",
-      "en": "Remote work’s real requirements."
+      "en": "Remote work’s real requirements.",
+      "ja": "廊下の決定が、不在者をシステマチックに傷つける。"
     },
     "body": {
       "zh": [
@@ -1280,6 +1548,13 @@
         "What you save is not only fuel but family time—productivity and the happiness economy can share one path.",
         "The pandemic made work-from-home overnight normal; the shift will not fully reverse. AI and vision can analyze attendance and focus, but the core should still be outcomes and goals—not finer surveillance.",
         "The public sector can imagine shared neighborhood offices so civil servants work nearby. Tech is ready; missing pieces are trust architecture and manager habits."
+      ],
+      "ja": [
+        "Zapierのような会社は世界分散・完全リモートだ。ロマンチックではなくマネジメントの話：情報システム、セキュリティ、人を率いる力が要る。",
+        "最悪は「あの日台北の会議にいなかったから知らない」。リモートと現場は同じ情報アクセスを持たねばならない。会議後の廊下の決定は、不在者をシステマチックに傷つける。",
+        "節約するのは燃料だけでなく家族の時間——生産性と幸福経済は同じ道を歩ける。",
+        "パンデミックで在宅が一夜で普及し、完全には戻らない。AIと映像は出退勤や集中を分析できるが、核心は成果と目標であり、より精緻な監視ではない。",
+        "公的部門も近隣共有オフィスで公務員が近くに通う想像ができる。技術は準備済み。欠けているのは信頼の設計と管理者の習慣だ。"
       ]
     },
     "figures": [
@@ -1287,7 +1562,8 @@
         "src": "image116.jpg",
         "caption": {
           "zh": "遠距工作：差勤與成果管理。",
-          "en": "Remote work metrics."
+          "en": "Remote work metrics.",
+          "ja": "Remote work metrics."
         }
       }
     ]
@@ -1306,15 +1582,18 @@
     ],
     "title": {
       "zh": "遠距司法與 4K 審判",
-      "en": "Remote justice"
+      "en": "Remote justice",
+      "ja": "遠隔司法"
     },
     "claim": {
       "zh": "法官與當事人線上參審，是效率也是可近性——司法不該假設人人住得起法院旁邊。",
-      "en": "Courts can be closer via video."
+      "en": "Courts can be closer via video.",
+      "ja": "アクセスは正義の一部だ。紙と行列だけに正義を置かない。"
     },
     "summary": {
       "zh": "若遠距可上班，為何審判不能系統性遠距？",
-      "en": "If work can be remote, why not hearings?"
+      "en": "If work can be remote, why not hearings?",
+      "ja": "4K審理と、実験の後に残すべき選択肢。"
     },
     "body": {
       "zh": [
@@ -1330,6 +1609,13 @@
         "Challenges are procedural: cross-examination, physical evidence, identity, open court, security. These are design problems—not a curse that ‘it cannot be done.’",
         "During COVID, courts worldwide were forced into video experiments. Afterward, options should remain—not a full retreat to crowded corridors.",
         "If justice can absorb technology, trust can keep pace. Otherwise life is online while the state’s justice stays on paper and in queues."
+      ],
+      "ja": [
+        "同じ遠隔インフラは司法にも届く：4K審理、オンライン参加、移動と遅延の削減。",
+        "効率だけが理由ではない。離島、過疎、移動制約、経済的弱者にとって、アクセスは正義の一部だ。",
+        "課題は手続保障：反対尋問、物証、身分確認、公開審理、セキュリティ。設計問題であり、「できない」呪いではない。",
+        "COVID中、世界の裁判所はビデオ実験を強いられた。その後は選択肢を残すべきで、混雑した廊下への全面撤退ではない。",
+        "司法が技術を吸収できれば信頼が時代に追いつく。さもなくば生活はオンラインで、国家の正義は紙と行列に留まる。"
       ]
     },
     "figures": [
@@ -1337,7 +1623,8 @@
         "src": "image121.jpg",
         "caption": {
           "zh": "遠距審判的想像。",
-          "en": "Remote hearings."
+          "en": "Remote hearings.",
+          "ja": "Remote hearings."
         }
       }
     ]
@@ -1356,15 +1643,18 @@
     ],
     "title": {
       "zh": "區塊鏈與手機投票",
-      "en": "Blockchain voting"
+      "en": "Blockchain voting",
+      "ja": "ブロックチェーン投票"
     },
     "claim": {
       "zh": "點對點能否降低中間成本、讓參與更可及——民主的技術債該被攤開。",
-      "en": "Can peer-to-peer lower the cost of democracy?"
+      "en": "Can peer-to-peer lower the cost of democracy?",
+      "ja": "技術は操作ではなく参加に奉仕すべきだ。"
     },
     "summary": {
       "zh": "瑞士公民權極高；技術能否幫助台灣提高參與而不只靠動員。",
-      "en": "High civic power meets new rails."
+      "en": "High civic power meets new rails.",
+      "ja": "スイスの直接民主と、参加コストを下げる可能性。"
     },
     "body": {
       "zh": [
@@ -1380,6 +1670,13 @@
         "Taiwan is a typhoon- and quake-prone island with a short, turbulent history—and a relatively rare base of human rights. Tech should serve participation, not manipulation.",
         "Phone voting’s opponent is not romantic traditional voting but vote-buying, barriers, information gaps, and system attack risk. Engineering and institutions must solve them together.",
         "On the trail I saw efficiency fight populism. If democracy only runs on handshakes and fatigue campaigns, top talent will not enter—tech can rewrite the cost of participation."
+      ],
+      "ja": [
+        "スイス市民の権限は極めて高い：直接民主、憲法改正や法律の拒否の閾値は、台湾人口に換算しても想像不能ではない。市民の力と所得が正の相関なら、なぜ少し大きな権限設計を真剣に議論しないのか。",
+        "ブロックチェーンはP2Pで中間者を外す。スマホが安全に投票できるなら、より民主的か。本書の政治技術の核心問いの一つだ。",
+        "台湾は台風と地震の多い島で歴史は短く変動が激しいが、比較的貴重な人権基盤もある。技術は操作ではなく参加に奉仕すべきだ。",
+        "スマホ投票の敵は伝統投票のロマンチックさではなく、買収、閾値、情報格差、システム攻撃のリスクだ。工学と制度で一緒に解く。",
+        "選挙戦で効率とポピュリズムの引っ張り合いを見た。民主主義が握手と疲労攻撃だけなら一流人材は入らない——技術は参加コストを書き換えうる。"
       ]
     },
     "figures": [
@@ -1387,7 +1684,8 @@
         "src": "image51.jpg",
         "caption": {
           "zh": "區塊鏈與投票：去掉中間人？",
-          "en": "Peer-to-peer voting?"
+          "en": "Peer-to-peer voting?",
+          "ja": "Peer-to-peer voting?"
         }
       }
     ]
@@ -1406,15 +1704,18 @@
     ],
     "title": {
       "zh": "公投：民主或操弄",
-      "en": "Referendums: democracy or manipulation"
+      "en": "Referendums: democracy or manipulation",
+      "ja": "国民投票：民主主義か操作か"
     },
     "claim": {
       "zh": "英國脫歐提醒：公投是工具，制度設計決定它是民主還是情緒按鈕。",
-      "en": "Referendums need design, not romance."
+      "en": "Referendums need design, not romance.",
+      "ja": "刃を民に渡す勇気と、柄の設計があるか。"
     },
     "summary": {
       "zh": "瑞士公民可啟動否決；台灣該學的是機制，不是口号。",
-      "en": "Learn mechanisms from Swiss direct democracy."
+      "en": "Learn mechanisms from Swiss direct democracy.",
+      "ja": "スイスの拒否権と、ブレグジットの並行物語。"
     },
     "body": {
       "zh": [
@@ -1430,6 +1731,13 @@
         "How questions are worded, information parity, thresholds, binding force, and handover with parliament decide whether results are deliberation or emotion.",
         "Taiwan’s referendum experience and two-party structure make reform hard—but not empty: move citizen power toward operable, verifiable design, not only mobilization season.",
         "Democratic maturity often shows in whether we dare put the knife in the people’s hands—and whether we designed the handle well."
+      ],
+      "ja": [
+        "スイス市民は期限内に連署し、成立した法律を拒否する国民投票にかけられる。市民総数に対する閾値は天文数字ではない。国民投票が不安定を招くと恐れる人はスイスを見よ：高権限と高所得は共存しうる。",
+        "2016年の英国ブレグジット投票は、今も「民主主義の勝利」と「ポピュリズムの操作」の並行物語だ。",
+        "問いの書き方、情報の対等、閾値、拘束力、議会との引き継ぎが、結果が熟議か感情かを決める。",
+        "台湾の国民投票経験と二大政党構造は改革を難しくするが、空白ではない：動員季だけの市民権ではなく、操作可能で検証可能な方向へ。",
+        "民主主義の成熟は、刃を民に渡す勇気と、柄をうまく設計したかに表れることが多い。"
       ]
     },
     "figures": [
@@ -1437,14 +1745,16 @@
         "src": "image160.jpg",
         "caption": {
           "zh": "英國脫歐與公投工具。",
-          "en": "Brexit and the referendum tool."
+          "en": "Brexit and the referendum tool.",
+          "ja": "Brexit and the referendum tool."
         }
       },
       {
         "src": "image96.jpg",
         "caption": {
           "zh": "2006 倒扁遊行：集會後沒有髒亂與鮮血。",
-          "en": "Mass protest without chaos, 2006."
+          "en": "Mass protest without chaos, 2006.",
+          "ja": "Mass protest without chaos, 2006."
         }
       }
     ]
@@ -1463,15 +1773,18 @@
     ],
     "title": {
       "zh": "兵役、後備與防衛結構",
-      "en": "Service and reserve forces"
+      "en": "Service and reserve forces",
+      "ja": "兵役と予備役"
     },
     "claim": {
       "zh": "瑞士可快速動員；台灣威脅來自空與海，結構不同，策略不能照抄。",
-      "en": "Copy principles, not templates."
+      "en": "Copy principles, not templates.",
+      "ja": "自国の戦場の形を見てから、兵役と予算を決めよ。"
     },
     "summary": {
       "zh": "海陸役期記憶、後備動員，與兩岸經貿交纏的獨特難題。",
-      "en": "Reserves amid entangled economies."
+      "en": "Reserves amid entangled economies.",
+      "ja": "スイスの短期拡張と、台湾の海と空の脅威。"
     },
     "body": {
       "zh": [
@@ -1487,6 +1800,13 @@
         "Taiwan’s threat differs from Switzerland’s: sea on all sides, mainly air and naval risk rather than tanks over a land border. Unlike the two Koreas—Southern firms do not build plants in the North—Taiwanese companies are deep in the other shore’s supply chains.",
         "Defense is strategy and industry, not only slogans and half-year training nostalgia. Whether reserves truly mobilize, logistics and civil defense exist, matters more than posters.",
         "A small state’s rationality is to see its own battlefield shape, then set service and budgets. Copying Switzerland—or any other country—will distort in the weather of the Strait."
+      ],
+      "ja": [
+        "スイスの男子は20歳で約260日の兵役（分割可）。予備役は常備を短期間で拡張する——小国の生存工芸だ。",
+        "私は海兵隊に当たり、父は謝ったが私は気にしなかった。台湾の役期は何度も変わり、精鋭化と代替役が「全民防衛」の社会経験を変えた。",
+        "台湾の脅威はスイスと違う：四方海、主に空と海であり陸隣の戦車ではない。南北朝鮮とも違う——韓国企業が北に工場を建てない一方、台湾企業は対岸サプライチェーンに深い。",
+        "防衛は戦略と産業の問題で、スローガンと半年訓練の懐古だけではない。予備が本当に動員できるか、兵站と民防があるかが、ポスターより重要だ。",
+        "小国の合理性は自国の戦場の形を見て兵役と予算を決めること。スイスや他国のコピーは、海峡の天候の中で歪む。"
       ]
     },
     "figures": [
@@ -1494,7 +1814,8 @@
         "src": "image168.jpg",
         "caption": {
           "zh": "工地旗幟與識別：和平年代的另一種動員意象。",
-          "en": "Flags, identity, readiness."
+          "en": "Flags, identity, readiness.",
+          "ja": "Flags, identity, readiness."
         }
       }
     ]
@@ -1514,15 +1835,18 @@
     ],
     "title": {
       "zh": "國家與認同",
-      "en": "Nation and identity"
+      "en": "Nation and identity",
+      "ja": "国家とアイデンティティ"
     },
     "claim": {
       "zh": "海蒂是不是瑞士人的爭論，映照台灣：語言、歷史與「我是誰」的長期張力。",
-      "en": "Heidi’s origins mirror Taiwan’s identity tension."
+      "en": "Heidi’s origins mirror Taiwan’s identity tension.",
+      "ja": "多言語・多起源は欠陥ではなく、制度が複雑を認めれば統治可能だ。"
     },
     "summary": {
       "zh": "瑞士四語官方；台灣國語、台語與歷史層疊。",
-      "en": "Four Swiss languages; Taiwan’s layered tongues."
+      "en": "Four Swiss languages; Taiwan’s layered tongues.",
+      "ja": "スイスの国語と、ハイディの国籍が刺す神経。"
     },
     "body": {
       "zh": [
@@ -1538,6 +1862,13 @@
         "In 2010 media stirred when scholars suggested Heidi’s story may stem from German texts—Swiss hearts ached. A fictional character’s nationality can still prick real national nerves.",
         "Where Mazu came from, which tongue is ‘national language,’ whether passport and self-identification match: elections will not settle these.",
         "Identity needs narrative and daily life. Multilingual, multi-origin countries are not defects—Switzerland proved they are governable if institutions admit complexity instead of forcing singularity."
+      ],
+      "ja": [
+        "スイス連邦憲法は複数の国語を認める。彼らはドイツ人かスイス人か。我々は台湾人か中国人か。混乱したアイデンティティの構造は似るが、歴史の根は違う。",
+        "日本統治50年、過疎や先住民には今も日本語が通じることがある。閩南、客家、戦後の北京語が重なる。子どもの頃、台湾語で罰を受けた。祖父母がいなければ子どもは台湾語環境を失うかもしれない。",
+        "2010年、ハイディ物語がドイツ起源かもしれないと学者が示唆しメディアが騒ぎ、スイスは心を痛めた。架空の国籍が本物の国族神経を刺しうる。",
+        "媽祖はどこから、国語はどの言葉か、パスポートと自己同定は一致するか：選挙戦はこれらを終わらせない。",
+        "アイデンティティには物語と生活が要る。多言語・多起源の国は欠陥ではない——スイスは統治可能だと示した。制度が複雑を認め、単一を強要しないなら。"
       ]
     },
     "figures": [
@@ -1545,14 +1876,16 @@
         "src": "image179.jpg",
         "caption": {
           "zh": "《阿爾卑斯山的少女》與瑞士想像。",
-          "en": "Heidi and the Swiss imaginary."
+          "en": "Heidi and the Swiss imaginary.",
+          "ja": "Heidi and the Swiss imaginary."
         }
       },
       {
         "src": "image112.jpg",
         "caption": {
           "zh": "台幣千元與少子化：國家圖像也在紙鈔上。",
-          "en": "Banknotes as national images."
+          "en": "Banknotes as national images.",
+          "ja": "Banknotes as national images."
         }
       }
     ]
@@ -1571,15 +1904,18 @@
     ],
     "title": {
       "zh": "書包、出版社與教育綁架",
-      "en": "Schoolbags and capture"
+      "en": "Schoolbags and capture",
+      "ja": "ランドセルと捕獲"
     },
     "claim": {
       "zh": "孩子書包比公事包還重，是系統問題——一綱多本與實體教科書利益。",
-      "en": "Heavy bags are a system failure."
+      "en": "Heavy bags are a system failure.",
+      "ja": "教育は低炭素産業であり未来の税基盤だ。もっと厚い本を刷るより現代化せよ。"
     },
     "summary": {
       "zh": "唯物定價的出版業怕電子書；遠距教學又會暴露教學現場。",
-      "en": "Publishing incentives vs digital texts."
+      "en": "Publishing incentives vs digital texts.",
+      "ja": "詰め込み、電子書籍、パンデミックの遠隔授業。"
     },
     "body": {
       "zh": [
@@ -1595,6 +1931,13 @@
         "In 2020 global school closures forced remote teaching. If parents can see live or recorded classes, quality under permanent tenure would be shaken—and improved.",
         "Swiss paths are more plural: clearer academic and applied tracks. Taiwan’s tech-university upgrades are still young; industry–academia practice culture is not yet stable.",
         "Education is a low-carbon industry and future tax base. Lightening bags and raising remote and international-student share looks more modern than printing thicker volumes."
+      ],
+      "ja": [
+        "台湾の就学前から義務教育は詰め込みだらけ。一綱多本の下、教科書がランドセルを侵し、親は所管と出版社に子どもを捕獲させる——鞄は私のブリーフケースより重い。",
+        "中身は電子書籍にできるが、産業は海賊版を恐れ、触れる物に価格を付ける——触れなければ金にならない。Netflix式の知識サブスクが成熟すれば、重さと紙代は下がる。",
+        "2020年の世界的休校は遠隔授業を強制した。親が生中継や録画の授業を見られれば、終身雇用の教育の質は揺れ——改善の機会にもなる。",
+        "スイスの経路は多元：学術と応用の分岐がより明確。台湾の科技大学昇格はまだ若く、産学実務文化は安定していない。",
+        "教育は低炭素産業であり未来の税基盤だ。鞄を軽くし、遠隔と留学生比率を上げる方が、より厚い本を刷るより現代化に見える。"
       ]
     },
     "figures": [
@@ -1602,7 +1945,8 @@
         "src": "image93.jpg",
         "caption": {
           "zh": "書包比公事包重。",
-          "en": "Heavier than a briefcase."
+          "en": "Heavier than a briefcase.",
+          "ja": "Heavier than a briefcase."
         }
       }
     ]
@@ -1621,15 +1965,18 @@
     ],
     "title": {
       "zh": "文化輸出與城市美學",
-      "en": "Culture export"
+      "en": "Culture export",
+      "ja": "文化輸出"
     },
     "claim": {
       "zh": "從百老匯到在地花市，文化是產值；政府補助不是唯一商業模式。",
-      "en": "Culture is GDP—and daily beauty."
+      "en": "Culture is GDP—and daily beauty.",
+      "ja": "文化は産業になりうる。ハコだけ建てて中身を育てなければ、オペラハウスは大きな空調室だ。"
     },
     "summary": {
       "zh": "琉森音樂節與台中歌劇院：內容、旅宿與稅收的循環。",
-      "en": "Festivals, hotels, and tax cycles."
+      "en": "Festivals, hotels, and tax cycles.",
+      "ja": "ルツェルン音楽祭から台中の花市まで。"
     },
     "body": {
       "zh": [
@@ -1645,6 +1992,13 @@
         "Taichung has the National Opera House and flower markets: life can be cheap and beautiful. Only on the campaign trail did I walk markets heavily and see aesthetics overlap with electoral geography.",
         "Taiwan’s history is short; literary and translation export is still thin. That is not a curse—it is investable blank space.",
         "Culture export sits with tourism, education, and urban regeneration. When cities only pour concrete and do not grow content, an opera house is a large air-conditioned room."
+      ],
+      "ja": [
+        "スイス文学の国際知名度は限られるが、ルツェルン音楽祭は欧州の柱：公的補助比率は高くなく、観客の飲食宿泊が税の論理を支える。文化は純粋支出ではなく産業になりうる。",
+        "2013年のニューヨークではライオンキングとオペラ座の怪人が毎晩——都市が物語をチケット可能なインフラにした。",
+        "台中には国家歌劇院と花卉市場がある：生活は安く美しくありうる。選挙戦で初めて市場を歩き、美学と選挙地理の重なりを見た。",
+        "台湾の歴史は短く、文学と翻訳の輸出はまだ薄い。呪いではなく、投資可能な空白だ。",
+        "文化輸出は観光・教育・都市再生と同じ家族。都市がハコだけ建て中身を育てなければ、オペラハウスは大きな空調室にすぎない。"
       ]
     },
     "figures": [
@@ -1652,7 +2006,8 @@
         "src": "image32.jpg",
         "caption": {
           "zh": "2013 紐約百老匯。",
-          "en": "Broadway, 2013."
+          "en": "Broadway, 2013.",
+          "ja": "Broadway, 2013."
         }
       }
     ]
@@ -1672,15 +2027,18 @@
     ],
     "title": {
       "zh": "八十天競選觀察",
-      "en": "Eighty days on the trail"
+      "en": "Eighty days on the trail",
+      "ja": "選挙戦80日"
     },
     "claim": {
       "zh": "證明選舉非難事；也是對效率、媚俗與選民責任的省思——我已不再從政。",
-      "en": "Elections are doable—and costly in dignity."
+      "en": "Elections are doable—and costly in dignity.",
+      "ja": "このサイトは文集であり、選挙の遺跡ではない。理解のための記録だ。"
     },
     "summary": {
       "zh": "83 天、約 1.3 萬票、一面帆布：素人第三高票的筆記。",
-      "en": "83 days, ~13k votes, one banner."
+      "en": "83 days, ~13k votes, one banner.",
+      "ja": "目立たない看板一面と、1万3434票。"
     },
     "body": {
       "zh": [
@@ -1696,6 +2054,13 @@
         "Market handshakes, chasing garbage trucks, balloon backpacks—some contacts work; some are populism I think damages professional thresholds. COVID later paused handshakes and an older aesthetic.",
         "The spine was air pollution and energy. As an engineer I opened CEMS and stats before the vote, mocked or not. Air is children’s lungs, not a blue–green prop.",
         "I left the race full of harvest from my first and deliberately last political act. This site is an essay collection, not a campaign relic; the record is for understanding, not a comeback."
+      ],
+      "ja": [
+        "2019年10月20日の指名から2020年1月10日の収束まで約83日。公職に出たことがなく、控えめな帆布看板一面で1万3434票、選挙区3位、2位と約1万票差。",
+        "目的は明確：理念を聞いてもらう。実力ある人が降りて戦えると示す。落選しても正しい情報は他者が実行しうる。",
+        "市場の握手、ゴミ収集車の追跡、風船リュック——接触として有効なものも、専門の閾値を損なう媚俗と私が思うものもある。COVIDは後に握手と古い美学を止めた。",
+        "主軸は大気汚染とエネルギー。エンジニアとしてCEMSと統計を選挙前に開いた。嘲笑されても。空気は子どもの肺であり、青緑の道具ではない。",
+        "収穫たっぷりの敗戦で、人生初で意図的に最後の政治活動を終えた。このサイトは文集であり選挙遺跡ではない。記録は理解のためであり、カムバックのためではない。"
       ]
     },
     "figures": [
@@ -1703,7 +2068,8 @@
         "src": "image120.jpg",
         "caption": {
           "zh": "競選旅程的影像切片。",
-          "en": "From the campaign trail."
+          "en": "From the campaign trail.",
+          "ja": "From the campaign trail."
         }
       }
     ]
@@ -1722,15 +2088,18 @@
     ],
     "title": {
       "zh": "線上線下行銷實驗",
-      "en": "Online/offline campaign labs"
+      "en": "Online/offline campaign labs",
+      "ja": "オンライン／オフライン選挙ラボ"
     },
     "claim": {
       "zh": "沒有樁腳時，臉書、路線規劃與量入為出的廣告，是素人僅有的工具箱。",
-      "en": "A toolbox without factions."
+      "en": "A toolbox without factions.",
+      "ja": "本当に希少なのは政見・マーケ・資金調達を兼ねる人材——入場の屈辱コストを下げよ。"
     },
     "summary": {
       "zh": "三萬包面紙、特斯拉宣傳車、Google 退出政治廣告後的現實。",
-      "en": "Tissues, a Tesla, and ad-platform limits."
+      "en": "Tissues, a Tesla, and ad-platform limits.",
+      "ja": "フェイスブック、ティッシュ3万包、テスラの宣伝車。"
     },
     "body": {
       "zh": [
@@ -1746,6 +2115,13 @@
         "Offline: one billboard (NT$6,000 on a neighbor’s balcony), about 30,000 tissue packs, hand placards, volunteers’ cars and my Tesla converted for campaigning—Control Yuan still barred listing the car as expenditure. I considered drones as ad trucks; volume was not enough.",
         "I had used Google Maps for engineering routes nine years earlier; using it to plan visits and read neighborhood structure was data decision, not gut feel.",
         "Campaigns cost money—but you can also run without spending much. What is scarce is people who combine policy, marketing, and fundraising—and such people often have better life options. That is the observation I want left: lower the humiliation cost for first-rate talent to enter."
+      ],
+      "ja": [
+        "台湾の開票効率は驚くほど高い：総統有効票約1430万、投開票からおおよそ半日で結果が見える——島は手慣れている。",
+        "オンライン：フェイスブックとブログが先。11月に文宣、12月に夜市市場を大量投入。Googleが政治広告から撤退後、精密配信は難しく、Lineとウェブ広告は不正確で、結局フェイスブックだけが残りがち。",
+        "オフライン：看板×1（6000元、隣人のバルコニー）、ティッシュ約3万包、手持ち板、ボランティアの車とテスラ改造の宣伝——監察院は車を支出に載せさせなかった。ドローン広告車も考えたが音量が足りず断念。",
+        "9年前からGoogleマップを工事ルートに使った。拝票ルートと里の人口構造に使うのは勘ではなく数字の決定だ。",
+        "選挙は金がかかる——あまり使わずに戦うこともできる。希少なのは政見・マーケ・資金調達を兼ねる人で、そういう人にはより良い人生の選択肢があることが多い。残したい観察はそれだ：一流人材の入場の屈辱コストを下げること。"
       ]
     },
     "figures": [
@@ -1753,14 +2129,16 @@
         "src": "image171.jpg",
         "caption": {
           "zh": "選後分析與工具檢討。",
-          "en": "Post-election notes."
+          "en": "Post-election notes.",
+          "ja": "Post-election notes."
         }
       },
       {
         "src": "image3.jpg",
         "caption": {
           "zh": "數據與得票結構。",
-          "en": "Vote structure."
+          "en": "Vote structure.",
+          "ja": "Vote structure."
         }
       }
     ]

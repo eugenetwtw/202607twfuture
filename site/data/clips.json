@@ -4,223 +4,255 @@
     "src": "clips/img-image35.mp4",
     "poster": "image35.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "high-value-economy": {
     "no": 2,
     "src": "clips/issue-02-high-value-economy.mp4",
     "poster": "image158.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "detail-and-craft": {
     "no": 3,
     "src": "clips/issue-03-detail-and-craft.mp4",
     "poster": "image168.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "tourism-and-risk": {
     "no": 4,
     "src": "clips/img-image115.mp4",
     "poster": "image115.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "euthanasia-and-autonomy": {
     "no": 5,
     "src": "clips/img-image111.mp4",
     "poster": "image111.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "healthcare-export": {
     "no": 6,
     "src": "clips/img-image145.mp4",
     "poster": "image145.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "telemedicine-hub": {
     "no": 7,
     "src": "clips/img-image44.mp4",
     "poster": "image44.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "covid-as-turning-point": {
     "no": 8,
     "src": "clips/img-image153.mp4",
     "poster": "image153.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "coal-and-air": {
     "no": 9,
     "src": "clips/img-image152.mp4",
     "poster": "image152.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "public-rooftop-solar": {
     "no": 10,
     "src": "clips/img-image101.mp4",
     "poster": "image101.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "offshore-wind": {
     "no": 11,
     "src": "clips/img-image22.mp4",
     "poster": "image22.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "v2g-and-ev-bonds": {
     "no": 12,
     "src": "clips/img-image172.mp4",
     "poster": "image172.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "time-of-use-pricing": {
     "no": 13,
     "src": "clips/img-image136.mp4",
     "poster": "image136.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "hydropower-land": {
     "no": 14,
     "src": "clips/img-image142.mp4",
     "poster": "image142.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "nuclear-rationality": {
     "no": 15,
     "src": "clips/img-image54.mp4",
     "poster": "image54.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "farmland-factories": {
     "no": 16,
     "src": "clips/img-image7.mp4",
     "poster": "image7.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "rent-vs-own": {
     "no": 17,
     "src": "clips/img-image128.mp4",
     "poster": "image128.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "housing-justice": {
     "no": 18,
     "src": "clips/img-image175.mp4",
     "poster": "image175.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "earthquake-rebuild": {
     "no": 19,
     "src": "clips/img-image37.mp4",
     "poster": "image37.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "tdr-and-education": {
     "no": 20,
     "src": "clips/img-image117.mp4",
     "poster": "image117.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "adaptive-reuse": {
     "no": 21,
     "src": "clips/img-image29.mp4",
     "poster": "image29.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "finance-next-wave": {
     "no": 22,
     "src": "clips/issue-02-high-value-economy.mp4",
     "poster": "image158.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "fintech-and-blockchain": {
     "no": 23,
     "src": "clips/img-image18.mp4",
     "poster": "image18.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "remote-work-ai": {
     "no": 24,
     "src": "clips/img-image116.mp4",
     "poster": "image116.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "remote-justice": {
     "no": 25,
     "src": "clips/img-image121.mp4",
     "poster": "image121.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "blockchain-voting": {
     "no": 26,
     "src": "clips/img-image51.mp4",
     "poster": "image51.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "referendum-democracy": {
     "no": 27,
     "src": "clips/img-image160.mp4",
     "poster": "image160.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "military-and-reserve": {
     "no": 28,
     "src": "clips/issue-03-detail-and-craft.mp4",
     "poster": "image168.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "national-identity": {
     "no": 29,
     "src": "clips/img-image179.mp4",
     "poster": "image179.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "education-burden": {
     "no": 30,
     "src": "clips/img-image93.mp4",
     "poster": "image93.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "culture-export": {
     "no": 31,
     "src": "clips/img-image32.mp4",
     "poster": "image32.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   },
   "eighty-days-campaign": {
     "no": 32,
     "src": "clips/issue-32-eighty-days-campaign.mp4",
     "poster": "image120.jpg",
     "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo"
+    "label_en": "Short clip generated from this photo",
+    "label_ja": "このページの写真から生成した短編"
   }
 }

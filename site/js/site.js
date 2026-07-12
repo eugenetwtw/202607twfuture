@@ -220,7 +220,10 @@
     var labelFsExit = lb.getAttribute("data-label-fs-exit") || "Exit fullscreen";
     var labelModePhoto = lb.getAttribute("data-label-mode-photo") || "Photos";
     var labelModeVideo = lb.getAttribute("data-label-mode-video") || "Clips";
-    var isZh = (document.documentElement.lang || "").indexOf("zh") === 0;
+    var docLang = document.documentElement.lang || "";
+    var isZh = docLang.indexOf("zh") === 0;
+    var isJa = docLang.indexOf("ja") === 0;
+    var useSecSuffix = isZh || isJa;
 
     function photoPool() {
       var out = [];
@@ -276,7 +279,7 @@
     }
 
     function formatSec(sec) {
-      return isZh ? sec + " 秒" : sec + "s";
+      return useSecSuffix ? sec + " 秒" : sec + "s";
     }
 
     function renderDelayControls() {
@@ -297,7 +300,9 @@
     }
 
     function formatCountdown(sec) {
-      return isZh ? "下張 " + sec + " 秒" : "next " + sec + "s";
+      if (isJa) return "次 " + sec + " 秒";
+      if (isZh) return "下張 " + sec + " 秒";
+      return "next " + sec + "s";
     }
 
     function renderCountdown() {

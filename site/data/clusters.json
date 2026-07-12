@@ -3,49 +3,56 @@
     "id": "switzerland-model",
     "title": {
       "zh": "瑞士參照與發展模型",
-      "en": "Switzerland as reference"
+      "en": "Switzerland as reference",
+      "ja": "スイス参照と発展モデル"
     }
   },
   {
     "id": "life-health",
     "title": {
       "zh": "生命、醫療與人權",
-      "en": "Life, health & rights"
+      "en": "Life, health & rights",
+      "ja": "生命・医療と人権"
     }
   },
   {
     "id": "energy-land",
     "title": {
       "zh": "能源、空污與土地",
-      "en": "Energy, air & land"
+      "en": "Energy, air & land",
+      "ja": "エネルギー・大気汚染と土地"
     }
   },
   {
     "id": "housing-city",
     "title": {
       "zh": "居住、建築與城市",
-      "en": "Housing & city"
+      "en": "Housing & city",
+      "ja": "住宅・建築と都市"
     }
   },
   {
     "id": "industry-tech",
     "title": {
       "zh": "產業、金融與科技",
-      "en": "Industry, finance & tech"
+      "en": "Industry, finance & tech",
+      "ja": "産業・金融とテック"
     }
   },
   {
     "id": "democracy-identity",
     "title": {
       "zh": "民主、制度與認同",
-      "en": "Democracy & identity"
+      "en": "Democracy & identity",
+      "ja": "民主主義・制度とアイデンティティ"
     }
   },
   {
     "id": "culture-personal",
     "title": {
       "zh": "文化、教育與個人紀錄",
-      "en": "Culture, education & memoir"
+      "en": "Culture, education & memoir",
+      "ja": "文化・教育と個人の記録"
     }
   }
 ]
