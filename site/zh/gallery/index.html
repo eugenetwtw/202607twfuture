@@ -420,9 +420,11 @@
   <div class="lb" id="gallery-lightbox" hidden data-gallery-lightbox
        data-label-play="自動播放"
        data-label-pause="暫停"
+       data-label-fs="全螢幕"
+       data-label-fs-exit="離開全螢幕"
        data-label-of="/">
     <div class="lb__backdrop" data-gallery-close tabindex="-1"></div>
-    <div class="lb__panel" role="dialog" aria-modal="true" aria-label="照片選輯">
+    <div class="lb__panel" role="dialog" aria-modal="true" aria-label="照片選輯" data-gallery-panel>
       <button type="button" class="lb__close" data-gallery-close aria-label="關閉">×</button>
       <div class="lb__stage">
         <button type="button" class="lb__nav lb__nav--prev" data-gallery-prev aria-label="上一張">‹</button>
@@ -435,6 +437,7 @@
         <div class="lb__counter"><span data-gallery-index>1</span>/<span data-gallery-total>125</span></div>
         <div class="lb__actions">
           <button type="button" class="btn btn-secondary lb__play" data-gallery-play>自動播放</button>
+          <button type="button" class="btn btn-secondary lb__fs" data-gallery-fullscreen>全螢幕</button>
         </div>
         <div class="lb__caption" data-gallery-caption></div>
       </div>

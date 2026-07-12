@@ -420,9 +420,11 @@
   <div class="lb" id="gallery-lightbox" hidden data-gallery-lightbox
        data-label-play="Autoplay"
        data-label-pause="Pause"
+       data-label-fs="Fullscreen"
+       data-label-fs-exit="Exit fullscreen"
        data-label-of="/">
     <div class="lb__backdrop" data-gallery-close tabindex="-1"></div>
-    <div class="lb__panel" role="dialog" aria-modal="true" aria-label="Photo gallery">
+    <div class="lb__panel" role="dialog" aria-modal="true" aria-label="Photo gallery" data-gallery-panel>
       <button type="button" class="lb__close" data-gallery-close aria-label="Close">×</button>
       <div class="lb__stage">
         <button type="button" class="lb__nav lb__nav--prev" data-gallery-prev aria-label="Previous">‹</button>
@@ -435,6 +437,7 @@
         <div class="lb__counter"><span data-gallery-index>1</span>/<span data-gallery-total>125</span></div>
         <div class="lb__actions">
           <button type="button" class="btn btn-secondary lb__play" data-gallery-play>Autoplay</button>
+          <button type="button" class="btn btn-secondary lb__fs" data-gallery-fullscreen>Fullscreen</button>
         </div>
         <div class="lb__caption" data-gallery-caption></div>
       </div>

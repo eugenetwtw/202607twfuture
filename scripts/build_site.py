@@ -56,6 +56,8 @@ UI = {
         "gallery_next": "下一張",
         "gallery_play": "自動播放",
         "gallery_pause": "暫停",
+        "gallery_fullscreen": "全螢幕",
+        "gallery_fullscreen_exit": "離開全螢幕",
         "gallery_of": "/",
         "home": "首頁",
         "issues": "議題",
@@ -115,6 +117,8 @@ UI = {
         "gallery_next": "Next",
         "gallery_play": "Autoplay",
         "gallery_pause": "Pause",
+        "gallery_fullscreen": "Fullscreen",
+        "gallery_fullscreen_exit": "Exit fullscreen",
         "gallery_of": "/",
         "home": "Home",
         "issues": "Issues",
@@ -685,9 +689,11 @@ def build_gallery(lang: str, gallery_data: dict) -> str:
   <div class="lb" id="gallery-lightbox" hidden data-gallery-lightbox
        data-label-play="{esc(ui["gallery_play"])}"
        data-label-pause="{esc(ui["gallery_pause"])}"
+       data-label-fs="{esc(ui["gallery_fullscreen"])}"
+       data-label-fs-exit="{esc(ui["gallery_fullscreen_exit"])}"
        data-label-of="{esc(ui["gallery_of"])}">
     <div class="lb__backdrop" data-gallery-close tabindex="-1"></div>
-    <div class="lb__panel" role="dialog" aria-modal="true" aria-label="{esc(ui["gallery_title"])}">
+    <div class="lb__panel" role="dialog" aria-modal="true" aria-label="{esc(ui["gallery_title"])}" data-gallery-panel>
       <button type="button" class="lb__close" data-gallery-close aria-label="{esc(ui["gallery_close"])}">×</button>
       <div class="lb__stage">
         <button type="button" class="lb__nav lb__nav--prev" data-gallery-prev aria-label="{esc(ui["gallery_prev"])}">‹</button>
@@ -700,6 +706,7 @@ def build_gallery(lang: str, gallery_data: dict) -> str:
         <div class="lb__counter"><span data-gallery-index>1</span>{esc(ui["gallery_of"])}<span data-gallery-total>{len(items)}</span></div>
         <div class="lb__actions">
           <button type="button" class="btn btn-secondary lb__play" data-gallery-play>{esc(ui["gallery_play"])}</button>
+          <button type="button" class="btn btn-secondary lb__fs" data-gallery-fullscreen>{esc(ui["gallery_fullscreen"])}</button>
         </div>
         <div class="lb__caption" data-gallery-caption></div>
       </div>

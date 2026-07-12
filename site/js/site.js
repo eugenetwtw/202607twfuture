@@ -195,10 +195,66 @@
     var idxEl = lb.querySelector("[data-gallery-index]");
     var totalEl = lb.querySelector("[data-gallery-total]");
     var playBtn = lb.querySelector("[data-gallery-play]");
+    var fsBtn = lb.querySelector("[data-gallery-fullscreen]");
+    var panel = lb.querySelector("[data-gallery-panel]") || lb;
     var labelPlay = lb.getAttribute("data-label-play") || "Play";
     var labelPause = lb.getAttribute("data-label-pause") || "Pause";
+    var labelFs = lb.getAttribute("data-label-fs") || "Fullscreen";
+    var labelFsExit = lb.getAttribute("data-label-fs-exit") || "Exit fullscreen";
 
     if (totalEl) totalEl.textContent = String(items.length);
+
+    function fsElement() {
+      return (
+        document.fullscreenElement ||
+        document.webkitFullscreenElement ||
+        document.msFullscreenElement ||
+        null
+      );
+    }
+
+    function isFs() {
+      var el = fsElement();
+      return !!(el && (el === panel || el === lb || panel.contains(el)));
+    }
+
+    function updateFsButton() {
+      if (!fsBtn) return;
+      fsBtn.textContent = isFs() ? labelFsExit : labelFs;
+      fsBtn.setAttribute("aria-pressed", isFs() ? "true" : "false");
+    }
+
+    function requestFs(el) {
+      if (el.requestFullscreen) return el.requestFullscreen();
+      if (el.webkitRequestFullscreen) return el.webkitRequestFullscreen();
+      if (el.msRequestFullscreen) return el.msRequestFullscreen();
+      return Promise.reject(new Error("fullscreen unsupported"));
+    }
+
+    function exitFs() {
+      if (document.exitFullscreen) return document.exitFullscreen();
+      if (document.webkitExitFullscreen) return document.webkitExitFullscreen();
+      if (document.msExitFullscreen) return document.msExitFullscreen();
+      return Promise.resolve();
+    }
+
+    function toggleFullscreen() {
+      var p;
+      if (isFs()) {
+        p = exitFs();
+      } else {
+        p = requestFs(panel);
+      }
+      if (p && typeof p.then === "function") {
+        p.then(updateFsButton).catch(function () {
+          // Some browsers only allow fullscreen after a direct user gesture;
+          // button click already is one — ignore abort errors.
+          updateFsButton();
+        });
+      } else {
+        updateFsButton();
+      }
+    }
 
     function stopPlay() {
       playing = false;
@@ -233,6 +289,7 @@
       show(i);
       lb.hidden = false;
       document.body.classList.add("lb-open");
+      updateFsButton();
       // focus close for a11y
       var closeBtn = lb.querySelector(".lb__close");
       if (closeBtn) closeBtn.focus();
@@ -240,9 +297,14 @@
 
     function close() {
       stopPlay();
+      if (isFs()) {
+        var p = exitFs();
+        if (p && typeof p.catch === "function") p.catch(function () {});
+      }
       lb.hidden = true;
       document.body.classList.remove("lb-open");
       if (imgEl) imgEl.removeAttribute("src");
+      updateFsButton();
     }
 
     document.querySelectorAll("[data-gallery-open]").forEach(function (btn) {
@@ -276,10 +338,21 @@
         else startPlay();
       });
     }
+    if (fsBtn) {
+      fsBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        toggleFullscreen();
+      });
+    }
+
+    document.addEventListener("fullscreenchange", updateFsButton);
+    document.addEventListener("webkitfullscreenchange", updateFsButton);
 
     document.addEventListener("keydown", function (e) {
       if (lb.hidden) return;
       if (e.key === "Escape") {
+        // Browser exits fullscreen first; second Esc closes lightbox
+        if (isFs()) return;
         e.preventDefault();
         close();
       } else if (e.key === "ArrowLeft") {
@@ -288,6 +361,10 @@
       } else if (e.key === "ArrowRight") {
         e.preventDefault();
         show(index + 1);
+      } else if (e.key === "f" || e.key === "F") {
+        if (e.target && (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA")) return;
+        e.preventDefault();
+        toggleFullscreen();
       } else if (e.key === " " || e.key === "Spacebar") {
         // space toggles autoplay when lightbox open
         if (e.target && e.target.tagName === "BUTTON") return;
