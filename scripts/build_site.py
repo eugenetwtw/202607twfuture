@@ -706,6 +706,7 @@ def build_gallery(lang: str, gallery_data: dict) -> str:
         <div class="lb__counter"><span data-gallery-index>1</span>{esc(ui["gallery_of"])}<span data-gallery-total>{len(items)}</span></div>
         <div class="lb__actions">
           <button type="button" class="btn btn-secondary lb__play" data-gallery-play>{esc(ui["gallery_play"])}</button>
+          <span class="lb__countdown" data-gallery-countdown hidden aria-live="polite"></span>
           <button type="button" class="btn btn-secondary lb__fs" data-gallery-fullscreen>{esc(ui["gallery_fullscreen"])}</button>
         </div>
         <div class="lb__caption" data-gallery-caption></div>

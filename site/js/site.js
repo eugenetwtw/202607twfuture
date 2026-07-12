@@ -187,22 +187,63 @@
 
     var index = 0;
     var playing = false;
-    var timer = null;
-    var INTERVAL_MS = 4500;
+    var playTimer = null;
+    var INTERVAL_SEC = 5;
+    var remainSec = INTERVAL_SEC;
 
     var imgEl = lb.querySelector("[data-gallery-img]");
     var capEl = lb.querySelector("[data-gallery-caption]");
     var idxEl = lb.querySelector("[data-gallery-index]");
     var totalEl = lb.querySelector("[data-gallery-total]");
     var playBtn = lb.querySelector("[data-gallery-play]");
+    var countdownEl = lb.querySelector("[data-gallery-countdown]");
     var fsBtn = lb.querySelector("[data-gallery-fullscreen]");
     var panel = lb.querySelector("[data-gallery-panel]") || lb;
     var labelPlay = lb.getAttribute("data-label-play") || "Play";
     var labelPause = lb.getAttribute("data-label-pause") || "Pause";
     var labelFs = lb.getAttribute("data-label-fs") || "Fullscreen";
     var labelFsExit = lb.getAttribute("data-label-fs-exit") || "Exit fullscreen";
+    var isZh = (document.documentElement.lang || "").indexOf("zh") === 0;
 
     if (totalEl) totalEl.textContent = String(items.length);
+
+    function formatCountdown(sec) {
+      if (isZh) return sec + " 秒";
+      return sec + "s";
+    }
+
+    function renderCountdown() {
+      if (!countdownEl) return;
+      if (!playing) {
+        countdownEl.hidden = true;
+        countdownEl.textContent = "";
+        return;
+      }
+      countdownEl.hidden = false;
+      countdownEl.textContent = formatCountdown(remainSec);
+    }
+
+    function clearPlayTimer() {
+      if (playTimer) {
+        clearInterval(playTimer);
+        playTimer = null;
+      }
+    }
+
+    function armPlayTimer() {
+      clearPlayTimer();
+      remainSec = INTERVAL_SEC;
+      renderCountdown();
+      // One tick per second: countdown UI + advance when it hits 0
+      playTimer = setInterval(function () {
+        remainSec -= 1;
+        if (remainSec <= 0) {
+          show((index + 1) % items.length);
+          remainSec = INTERVAL_SEC;
+        }
+        renderCountdown();
+      }, 1000);
+    }
 
     function fsElement() {
       return (
@@ -258,23 +299,20 @@
 
     function stopPlay() {
       playing = false;
-      if (timer) {
-        clearInterval(timer);
-        timer = null;
-      }
+      clearPlayTimer();
+      remainSec = INTERVAL_SEC;
+      renderCountdown();
       if (playBtn) playBtn.textContent = labelPlay;
     }
 
     function startPlay() {
       playing = true;
       if (playBtn) playBtn.textContent = labelPause;
-      if (timer) clearInterval(timer);
-      timer = setInterval(function () {
-        show((index + 1) % items.length);
-      }, INTERVAL_MS);
+      armPlayTimer();
     }
 
-    function show(i) {
+    function show(i, opts) {
+      opts = opts || {};
       index = (i + items.length) % items.length;
       var item = items[index];
       if (imgEl) {
@@ -283,6 +321,10 @@
       }
       if (capEl) capEl.textContent = item.caption || "";
       if (idxEl) idxEl.textContent = String(index + 1);
+      // Manual nav while autoplay: restart the full delay window
+      if (playing && opts.restartTimer) {
+        armPlayTimer();
+      }
     }
 
     function open(i) {
@@ -323,13 +365,13 @@
     if (prev) {
       prev.addEventListener("click", function (e) {
         e.stopPropagation();
-        show(index - 1);
+        show(index - 1, { restartTimer: true });
       });
     }
     if (next) {
       next.addEventListener("click", function (e) {
         e.stopPropagation();
-        show(index + 1);
+        show(index + 1, { restartTimer: true });
       });
     }
     if (playBtn) {
@@ -357,10 +399,10 @@
         close();
       } else if (e.key === "ArrowLeft") {
         e.preventDefault();
-        show(index - 1);
+        show(index - 1, { restartTimer: true });
       } else if (e.key === "ArrowRight") {
         e.preventDefault();
-        show(index + 1);
+        show(index + 1, { restartTimer: true });
       } else if (e.key === "f" || e.key === "F") {
         if (e.target && (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA")) return;
         e.preventDefault();
@@ -394,8 +436,8 @@
           var dx = e.changedTouches[0].clientX - touchX;
           touchX = null;
           if (Math.abs(dx) < 40) return;
-          if (dx > 0) show(index - 1);
-          else show(index + 1);
+          if (dx > 0) show(index - 1, { restartTimer: true });
+          else show(index + 1, { restartTimer: true });
         },
         { passive: true }
       );
