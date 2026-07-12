@@ -44,9 +44,32 @@ python3 scripts/build_site.py
 
 ## 部署
 
-將 **`site/` 目錄內容** 上傳至任何靜態主機（GitHub Pages、Cloudflare Pages、Netlify、S3…）。
+可部署物在 **`site/`**（內含 `index.html`、`zh/`、`en/`、`ja/`、`media/`…）。  
+**不要**把 repo 根目錄當成網站根——根目錄只有原始碼與 `site/` 子資料夾，Vercel 若掃錯會出現 **404 NOT_FOUND**。
 
-上線後請把正式網域填進 OG／canonical（目前 `og:image` 為相對路徑，社群預覽在部分平台需絕對 URL）。可在 `scripts/build_site.py` 加 `BASE_URL` 後重建。
+### Vercel（建議）
+
+1. Import 這個 GitHub repo：`eugenetwtw/202607twfuture`
+2. **Framework Preset:** Other
+3. **Root Directory:** 設成 `site`  
+   （Project → Settings → General → Root Directory → `site`）  
+   或依賴 repo 根的 `vercel.json`（`"outputDirectory": "site"`）
+4. Build Command / Install Command：留空
+5. Redeploy
+
+本機對應：
+
+```bash
+cd site && python3 -m http.server 8765
+# → http://127.0.0.1:8765/
+```
+
+上線後可用正式網域重建 OG／canonical：
+
+```bash
+TW_SITE_BASE_URL=https://你的網域.vercel.app python3 scripts/build_site.py
+git add site && git commit -m "Absolute OG/canonical URLs" && git push
+```
 
 ## 借書／買書連結
 
