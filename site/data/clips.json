@@ -1,0 +1,23 @@
+{
+  "high-value-economy": {
+    "no": 2,
+    "src": "clips/issue-02-high-value-economy.mp4",
+    "poster": "image158.jpg",
+    "label_zh": "由本頁照片生成的短片",
+    "label_en": "Short clip generated from this photo"
+  },
+  "detail-and-craft": {
+    "no": 3,
+    "src": "clips/issue-03-detail-and-craft.mp4",
+    "poster": "image168.jpg",
+    "label_zh": "由本頁照片生成的短片",
+    "label_en": "Short clip generated from this photo"
+  },
+  "eighty-days-campaign": {
+    "no": 32,
+    "src": "clips/issue-32-eighty-days-campaign.mp4",
+    "poster": "image120.jpg",
+    "label_zh": "由本頁照片生成的短片",
+    "label_en": "Short clip generated from this photo"
+  }
+}

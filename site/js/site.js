@@ -405,8 +405,7 @@
       }
       if (imgEl) {
         imgEl.hidden = false;
-        imgEl.classList.remove("kenburns");
-      }
+              }
     }
 
     function show(i, opts) {
@@ -425,8 +424,7 @@
         videoEl.hidden = false;
         if (imgEl) {
           imgEl.hidden = true;
-          imgEl.classList.remove("kenburns");
-        }
+                  }
         videoEl.innerHTML =
           '<iframe src="https://www.youtube.com/embed/' +
           encodeURIComponent(yt) +
@@ -437,7 +435,6 @@
         imgEl.hidden = false;
         imgEl.src = item.poster || item.src;
         imgEl.alt = (item.caption || "").slice(0, 120);
-        imgEl.classList.add("kenburns");
       }
 
       if (capEl) capEl.textContent = item.caption || "";

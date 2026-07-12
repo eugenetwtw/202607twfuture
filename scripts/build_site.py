@@ -68,6 +68,7 @@ UI = {
         "home": "首頁",
         "issues": "議題",
         "issue_no": "議題",
+        "photo_clip": "由本頁照片生成的短片",
         "primary_lib": "到圖書館借電子書",
         "fallback_en": "English text is not ready yet; showing Traditional Chinese.",
         "footer": "張渝江《台灣大未來》— 工程師視角的台灣下一步。圖像除另有標示外屬作者。",
@@ -140,6 +141,7 @@ UI = {
         "home": "Home",
         "issues": "Issues",
         "issue_no": "Issue",
+        "photo_clip": "Short clip generated from this photo",
         "primary_lib": "Borrow ebook (library)",
         "fallback_en": "English text is not ready yet; showing Traditional Chinese.",
         "footer": "Eugene Chang · Taiwan's Great Future — an engineer's map of what's next. Images © the author unless noted.",
@@ -211,8 +213,17 @@ def asset(rel: str, depth: int) -> str:
 
 
 def media_src(filename: str, depth: int) -> str:
-    # all compressed to .jpg
-    stem = Path(filename).stem + ".jpg"
+    name = str(filename).lstrip("/")
+    # video / explicit subpaths under media/
+    if name.startswith("clips/") or Path(name).suffix.lower() in {
+        ".mp4",
+        ".webm",
+        ".mov",
+        ".svg",
+    }:
+        return asset(f"media/{name}", depth)
+    # photos compressed to .jpg
+    stem = Path(name).stem + ".jpg"
     return asset(f"media/{stem}", depth)
 
 
@@ -565,7 +576,7 @@ def body_paragraphs(issue: dict, lang: str) -> tuple[str, bool]:
     return "".join(f"<p>{esc(p)}</p>" for p in paras), used_fallback
 
 
-def build_issue(lang: str, issue: dict, issues: list, books: dict) -> str:
+def build_issue(lang: str, issue: dict, issues: list, books: dict, clips: dict | None = None) -> str:
     ui = UI[lang]
     depth = 3
     by_slug = {i["slug"]: i for i in issues}
@@ -586,6 +597,22 @@ def build_issue(lang: str, issue: dict, issues: list, books: dict) -> str:
     <figure class="cover-figure">
       <img src="{media_src(cover, depth)}" alt="{esc(title)}" />
       {f'<figcaption>{esc(cover_cap)}</figcaption>' if cover_cap else ''}
+    </figure>
+"""
+    # Optional AI short clip under the original photo (not on homepage)
+    clip = (clips or {}).get(issue["slug"])
+    clip_html = ""
+    if clip and clip.get("src"):
+        clip_label = clip.get("label_zh") if lang == "zh" else clip.get("label_en")
+        clip_label = clip_label or ui.get("photo_clip") or ""
+        poster = media_src(clip.get("poster") or cover, depth)
+        src_v = media_src(clip["src"], depth)
+        clip_html = f"""
+    <figure class="clip-figure">
+      <video class="clip-video" controls playsinline preload="metadata" poster="{poster}">
+        <source src="{src_v}" type="video/mp4" />
+      </video>
+      <figcaption>{esc(clip_label)}</figcaption>
     </figure>
 """
 
@@ -644,6 +671,7 @@ def build_issue(lang: str, issue: dict, issues: list, books: dict) -> str:
       <p class="claim">{esc(claim)}</p>
       {fb}
       {cover_html}
+      {clip_html}
       <div class="prose">
         {prose}
         {"".join(extra_figs)}
@@ -868,6 +896,10 @@ def main():
     books = load_json("books.json")
 
     gallery_data = load_json("gallery.json")
+    try:
+        clips = load_json("clips.json")
+    except Exception:
+        clips = {}
 
     # root redirect
     write(
@@ -897,7 +929,7 @@ def main():
         for issue in issues:
             write(
                 OUT / lang / "issues" / issue["slug"] / "index.html",
-                build_issue(lang, issue, issues, books),
+                build_issue(lang, issue, issues, books, clips),
             )
 
     n_gal = len(gallery_data.get("items") or [])

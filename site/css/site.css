@@ -186,12 +186,6 @@ a:hover {
   margin: 0;
 }
 
-.hero-cover,
-.hero-portrait {
-  overflow: hidden;
-  border-radius: 6px;
-}
-
 .hero-cover img,
 .hero-portrait img {
   width: 100%;
@@ -206,16 +200,9 @@ a:hover {
   display: block;
 }
 
-.hero-cover img {
-  transform-origin: 50% 40%;
-  animation: kenburns-a 18s ease-in-out infinite alternate;
-}
-
 .hero-portrait img {
   aspect-ratio: 3 / 4;
   object-position: center top;
-  transform-origin: 50% 20%;
-  animation: kenburns-b 20s ease-in-out infinite alternate;
 }
 
 .hero-cover figcaption,
@@ -521,64 +508,6 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: scale(1.08);
-  transform-origin: center center;
-  will-change: transform;
-  animation: kenburns-a 14s ease-in-out infinite alternate;
-}
-
-/* Alternate directions so neighboring cards feel less synced */
-.issue-card:nth-child(2n) .thumb img {
-  transform-origin: 30% 40%;
-  animation-name: kenburns-b;
-  animation-duration: 16s;
-}
-
-.issue-card:nth-child(3n) .thumb img {
-  transform-origin: 70% 30%;
-  animation-name: kenburns-c;
-  animation-duration: 18s;
-}
-
-.issue-card:hover .thumb img {
-  animation-play-state: paused;
-}
-
-@keyframes kenburns-a {
-  from {
-    transform: scale(1.06) translate(0%, 0%);
-  }
-  to {
-    transform: scale(1.16) translate(-2.5%, -1.5%);
-  }
-}
-
-@keyframes kenburns-b {
-  from {
-    transform: scale(1.08) translate(1%, 0%);
-  }
-  to {
-    transform: scale(1.18) translate(-2%, 2%);
-  }
-}
-
-@keyframes kenburns-c {
-  from {
-    transform: scale(1.05) translate(-1%, 1%);
-  }
-  to {
-    transform: scale(1.15) translate(2%, -2%);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .issue-card .thumb img,
-  .hero-cover img,
-  .hero-portrait img,
-  .lb__img.kenburns {
-    animation: none !important;
-    transform: none !important;
-  }
 }
 
 .issue-card .issue-no {
@@ -700,7 +629,7 @@ a:hover {
 }
 
 .cover-figure {
-  margin: 0 0 2rem;
+  margin: 0 0 1rem;
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid var(--line);
@@ -714,12 +643,29 @@ a:hover {
 }
 
 .cover-figure figcaption,
-.inline-figure figcaption {
+.inline-figure figcaption,
+.clip-figure figcaption {
   font-family: var(--sans);
   font-size: 0.82rem;
   color: var(--muted);
   padding: 0.65rem 0.85rem;
   background: var(--card);
+}
+
+/* AI photo-to-video clip under original still */
+.clip-figure {
+  margin: 0 0 2rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #14110e;
+}
+
+.clip-video {
+  display: block;
+  width: 100%;
+  max-height: 480px;
+  background: #000;
 }
 
 .prose p {
@@ -1231,11 +1177,6 @@ a:hover {
   object-fit: contain;
 }
 
-/* Optional subtle Ken Burns when gallery shows a still (not video) */
-.lb__img.kenburns {
-  transform-origin: center center;
-  animation: kenburns-a 12s ease-in-out infinite alternate;
-}
 
 .lb__nav {
   width: 2.6rem;
