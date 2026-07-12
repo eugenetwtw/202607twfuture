@@ -651,41 +651,19 @@ def build_about(lang: str, books: dict) -> str:
     ui = UI[lang]
     depth = 2
     author = media_src("author-upper.jpg", depth)
-    author_avatar = media_src("author-avatar.jpg", depth)
-    campaign = media_src("author-campaign.jpg", depth)
     if lang == "zh":
         content = f"""
       <p class="about-hook">{esc(ui.get("about_hook") or "")}</p>
-      <p>台大土木與法律雙學士、碩士；芝加哥伊利諾大學 MBA（財務與風險）。土木工程技師、綠圖顧問負責人，也做區塊鏈與營造。他在工地學細節，在選戰學效率——然後把兩者寫進書裡。</p>
+      <p>台大土木與法律雙學士、碩士；芝加哥伊利諾大學 MBA（財務與風險）。土木工程技師、綠圖顧問負責人，也做區塊鏈與營造。他在工地學細節，再把視野寫進書裡。</p>
       <p>著有《無人機大未來》《比特幣區塊鏈大未來》《台灣大未來》等。這一站，是他的<strong>個人品牌入口</strong>：短議題好分享，長論證在書裡、在圖書館、在你願意往下點的地方。</p>
-      <div class="about-photos">
-        <figure>
-          <img src="{author}" alt="{esc(ui["author_name"])}" width="600" height="800" />
-          <figcaption>{esc(ui["author_name"])} · {esc(ui["author_role"])}</figcaption>
-        </figure>
-        <figure>
-          <img src="{campaign}" alt="{esc(ui["author_name"])}" width="960" height="960" />
-          <figcaption>形象與現場——同一個作者，不同鏡頭</figcaption>
-        </figure>
-      </div>
-      <p>《台灣大未來》寫於 2019–2020：瑞士參照、能源與空污、居住、醫療與科技，外加八十天競選日記。他要回答的不是口號，是：方向對了，台灣能不能站上另一個量級。</p>
+      <p>《台灣大未來》寫於 2019–2020：瑞士參照、能源與空污、居住、醫療與科技。他要回答的不是口號，是：方向對了，台灣能不能站上另一個量級。</p>
 """
     else:
         content = f"""
       <p class="about-hook">{esc(ui.get("about_hook") or "")}</p>
-      <p>NTU (civil engineering & law), University of Illinois MBA, licensed engineer, founder work in consulting and blockchain. He learned detail on job sites and speed on the trail—then put both on the page.</p>
+      <p>NTU (civil engineering & law), University of Illinois MBA, licensed engineer, founder work in consulting and blockchain. He learned detail on job sites—then put the long view on the page.</p>
       <p>Author of books on drones, bitcoin, and Taiwan’s future. This site is his <strong>personal brand front door</strong>: short issues you can share, full arguments in the book.</p>
-      <div class="about-photos">
-        <figure>
-          <img src="{author}" alt="{esc(ui["author_name"])}" width="600" height="800" />
-          <figcaption>{esc(ui["author_name"])} · {esc(ui["author_role"])}</figcaption>
-        </figure>
-        <figure>
-          <img src="{campaign}" alt="{esc(ui["author_name"])}" width="960" height="960" />
-          <figcaption>Studio and field—same author, different frames</figcaption>
-        </figure>
-      </div>
-      <p><em>Taiwan's Great Future</em> (2019–2020) covers Switzerland as mirror, energy, housing, health, tech—and an eighty-day campaign. The question is simple and hard: if the direction is right, how high can Taiwan climb?</p>
+      <p><em>Taiwan's Great Future</em> (2019–2020) covers Switzerland as mirror, energy, housing, health, and tech. The question is simple and hard: if the direction is right, how high can Taiwan climb?</p>
 """
     body = f"""
   <section class="section">
