@@ -929,7 +929,7 @@
       2,
       7
     ],
-    "cover": "ai-nuclear-coast.jpg",
+    "cover": "ai-nuclear-strait-map.jpg",
     "related": [
       "coal-and-air",
       "hydropower-land",
@@ -975,11 +975,19 @@
     },
     "figures": [
       {
-        "src": "ai-nuclear-coast.jpg",
+        "src": "ai-nuclear-strait-map.jpg",
         "caption": {
-          "zh": "海岸電力地景與輸電線：區域核電選擇的意象（AI 生成，非特定電廠）。",
-          "en": "Coastal power landscape and transmission lines — regional nuclear choices (AI-generated, not a real plant).",
-          "ja": "海岸の電力景観と送電線——地域の原子力選択のイメージ（AI生成・特定発電所ではない）。"
+          "zh": "台海兩岸核電意象圖：中國福建、浙江、上海、廣東沿海核電機組密集，對照台灣一側（AI 生成資訊圖，示意用，非《經濟學人》原圖、非精確廠址）。",
+          "en": "Taiwan Strait nuclear facilities concept map: dense plants along China’s Fujian, Zhejiang, Shanghai, and Guangdong coasts versus fewer on Taiwan (AI infographic, schematic—not The Economist’s chart, not exact plant sites).",
+          "ja": "台湾海峡の原子力施設イメージ図：中国・福建／浙江／上海／広東の沿岸に密集し、台湾側は少ない（AI生成の概念図。《エコノミスト》原図でも実在位置の正確図でもない）。"
+        }
+      },
+      {
+        "src": "ai-nuclear-coast-dense.jpg",
+        "caption": {
+          "zh": "對岸沿海大型核電聚落的視覺聯想：區域能源地緣的另一面（AI 生成，非特定真實電廠照片）。",
+          "en": "Visual sense of large coastal nuclear clusters across the strait—the regional energy geography (AI-generated, not a photo of a named plant).",
+          "ja": "対岸沿岸の大規模原子力群の視覚イメージ——地域エネルギー地政（AI生成・特定実在プラントの写真ではない）。"
         }
       }
     ]
