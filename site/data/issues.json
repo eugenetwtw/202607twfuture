@@ -197,7 +197,7 @@
     "source_chapters": [
       1
     ],
-    "cover": "image115.jpg",
+    "cover": "ai-tourism-alps.jpg",
     "related": [
       "high-value-economy",
       "military-and-reserve",
@@ -243,11 +243,11 @@
     },
     "figures": [
       {
-        "src": "image115.jpg",
+        "src": "ai-tourism-alps.jpg",
         "caption": {
-          "zh": "飛鼠裝滑翔：瑞士人怎麼容忍外國人來他們家撞山？",
-          "en": "Wingsuit flying in the Alps.",
-          "ja": "ウィングスーツ飛行——スイスはどう外国人の「山への衝突」を許容するのか。"
+          "zh": "阿爾卑斯上空的翼裝飛行——高風險觀光如何被定價與保險（AI 生成示意）。",
+          "en": "Wingsuit flight over the Alps — how extreme tourism prices risk (AI-generated).",
+          "ja": "アルプス上空のウィングスーツ——極限観光はどうリスクを価格化するか（AI生成）。"
         }
       }
     ]
@@ -259,7 +259,7 @@
       1,
       4
     ],
-    "cover": "image111.jpg",
+    "cover": "ai-euthanasia-lake.jpg",
     "related": [
       "healthcare-export",
       "high-value-economy",
@@ -305,27 +305,27 @@
     },
     "figures": [
       {
-        "src": "image111.jpg",
+        "src": "ai-euthanasia-lake.jpg",
         "caption": {
-          "zh": "瑞士 Dignitas；傅達仁在此辭世。",
-          "en": "Dignitas, Switzerland.",
-          "ja": "スイスのDignitas。傅達仁がここで生を終えた。"
+          "zh": "湖畔的沈靜建築：瑞士與生命終點選擇的意象（AI 生成，非特定機構）。",
+          "en": "Quiet lakeside architecture — an image of end-of-life choice in Switzerland (AI-generated, not a real clinic).",
+          "ja": "湖畔の静かな建築——スイスと人生の終末期選択のイメージ（AI生成・特定施設ではない）。"
         }
       },
       {
-        "src": "image95.jpg",
+        "src": "ai-euthanasia-care.jpg",
         "caption": {
-          "zh": "2002，家母化療。",
-          "en": "Mother in chemotherapy, 2002.",
-          "ja": "2002年、母の化学療法。"
+          "zh": "醫院長廊的等待：家庭與化療的日常（AI 生成示意）。",
+          "en": "A hospital corridor waiting — family care and chemotherapy (AI-generated).",
+          "ja": "病院の廊下での待ち時間——家族のケアと化学療法（AI生成）。"
         }
       },
       {
-        "src": "image66.jpg",
+        "src": "ai-euthanasia-rights.jpg",
         "caption": {
-          "zh": "安樂死、健保資源與自由。",
-          "en": "Resources, rights, freedom.",
-          "ja": "安楽死、健保資源、そして自由。"
+          "zh": "聽診器、空白筆記本與天秤：資源、權利與自由（AI 生成）。",
+          "en": "Stethoscope, blank notebook, and scales — resources, rights, freedom (AI-generated).",
+          "ja": "聴診器、白紙のノート、天秤——資源・権利・自由（AI生成）。"
         }
       }
     ]
@@ -1827,7 +1827,7 @@
       1,
       8
     ],
-    "cover": "image179.jpg",
+    "cover": "ai-identity-alpine.jpg",
     "related": [
       "why-switzerland",
       "military-and-reserve",
@@ -1873,19 +1873,19 @@
     },
     "figures": [
       {
-        "src": "image179.jpg",
+        "src": "ai-identity-alpine.jpg",
         "caption": {
-          "zh": "《阿爾卑斯山的少女》與瑞士想像。",
-          "en": "Heidi and the Swiss imaginary.",
-          "ja": "『アルプスの少女ハイジ』とスイスの想像。"
+          "zh": "阿爾卑斯牧歌與童年想像：國族故事如何被風景養大（AI 生成，非特定角色）。",
+          "en": "Alpine pastoral and childhood imagination — how national stories grow from landscape (AI-generated, original character).",
+          "ja": "アルプスの牧歌と子どもの想像——国の物語はどう風景から育つか（AI生成・オリジナル）。"
         }
       },
       {
-        "src": "image112.jpg",
+        "src": "ai-identity-banknote.jpg",
         "caption": {
-          "zh": "台幣千元與少子化：國家圖像也在紙鈔上。",
-          "en": "Banknotes as national images.",
-          "ja": "台湾ドル千元と少子化——国家のイメージは紙幣にもある。"
+          "zh": "虛構紙鈔上的山岳紋樣：國家圖像也印在貨幣裡（AI 生成，非真實貨幣）。",
+          "en": "Mountain patterns on a fictional banknote — national images on currency (AI-generated, not real money).",
+          "ja": "架空紙幣の山岳模様——国家のイメージは貨幣にも（AI生成・実在通貨ではない）。"
         }
       }
     ]

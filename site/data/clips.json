@@ -25,19 +25,19 @@
   },
   "tourism-and-risk": {
     "no": 4,
-    "src": "clips/img-image115.mp4",
-    "poster": "image115.jpg",
-    "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo",
-    "label_ja": "このページの写真から生成した短編"
+    "src": "clips/ai-tourism-alps.mp4",
+    "poster": "ai-tourism-alps.jpg",
+    "label_zh": "由本頁 AI 生成圖像製成的短片",
+    "label_en": "Short clip from this page’s AI-generated image",
+    "label_ja": "このページのAI生成画像から作った短編"
   },
   "euthanasia-and-autonomy": {
     "no": 5,
-    "src": "clips/img-image111.mp4",
-    "poster": "image111.jpg",
-    "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo",
-    "label_ja": "このページの写真から生成した短編"
+    "src": "clips/ai-euthanasia-lake.mp4",
+    "poster": "ai-euthanasia-lake.jpg",
+    "label_zh": "由本頁 AI 生成圖像製成的短片",
+    "label_en": "Short clip from this page’s AI-generated image",
+    "label_ja": "このページのAI生成画像から作った短編"
   },
   "healthcare-export": {
     "no": 6,
@@ -225,11 +225,11 @@
   },
   "national-identity": {
     "no": 29,
-    "src": "clips/img-image179.mp4",
-    "poster": "image179.jpg",
-    "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo",
-    "label_ja": "このページの写真から生成した短編"
+    "src": "clips/ai-identity-alpine.mp4",
+    "poster": "ai-identity-alpine.jpg",
+    "label_zh": "由本頁 AI 生成圖像製成的短片",
+    "label_en": "Short clip from this page’s AI-generated image",
+    "label_ja": "このページのAI生成画像から作った短編"
   },
   "education-burden": {
     "no": 30,
