@@ -721,7 +721,7 @@
     "source_chapters": [
       2
     ],
-    "cover": "image172.jpg",
+    "cover": "ai-v2g-ev.jpg",
     "related": [
       "time-of-use-pricing",
       "coal-and-air",
@@ -767,19 +767,19 @@
     },
     "figures": [
       {
-        "src": "image172.jpg",
+        "src": "ai-v2g-ev.jpg",
         "caption": {
-          "zh": "V2G：車與電網。",
-          "en": "V2G.",
-          "ja": "V2G：車と電網。"
+          "zh": "電動車與壁掛充電／電網介面：V2G 的意象（AI 生成，非特定品牌）。",
+          "en": "EV and wall charger / grid interface — a V2G image (AI-generated, no brand).",
+          "ja": "EVと壁掛け充電器／電網インタフェース——V2Gのイメージ（AI生成・特定ブランドではない）。"
         }
       },
       {
-        "src": "image136.jpg",
+        "src": "ai-v2g-tou.jpg",
         "caption": {
-          "zh": "時間電價是價差的前提。",
-          "en": "Time-of-use pricing.",
-          "ja": "時間帯別料金は価格差の前提。"
+          "zh": "智慧電表與時鐘：時間電價與尖離峰（AI 生成示意）。",
+          "en": "Smart meter and clock — time-of-use and peak vs off-peak (AI-generated).",
+          "ja": "スマートメーターと時計——時間帯別料金とピーク／オフピーク（AI生成）。"
         }
       }
     ]
@@ -929,7 +929,7 @@
       2,
       7
     ],
-    "cover": "image54.jpg",
+    "cover": "ai-nuclear-coast.jpg",
     "related": [
       "coal-and-air",
       "hydropower-land",
@@ -975,11 +975,11 @@
     },
     "figures": [
       {
-        "src": "image54.jpg",
+        "src": "ai-nuclear-coast.jpg",
         "caption": {
-          "zh": "區域核電現實與台灣的選擇。",
-          "en": "Regional nuclear reality.",
-          "ja": "地域の原子力の現実と台湾の選択。"
+          "zh": "海岸電力地景與輸電線：區域核電選擇的意象（AI 生成，非特定電廠）。",
+          "en": "Coastal power landscape and transmission lines — regional nuclear choices (AI-generated, not a real plant).",
+          "ja": "海岸の電力景観と送電線——地域の原子力選択のイメージ（AI生成・特定発電所ではない）。"
         }
       }
     ]

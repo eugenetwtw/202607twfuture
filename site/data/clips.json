@@ -89,11 +89,11 @@
   },
   "v2g-and-ev-bonds": {
     "no": 12,
-    "src": "clips/img-image172.mp4",
-    "poster": "image172.jpg",
-    "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo",
-    "label_ja": "このページの写真から生成した短編"
+    "src": "clips/ai-v2g-ev.mp4",
+    "poster": "ai-v2g-ev.jpg",
+    "label_zh": "由本頁 AI 生成圖像製成的短片",
+    "label_en": "Short clip from this page’s AI-generated image",
+    "label_ja": "このページのAI生成画像から作った短編"
   },
   "time-of-use-pricing": {
     "no": 13,
@@ -113,11 +113,11 @@
   },
   "nuclear-rationality": {
     "no": 15,
-    "src": "clips/img-image54.mp4",
-    "poster": "image54.jpg",
-    "label_zh": "由本頁照片生成的短片",
-    "label_en": "Short clip generated from this photo",
-    "label_ja": "このページの写真から生成した短編"
+    "src": "clips/ai-nuclear-coast.mp4",
+    "poster": "ai-nuclear-coast.jpg",
+    "label_zh": "由本頁 AI 生成圖像製成的短片",
+    "label_en": "Short clip from this page’s AI-generated image",
+    "label_ja": "このページのAI生成画像から作った短編"
   },
   "farmland-factories": {
     "no": 16,
