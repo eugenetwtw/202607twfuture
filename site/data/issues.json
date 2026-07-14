@@ -977,17 +977,17 @@
       {
         "src": "ai-nuclear-strait-map.jpg",
         "caption": {
-          "zh": "台海兩岸核電意象圖：中國福建、浙江、上海、廣東沿海核電機組密集，對照台灣一側（AI 生成資訊圖，示意用，非《經濟學人》原圖、非精確廠址）。",
-          "en": "Taiwan Strait nuclear facilities concept map: dense plants along China’s Fujian, Zhejiang, Shanghai, and Guangdong coasts versus fewer on Taiwan (AI infographic, schematic—not The Economist’s chart, not exact plant sites).",
-          "ja": "台湾海峡の原子力施設イメージ図：中国・福建／浙江／上海／広東の沿岸に密集し、台湾側は少ない（AI生成の概念図。《エコノミスト》原図でも実在位置の正確図でもない）。"
+          "zh": "台海核電分布示意（自製）：中國廣東、福建、浙江／上海鄰近沿岸有多處核電廠址（大亞灣、陽江、台山、寧德、福清、三門、秦山等，公開座標近似）；台灣僅四廠——北岸金山核一、國聖核二（重啟討論）、貢寮核四封存、墾丁核三。非《經濟學人》原圖。",
+          "en": "Original Taiwan Strait nuclear schematic: multiple mainland sites along Guangdong, Fujian, and Zhejiang near Shanghai (Daya Bay, Yangjiang, Taishan, Ningde, Fuqing, Sanmen, Qinshan, etc., approx. public coords); Taiwan has four sites only—Jinshan and Kuosheng (north, restart debate), Lungmen at Gongliao (mothballed), Maanshan near Kenting. Not The Economist’s map.",
+          "ja": "台湾海峡の原子力配置の自作概念図：中国・広東／福建／浙江・上海近傍に複数サイト；台湾は4か所のみ——金山・国聖（北部・再稼働議論）、貢寮・龍門（封存）、墾丁・馬鞍山。『エコノミスト』原図ではない。"
         }
       },
       {
         "src": "ai-nuclear-coast-dense.jpg",
         "caption": {
-          "zh": "對岸沿海大型核電聚落的視覺聯想：區域能源地緣的另一面（AI 生成，非特定真實電廠照片）。",
-          "en": "Visual sense of large coastal nuclear clusters across the strait—the regional energy geography (AI-generated, not a photo of a named plant).",
-          "ja": "対岸沿岸の大規模原子力群の視覚イメージ——地域エネルギー地政（AI生成・特定実在プラントの写真ではない）。"
+          "zh": "對岸沿海大型核電聚落的視覺聯想（AI 生成輔助圖，非特定真實電廠航拍）。",
+          "en": "Visual sense of large coastal nuclear clusters across the strait (AI supporting image, not a photo of a named plant).",
+          "ja": "対岸沿岸の大規模原子力群の視覚イメージ（AI補助図・特定プラントの写真ではない）。"
         }
       }
     ]
