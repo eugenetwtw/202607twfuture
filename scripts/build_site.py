@@ -497,6 +497,10 @@ def layout(
   <link rel="icon" href="{asset("favicon-32.png", depth)}" type="image/png" sizes="32x32" />
   <link rel="apple-touch-icon" href="{asset("apple-touch-icon.png", depth)}" />
   <link rel="stylesheet" href="{css}" />
+  <script>
+    window.va = window.va || function () {{ (window.vaq = window.vaq || []).push(arguments); }};
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -899,7 +903,7 @@ def build_about(lang: str, books: dict) -> str:
     if lang == "zh":
         content = f"""
       <p class="about-hook">{esc(ui.get("about_hook") or "")}</p>
-      <p>台大土木與法律雙學士、碩士；芝加哥伊利諾大學 MBA（財務與風險）。土木工程技師、綠圖顧問負責人，也做區塊鏈與營造。他在工地學細節，再把視野寫進書裡。</p>
+      <p>台大土木與法律雙學士、碩士；芝加哥伊���諾大學 MBA（財務與風險）。土木工程技師、綠圖顧問負責人，也做區塊鏈與營造。他在工地學細節，再把視野寫進書裡。</p>
       <p>著有《無人機大未來》《比特幣區塊鏈大未來》《台灣大未來》等。這一站，是他的<strong>個人品牌入口</strong>：短議題好分享，長論證在書裡、在圖書館、在你願意往下點的地方。</p>
       <p>《台灣大未來》寫於 2019–2020：瑞士參照、能源與空污、居住、醫療與科技。他要回答的不是口號，是：方向對了，台灣能不能站上另一個量級。</p>
 """
@@ -1140,6 +1144,10 @@ def main():
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>台灣大未來</title>
   <link rel="canonical" href="zh/" />
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
   <script>location.replace("zh/");</script>
 </head>
 <body>
